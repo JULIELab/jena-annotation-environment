@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<customization>
+<rule pattern="organism={unspecified_organism}" style="background=d:212212212"/>
+<rule pattern="organism={human}" style="background=d:255127000"/>
+<rule pattern="organism={mouse}" style="background=blue"/>
+<rule pattern="organism={mouse}" style="foreground=white"/>
+<rule pattern="organism={rat}" style="background=red"/>
+<rule pattern="organism={drosophila}" style="background=green"/>
+<rule pattern="organism={s_cerevisiae}" style="background=black"/>
+<rule pattern="organism={s_cerevisiae}" style="foreground=white"/>
+<rule pattern="organism={e_coli}" style="background=d:034139034"/>
+<rule pattern="organism={e_coli}" style="foreground=white"/>
+<!--<rule pattern="organism={mammal}" style="background=d:255140000"/>-->
+<rule pattern="organism={animal}" style="background=d:132112255"/>
+<rule pattern="organism={animal}" style="foreground=white"/>
+<rule pattern="organism={plant}" style="background=d:072061139"/>
+<rule pattern="organism={plant}" style="foreground=white"/>
+<rule pattern="organism={fungi}" style="background=d:153000000"/>
+<rule pattern="organism={fungi}" style="foreground=white"/>
+<rule pattern="organism={eukaryote}" style="background=d:255204153"/>
+<rule pattern="organism={prokaryote}" style="background=d:064224208"/>
+<rule pattern="organism={virus}" style="background=d:255140000"/>
+</customization>

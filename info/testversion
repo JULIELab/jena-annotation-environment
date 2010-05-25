@@ -1,0 +1,12 @@
+Where and how to test current JANE development:
+
+database:
+=========
+on anno0: newtest_JaneDB
+JANE DB: user: JamesBond, pw: 0_0_7
+
+AL server:
+==========
+auf anno0:
+/usr/local/annoenv/programs/AnnoEnv-test
+PORT: 9999

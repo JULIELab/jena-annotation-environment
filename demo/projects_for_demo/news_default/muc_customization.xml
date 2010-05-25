@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<customization>
+<rule pattern="muc={person}" style="background=green"/>
+<rule pattern="muc={organization}" style="background=blue"/>
+<rule pattern="muc={location}" style="background=red"/>
+</customization>

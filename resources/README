@@ -1,0 +1,5 @@
+data for openNLP POS Tagger
+----------------------------
+POS/POS.dict -- is the cleaned POS dictionary
+POS/POS.mod.gz -- POS model trained on PennBioIE corpus
+

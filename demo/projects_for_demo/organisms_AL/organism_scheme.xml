@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<annotationscheme>
+
+  <attribute id="organism" name="organism" text="" type="nominal_button">
+    <value id="mouse" name="mouse"/>
+	<value id="rat" name="rat"/>
+	<value id="virus" name="virus"/>
+	<value id="human" name="human"/>
+   </attribute>
+
+</annotationscheme>
+
+
+

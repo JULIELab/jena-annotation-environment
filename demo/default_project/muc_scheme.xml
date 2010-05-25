@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<annotationscheme>
+
+  <attribute id="muc" name="muc" text="" type="nominal_button">
+    <value id="organization" name="organization"/>
+	<value id="person" name="person"/>
+	<value id="location" name="location"/>
+   </attribute>
+
+</annotationscheme>
+
+
+

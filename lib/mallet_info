@@ -1,0 +1,6 @@
+MALLET is a machine learning toolkit. Mallet is used for the machine
+learning algorithms in the active learning selection.
+
+References:
+* McCallum, Andrew Kachites.  "MALLET: A Machine Learning for Language
+  Toolkit." http://mallet.cs.umass.edu. 2002.

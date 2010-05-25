@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<annotationscheme>
+
+  <attribute id="celltype" name="celltype" text="" type="nominal_button">
+    <value id="cell" name="cell"/>
+   </attribute>
+
+</annotationscheme>
+
+
+

@@ -1,0 +1,2253 @@
+<xsl:stylesheet xmlns:xsl="http://www.w3.org/1999/XSL/Transform" version="1.0"
+xmlns:mmax="org.eml.MMAX2.discourse.MMAX2DiscourseLoader"
+xmlns:organism="www.eml.org/NameSpaces/organism">
+<xsl:output method="text" indent="yes" omit-xml-declaration="yes"/>
+<xsl:strip-space elements="*"/>
+
+<xsl:template match="words">
+<xsl:apply-templates/>
+</xsl:template>
+
+<xsl:template match="word">
+<xsl:choose>
+
+<xsl:when test="@id='word_1'">
+<xsl:value-of select="mmax:startItalic()"/>
+<xsl:value-of select="mmax:startSuperscript()"/>
+<xsl:text>
+***************************** BEGIN ABSTRACT 15808521 ***********************************************
+Arsenic ( +3 oxidation state ) methyltransferase and the inorganic arsenic methylation phenotype .
+Inorganic arsenic is enzymatically methylated ; hence , its ingestion results in exposure to the parent compound and various methylated arsenicals .
+Both experimental and epidemiological evidences suggest that some of the adverse health effects associated with chronic exposure to inorganic arsenic may be mediated by these methylated metabolites .
+If iAs methylation is an activation process , then the phenotype for inorganic arsenic methylation may determine risk associated with exposure to this metalloid .
+
+</xsl:text>
+<xsl:value-of select="mmax:endSuperscript()"/>
+<xsl:value-of select="mmax:endItalic()"/>
+
+<xsl:value-of select="mmax:registerDiscourseElement(@id)"/>
+  <xsl:apply-templates select="mmax:getStartedMarkables(@id)" mode="opening"/>
+  <xsl:value-of select="mmax:setDiscourseElementStart()"/>
+   <xsl:apply-templates/>
+  <xsl:value-of select="mmax:setDiscourseElementEnd()"/>
+  <xsl:apply-templates select="mmax:getEndedMarkables(@id)" mode="closing"/>
+  <xsl:text> </xsl:text>
+
+</xsl:when>
+
+<xsl:when test="@id='word_59'">
+
+<xsl:value-of select="mmax:registerDiscourseElement(@id)"/>
+  <xsl:apply-templates select="mmax:getStartedMarkables(@id)" mode="opening"/>
+  <xsl:value-of select="mmax:setDiscourseElementStart()"/>
+   <xsl:apply-templates/>
+  <xsl:value-of select="mmax:setDiscourseElementEnd()"/>
+  <xsl:apply-templates select="mmax:getEndedMarkables(@id)" mode="closing"/>
+  <xsl:text> </xsl:text>
+
+<xsl:value-of select="mmax:startItalic()"/>
+<xsl:value-of select="mmax:startSuperscript()"/>
+<xsl:text>
+
+The predicted protein products from arsenic ( +3 oxidation state ) methyltransferase are similar in size for rat ( 369 amino acid residues ) , mouse ( 376 residues ) , and human ( 375 residues ) .
+By comparison , a 275 - nucleotide deletion beginning at nucleotide 612 in the chimpanzee gene sequence causes a frameshift that leads to a nonsense mutation for a premature stop codon after amino acid 205 .
+The null phenotype for inorganic arsenic methylation in the chimpanzee is likely due to the deletion in the gene for arsenic ( +3 oxidation state ) methyltransferase that yields an inactive truncated protein .
+This lineage - specific loss of function caused by the deletion event must have occurred in the Pan lineage after Homo-Pan divergence about 5 million years ago .
+******************************* END ABSTRACT 15808521 ***********************************************
+
+</xsl:text>
+<xsl:value-of select="mmax:endSuperscript()"/>
+<xsl:value-of select="mmax:endItalic()"/>
+
+</xsl:when>
+
+<xsl:when test="@id='word_60'">
+<xsl:value-of select="mmax:startItalic()"/>
+<xsl:value-of select="mmax:startSuperscript()"/>
+<xsl:text>
+***************************** BEGIN ABSTRACT 11584061 ***********************************************
+Prostasin , a potential serum marker for ovarian cancer : identification through microarray technology .
+BACKGROUND : Screening biomarkers for ovarian cancer are needed because of its late stage at diagnosis and poor survival .
+We used microarray technology to identify overexpressed genes for secretory proteins as potential serum biomarkers and selected prostasin , a serine protease normally secreted by the prostate gland , for further study .
+METHODS : RNA was isolated and pooled from three ovarian cancer cell lines and from three normal human ovarian surface epithelial ( HOSE ) cell lines .
+Complementary DNA generated from these pools was hybridized to a microarray slide , and genes overexpressed in the cancer cells were identified .
+Real -time quantitative polymerase chain reaction was used to examine prostasin gene expression in ovarian cancer and HOSE cell lines .
+Anti - prostasin antibodies were used to examine prostasin expression and to measure serum prostasin by an enzyme - linked immunosorbent assay in 64 case patients with ovarian cancer and in 137 control subjects .
+Previously determined levels of CA 125 , an ovarian cancer marker , were available from about 70 % of all subjects .
+All statistical tests were two - sided .
+RESULTS : Prostasin was detected by immunostaining more strongly in cancerous ovarian epithelial cells and stroma than in normal ovarian tissue .
+
+</xsl:text>
+<xsl:value-of select="mmax:endSuperscript()"/>
+<xsl:value-of select="mmax:endItalic()"/>
+
+<xsl:value-of select="mmax:registerDiscourseElement(@id)"/>
+  <xsl:apply-templates select="mmax:getStartedMarkables(@id)" mode="opening"/>
+  <xsl:value-of select="mmax:setDiscourseElementStart()"/>
+   <xsl:apply-templates/>
+  <xsl:value-of select="mmax:setDiscourseElementEnd()"/>
+  <xsl:apply-templates select="mmax:getEndedMarkables(@id)" mode="closing"/>
+  <xsl:text> </xsl:text>
+
+</xsl:when>
+
+<xsl:when test="@id='word_136'">
+
+<xsl:value-of select="mmax:registerDiscourseElement(@id)"/>
+  <xsl:apply-templates select="mmax:getStartedMarkables(@id)" mode="opening"/>
+  <xsl:value-of select="mmax:setDiscourseElementStart()"/>
+   <xsl:apply-templates/>
+  <xsl:value-of select="mmax:setDiscourseElementEnd()"/>
+  <xsl:apply-templates select="mmax:getEndedMarkables(@id)" mode="closing"/>
+  <xsl:text> </xsl:text>
+
+<xsl:value-of select="mmax:startItalic()"/>
+<xsl:value-of select="mmax:startSuperscript()"/>
+<xsl:text>
+
+In 14 of 16 case patients with both preoperative and postoperative serum samples , postoperative prostasin levels were statistically significantly lower than preoperative levels ( P =.004 ) .
+In 37 case patients with nonmucinous ovarian cancer and in 100 control subjects for whom levels of CA 125 and prostasin were available , the combination of markers gave a sensitivity of 92 % ( 95 % CI = 78.1 % to 98.3 % ) and a specificity of 94 % ( 95 % CI = 87.4 % to 97.7 % ) for detecting ovarian cancer .
+CONCLUSIONS : Prostasin is overexpressed in epithelial ovarian cancer and should be investigated further as a screening or tumor marker , alone and in combination with CA 125 .
+******************************* END ABSTRACT 11584061 ***********************************************
+
+</xsl:text>
+<xsl:value-of select="mmax:endSuperscript()"/>
+<xsl:value-of select="mmax:endItalic()"/>
+
+</xsl:when>
+
+<xsl:when test="@id='word_137'">
+<xsl:value-of select="mmax:startItalic()"/>
+<xsl:value-of select="mmax:startSuperscript()"/>
+<xsl:text>
+***************************** BEGIN ABSTRACT 11336975 ***********************************************
+
+</xsl:text>
+<xsl:value-of select="mmax:endSuperscript()"/>
+<xsl:value-of select="mmax:endItalic()"/>
+
+<xsl:value-of select="mmax:registerDiscourseElement(@id)"/>
+  <xsl:apply-templates select="mmax:getStartedMarkables(@id)" mode="opening"/>
+  <xsl:value-of select="mmax:setDiscourseElementStart()"/>
+   <xsl:apply-templates/>
+  <xsl:value-of select="mmax:setDiscourseElementEnd()"/>
+  <xsl:apply-templates select="mmax:getEndedMarkables(@id)" mode="closing"/>
+  <xsl:text> </xsl:text>
+
+</xsl:when>
+
+<xsl:when test="@id='word_174'">
+
+<xsl:value-of select="mmax:registerDiscourseElement(@id)"/>
+  <xsl:apply-templates select="mmax:getStartedMarkables(@id)" mode="opening"/>
+  <xsl:value-of select="mmax:setDiscourseElementStart()"/>
+   <xsl:apply-templates/>
+  <xsl:value-of select="mmax:setDiscourseElementEnd()"/>
+  <xsl:apply-templates select="mmax:getEndedMarkables(@id)" mode="closing"/>
+  <xsl:text> </xsl:text>
+
+<xsl:value-of select="mmax:startItalic()"/>
+<xsl:value-of select="mmax:startSuperscript()"/>
+<xsl:text>
+
+Induction of P450 isoforms 1A ( CYP1A ) and 3A ( CYP3A ) by model inducers dexamethasone , omeprazole and rifampin was evaluated in primary cultured hepatocytes from man and laboratory animals .
+Inducer - specific species -differences were observed .
+Results with human hepatocytes from six human donors consistently show that both rifampin and dexamethasone were inducers of CYP3A activity ( measured as testosterone 6beta-hydroxylase activity ) , with rifampin being more potent .
+Conversely , in rat hepatocytes , dexamethasone was a potent CYP3A inducer while rifampin was not an inducer .
+Rifampin but not dexamethasone induced CYP3A in minipig and beagle dog hepatocytes .
+Omeprazole was a potent inducer of CYP1A activity ( measured as ethoxyresorufin-O-deethylase activity ) in human , beagle dog and minipig hepatocytes , and not an inducer in rat hepatocytes .
+The species -differences observed suggest that human hepatocytes represent the most appropriate preclinical experimental system for the evaluation of P450 induction in human .
+******************************* END ABSTRACT 11336975 ***********************************************
+
+</xsl:text>
+<xsl:value-of select="mmax:endSuperscript()"/>
+<xsl:value-of select="mmax:endItalic()"/>
+
+</xsl:when>
+
+<xsl:when test="@id='word_175'">
+<xsl:value-of select="mmax:startItalic()"/>
+<xsl:value-of select="mmax:startSuperscript()"/>
+<xsl:text>
+***************************** BEGIN ABSTRACT 9838922 ***********************************************
+Fanconi 's anaemia cells have normal steady - state levels and repair of oxidative DNA base modifications sensitive to Fpg protein .
+Cells from Fanconi 's anaemia ( FA ) patients are abnormally sensitive to oxygen .
+However , a distinct genetic defect in either the cellular defence against reactive oxygen species ( ROS ) or in their metabolic generation has not been identified to date .
+Recently , the gene for the human 8-hydroxyguanine ( 8-oxoG ) glycosylase , which removes this oxidative base modification from the genome , has been localized on chromosome 3p25 , i.e. , in the same region as the FA complementation group D ( FAD ) gene .
+We therefore studied the removal of photosensitization - induced 8-oxoG residues from the DNA of FA cells , using Fpg protein , the bacterial 8-oxoG glycosylase , to quantify the lesions by alkaline elution .
+Similar repair kinetics ( approx .
+
+</xsl:text>
+<xsl:value-of select="mmax:endSuperscript()"/>
+<xsl:value-of select="mmax:endItalic()"/>
+
+<xsl:value-of select="mmax:registerDiscourseElement(@id)"/>
+  <xsl:apply-templates select="mmax:getStartedMarkables(@id)" mode="opening"/>
+  <xsl:value-of select="mmax:setDiscourseElementStart()"/>
+   <xsl:apply-templates/>
+  <xsl:value-of select="mmax:setDiscourseElementEnd()"/>
+  <xsl:apply-templates select="mmax:getEndedMarkables(@id)" mode="closing"/>
+  <xsl:text> </xsl:text>
+
+</xsl:when>
+
+<xsl:when test="@id='word_230'">
+
+<xsl:value-of select="mmax:registerDiscourseElement(@id)"/>
+  <xsl:apply-templates select="mmax:getStartedMarkables(@id)" mode="opening"/>
+  <xsl:value-of select="mmax:setDiscourseElementStart()"/>
+   <xsl:apply-templates/>
+  <xsl:value-of select="mmax:setDiscourseElementEnd()"/>
+  <xsl:apply-templates select="mmax:getEndedMarkables(@id)" mode="closing"/>
+  <xsl:text> </xsl:text>
+
+<xsl:value-of select="mmax:startItalic()"/>
+<xsl:value-of select="mmax:startSuperscript()"/>
+<xsl:text>
+
+The susceptibility for the induction of oxidative DNA modifications by photosensitization was similar in all cells .
+In addition , the background ( steady - state ) levels of Fpg - sensitive oxidative DNA base modifications , which reflect the balance between generation and removal of the lesions , were similar in control and FA cells .
+It is concluded that both the generation and the overall removal of 8-oxoG residues in nuclear DNA is not impaired in FA cells .
+******************************* END ABSTRACT 9838922 ***********************************************
+
+</xsl:text>
+<xsl:value-of select="mmax:endSuperscript()"/>
+<xsl:value-of select="mmax:endItalic()"/>
+
+</xsl:when>
+
+<xsl:when test="@id='word_231'">
+<xsl:value-of select="mmax:startItalic()"/>
+<xsl:value-of select="mmax:startSuperscript()"/>
+<xsl:text>
+***************************** BEGIN ABSTRACT 15724245 ***********************************************
+MyD88 is critical for the development of innate and adaptive immunity during acute lymphocytic choriomeningitis virus infection .
+
+</xsl:text>
+<xsl:value-of select="mmax:endSuperscript()"/>
+<xsl:value-of select="mmax:endItalic()"/>
+
+<xsl:value-of select="mmax:registerDiscourseElement(@id)"/>
+  <xsl:apply-templates select="mmax:getStartedMarkables(@id)" mode="opening"/>
+  <xsl:value-of select="mmax:setDiscourseElementStart()"/>
+   <xsl:apply-templates/>
+  <xsl:value-of select="mmax:setDiscourseElementEnd()"/>
+  <xsl:apply-templates select="mmax:getEndedMarkables(@id)" mode="closing"/>
+  <xsl:text> </xsl:text>
+
+</xsl:when>
+
+<xsl:when test="@id='word_426'">
+
+<xsl:value-of select="mmax:registerDiscourseElement(@id)"/>
+  <xsl:apply-templates select="mmax:getStartedMarkables(@id)" mode="opening"/>
+  <xsl:value-of select="mmax:setDiscourseElementStart()"/>
+   <xsl:apply-templates/>
+  <xsl:value-of select="mmax:setDiscourseElementEnd()"/>
+  <xsl:apply-templates select="mmax:getEndedMarkables(@id)" mode="closing"/>
+  <xsl:text> </xsl:text>
+
+<xsl:value-of select="mmax:startItalic()"/>
+<xsl:value-of select="mmax:startSuperscript()"/>
+<xsl:text>
+
+We demonstrate that TLR - mediated responses are important in the innate immune response to LCMV and that MyD88 is essential for the control of the LCMV infection and the maturation / activation of virus - specific CD8 ( + ) T cells .
+******************************* END ABSTRACT 15724245 ***********************************************
+
+</xsl:text>
+<xsl:value-of select="mmax:endSuperscript()"/>
+<xsl:value-of select="mmax:endItalic()"/>
+
+</xsl:when>
+
+<xsl:when test="@id='word_427'">
+<xsl:value-of select="mmax:startItalic()"/>
+<xsl:value-of select="mmax:startSuperscript()"/>
+<xsl:text>
+***************************** BEGIN ABSTRACT 9718352 ***********************************************
+Dihydropyrimidinase deficiency : structural organization , chromosomal localization , and mutation analysis of the human dihydropyrimidinase gene .
+Dihydropyrimidinase ( DHP ) deficiency ( MIM 222748 ) is characterized by dihydropyrimidinuria and is associated with a variable clinical phenotype .
+This disease might be associated with a risk of 5 -fluorouracil toxicity , although no cases have been reported .
+We present here both the molecular characterization of the human DHP gene and , for the first time , the mutations causing DHP deficiency .
+The human DHP gene spans &gt; 80 kb and consists of 10 exons .
+It has been assigned to 8q22 , by FISH .
+We performed mutation analysis of genomic DNA in one symptomatic and five asymptomatic individuals presenting with dihydropyrimidinuria .
+We identified one frameshift mutation and five missense mutations .
+
+</xsl:text>
+<xsl:value-of select="mmax:endSuperscript()"/>
+<xsl:value-of select="mmax:endItalic()"/>
+
+<xsl:value-of select="mmax:registerDiscourseElement(@id)"/>
+  <xsl:apply-templates select="mmax:getStartedMarkables(@id)" mode="opening"/>
+  <xsl:value-of select="mmax:setDiscourseElementStart()"/>
+   <xsl:apply-templates/>
+  <xsl:value-of select="mmax:setDiscourseElementEnd()"/>
+  <xsl:apply-templates select="mmax:getEndedMarkables(@id)" mode="closing"/>
+  <xsl:text> </xsl:text>
+
+</xsl:when>
+
+<xsl:when test="@id='word_464'">
+
+<xsl:value-of select="mmax:registerDiscourseElement(@id)"/>
+  <xsl:apply-templates select="mmax:getStartedMarkables(@id)" mode="opening"/>
+  <xsl:value-of select="mmax:setDiscourseElementStart()"/>
+   <xsl:apply-templates/>
+  <xsl:value-of select="mmax:setDiscourseElementEnd()"/>
+  <xsl:apply-templates select="mmax:getEndedMarkables(@id)" mode="closing"/>
+  <xsl:text> </xsl:text>
+
+<xsl:value-of select="mmax:startItalic()"/>
+<xsl:value-of select="mmax:startSuperscript()"/>
+<xsl:text>
+
+A Caucasian pediatric patient exhibiting epileptic attacks , dysmorphic features , and severe developmental delay was homozygous for W360R .
+Using a eukaryotic expression system , we showed that all mutations reduced enzyme activity significantly , indicating that these are crucial DHP deficiency-causing mutations .
+There was no significant difference , in residual activity , between mutations observed in the symptomatic and those observed in the asymptomatic individuals .
+******************************* END ABSTRACT 9718352 ***********************************************
+
+</xsl:text>
+<xsl:value-of select="mmax:endSuperscript()"/>
+<xsl:value-of select="mmax:endItalic()"/>
+
+</xsl:when>
+
+<xsl:when test="@id='word_465'">
+<xsl:value-of select="mmax:startItalic()"/>
+<xsl:value-of select="mmax:startSuperscript()"/>
+<xsl:text>
+***************************** BEGIN ABSTRACT 11587068 ***********************************************
+Eight novel mutations of the androgen receptor gene in patients with androgen insensitivity syndrome .
+Androgen insensitivity syndrome ( AIS ) is an X - linked genetic disorder of male sexual differentiation caused by mutations in the androgen receptor ( AR ) gene .
+A reliable genotype -phenotype correlation in these patients does not exist as yet .
+Here we report the molecular studies performed on eight individuals with AIS .
+Exon - specific polymerase chain reaction ( PCR ) , single - strand conformation polymorphism , and sequencing analyses , were performed in exons 2 to 8 of the AR gene .
+In one case , total cellular RNA was extracted from genital skin fibroblasts and reverse transcriptase - PCR was performed .
+Six different point mutations leading to amino acid substitutions ( P682T , Q711E , G743E , F827V , H874R , D879Y ) , one splice - junction mutation ( g --&gt;c at +5 , exon 6 / intron 6 ) , and a missense mutation without amino acid substitution ( S888S ) were identified .
+All mutations , including a de novo mutation , were previously undescribed on the steroid binding domain .
+
+</xsl:text>
+<xsl:value-of select="mmax:endSuperscript()"/>
+<xsl:value-of select="mmax:endItalic()"/>
+
+<xsl:value-of select="mmax:registerDiscourseElement(@id)"/>
+  <xsl:apply-templates select="mmax:getStartedMarkables(@id)" mode="opening"/>
+  <xsl:value-of select="mmax:setDiscourseElementStart()"/>
+   <xsl:apply-templates/>
+  <xsl:value-of select="mmax:setDiscourseElementEnd()"/>
+  <xsl:apply-templates select="mmax:getEndedMarkables(@id)" mode="closing"/>
+  <xsl:text> </xsl:text>
+
+</xsl:when>
+
+<xsl:when test="@id='word_533'">
+
+<xsl:value-of select="mmax:registerDiscourseElement(@id)"/>
+  <xsl:apply-templates select="mmax:getStartedMarkables(@id)" mode="opening"/>
+  <xsl:value-of select="mmax:setDiscourseElementStart()"/>
+   <xsl:apply-templates/>
+  <xsl:value-of select="mmax:setDiscourseElementEnd()"/>
+  <xsl:apply-templates select="mmax:getEndedMarkables(@id)" mode="closing"/>
+  <xsl:text> </xsl:text>
+
+<xsl:value-of select="mmax:startItalic()"/>
+<xsl:value-of select="mmax:startSuperscript()"/>
+<xsl:text>
+
+******************************* END ABSTRACT 11587068 ***********************************************
+
+</xsl:text>
+<xsl:value-of select="mmax:endSuperscript()"/>
+<xsl:value-of select="mmax:endItalic()"/>
+
+</xsl:when>
+
+<xsl:when test="@id='word_534'">
+<xsl:value-of select="mmax:startItalic()"/>
+<xsl:value-of select="mmax:startSuperscript()"/>
+<xsl:text>
+***************************** BEGIN ABSTRACT 10825581 ***********************************************
+Bone marrow cells inhibit the generation of autologous EBV - specific CTL .
+
+</xsl:text>
+<xsl:value-of select="mmax:endSuperscript()"/>
+<xsl:value-of select="mmax:endItalic()"/>
+
+<xsl:value-of select="mmax:registerDiscourseElement(@id)"/>
+  <xsl:apply-templates select="mmax:getStartedMarkables(@id)" mode="opening"/>
+  <xsl:value-of select="mmax:setDiscourseElementStart()"/>
+   <xsl:apply-templates/>
+  <xsl:value-of select="mmax:setDiscourseElementEnd()"/>
+  <xsl:apply-templates select="mmax:getEndedMarkables(@id)" mode="closing"/>
+  <xsl:text> </xsl:text>
+
+</xsl:when>
+
+<xsl:when test="@id='word_571'">
+
+<xsl:value-of select="mmax:registerDiscourseElement(@id)"/>
+  <xsl:apply-templates select="mmax:getStartedMarkables(@id)" mode="opening"/>
+  <xsl:value-of select="mmax:setDiscourseElementStart()"/>
+   <xsl:apply-templates/>
+  <xsl:value-of select="mmax:setDiscourseElementEnd()"/>
+  <xsl:apply-templates select="mmax:getEndedMarkables(@id)" mode="closing"/>
+  <xsl:text> </xsl:text>
+
+<xsl:value-of select="mmax:startItalic()"/>
+<xsl:value-of select="mmax:startSuperscript()"/>
+<xsl:text>
+
+To clarify further the effect of BMC on the immune response to viral antigens , we obtained PBL from EBV IgG antibody positive kidney transplant recipients ( R) and their living - related donors ( LRD ) 1 year after renal transplantation and generated EBV - specific CTL in vitro in the presence or absence of autologous BMC .
+The addition of freshly aspirated autologous iliac crest BMC from either R or LRD caused a significant inhibitory effect on the generation of EBV - specific CTL from CTL precursors , in contrast to the addition of autologous PBL used as controls ( 62.29 +/- 10.85 % inhibition using BMC from the kidney transplant recipients ; 74.47 +/- 15.21 % inhibition using BMC from the living - related donors ) .
+This inhibitory effect was only exerted during the CTL generation phase ; but not in the effector CTL killing phase .
+The expression of CD94 , a component of the killer inhibitory receptor ( KIR ) on CD3 ( + ) cells was elevated in the cultures with BMC , in contrast to the cultures without BMC .
+The BMC inhibitory effect was partially abrogated by pre - incubation of the CTL effectors with anti - CD94 monoclonal antibody , in contrast with its isotype control .
+In addition , supernatants obtained from the CTL generating cultures with BMC contained high levels of prostaglandin E(2) ( PGE(2) ) , and EBV - specific CTL activity was inhibited by the addition of exogenous PGE(2) in the absence of BMC .
+The induction of CD40L cell surface expression by anti - CD3 was also decreased on the effector T cell population when BMC were added .
+There was a concomitant reduction in protein kinase C ( PKC ) activity .
+These studies demonstrate that BMC exert an inhibitory effect on T cell - mediated immunity to viral antigens in humans by regulating autologous effector T cell generation and early T cell activation signaling pathways .
+******************************* END ABSTRACT 10825581 ***********************************************
+
+</xsl:text>
+<xsl:value-of select="mmax:endSuperscript()"/>
+<xsl:value-of select="mmax:endItalic()"/>
+
+</xsl:when>
+
+<xsl:when test="@id='word_572'">
+<xsl:value-of select="mmax:startItalic()"/>
+<xsl:value-of select="mmax:startSuperscript()"/>
+<xsl:text>
+***************************** BEGIN ABSTRACT 9926400 ***********************************************
+Identification of a thymidylate synthase gene within the genome of Chilo iridescent virus .
+The thymidylate synthase ( TS , EC 2.1.1.45 ) is essential for the de novo synthesis of dTMP in pro - and eucaryotic organisms .
+Consequently it plays a major role in the replication of the DNA genome of a cell or a DNA virus .
+The gene encoding the TS of Chilo iridescent virus ( CIV ) was identified by nucleotide sequence analysis of the viral genome and was mapped within the EcoRI CIV DNA fragments G and R . Computer assisted analysis of the DNA nucleotide sequence between the genome coordinates 0.482 and 0.489 revealed an open reading frame ( ORF ) of 885 nucleotides .
+This ORF was found to encode a polypeptide of 295 amino acid residues ( 33.9 kDa ) that showed significant homologies to known TS of different species including mammals , plants , fungi , protozoa , bacteria , and DNA viruses .
+
+</xsl:text>
+<xsl:value-of select="mmax:endSuperscript()"/>
+<xsl:value-of select="mmax:endItalic()"/>
+
+<xsl:value-of select="mmax:registerDiscourseElement(@id)"/>
+  <xsl:apply-templates select="mmax:getStartedMarkables(@id)" mode="opening"/>
+  <xsl:value-of select="mmax:setDiscourseElementStart()"/>
+   <xsl:apply-templates/>
+  <xsl:value-of select="mmax:setDiscourseElementEnd()"/>
+  <xsl:apply-templates select="mmax:getEndedMarkables(@id)" mode="closing"/>
+  <xsl:text> </xsl:text>
+
+</xsl:when>
+
+<xsl:when test="@id='word_650'">
+
+<xsl:value-of select="mmax:registerDiscourseElement(@id)"/>
+  <xsl:apply-templates select="mmax:getStartedMarkables(@id)" mode="opening"/>
+  <xsl:value-of select="mmax:setDiscourseElementStart()"/>
+   <xsl:apply-templates/>
+  <xsl:value-of select="mmax:setDiscourseElementEnd()"/>
+  <xsl:apply-templates select="mmax:getEndedMarkables(@id)" mode="closing"/>
+  <xsl:text> </xsl:text>
+
+<xsl:value-of select="mmax:startItalic()"/>
+<xsl:value-of select="mmax:startSuperscript()"/>
+<xsl:text>
+
+The CIV-TS contains six amino acid domains that are highly conserved in the TS of other species .
+Within these domains the major amino acid residues are present for which a functional role has been reported .
+The CIV-TS was found to be more closely related to the TS of eucaryotes than to the TS of procaryotes indicating the phylogenetic origin of the CIV-TS gene .
+The identification of a TS gene in the genome of CIV is the first report of a viral TS that is not encoded by a herpesvirus or a bacteriophage .
+******************************* END ABSTRACT 9926400 ***********************************************
+
+</xsl:text>
+<xsl:value-of select="mmax:endSuperscript()"/>
+<xsl:value-of select="mmax:endItalic()"/>
+
+</xsl:when>
+
+<xsl:when test="@id='word_651'">
+<xsl:value-of select="mmax:startItalic()"/>
+<xsl:value-of select="mmax:startSuperscript()"/>
+<xsl:text>
+***************************** BEGIN ABSTRACT 10666196 ***********************************************
+Quantitative assessment of retroviral transfer of the human multidrug resistance 1 gene to human mobilized peripheral blood progenitor cells engrafted in nonobese diabetic /severe combined immunodeficient mice .
+Mobilized peripheral blood progenitor cells ( PBPC ) are a potential target for the retrovirus - mediated transfer of cytostatic drug - resistance genes .
+
+</xsl:text>
+<xsl:value-of select="mmax:endSuperscript()"/>
+<xsl:value-of select="mmax:endItalic()"/>
+
+<xsl:value-of select="mmax:registerDiscourseElement(@id)"/>
+  <xsl:apply-templates select="mmax:getStartedMarkables(@id)" mode="opening"/>
+  <xsl:value-of select="mmax:setDiscourseElementStart()"/>
+   <xsl:apply-templates/>
+  <xsl:value-of select="mmax:setDiscourseElementEnd()"/>
+  <xsl:apply-templates select="mmax:getEndedMarkables(@id)" mode="closing"/>
+  <xsl:text> </xsl:text>
+
+</xsl:when>
+
+<xsl:when test="@id='word_714'">
+
+<xsl:value-of select="mmax:registerDiscourseElement(@id)"/>
+  <xsl:apply-templates select="mmax:getStartedMarkables(@id)" mode="opening"/>
+  <xsl:value-of select="mmax:setDiscourseElementStart()"/>
+   <xsl:apply-templates/>
+  <xsl:value-of select="mmax:setDiscourseElementEnd()"/>
+  <xsl:apply-templates select="mmax:getEndedMarkables(@id)" mode="closing"/>
+  <xsl:text> </xsl:text>
+
+<xsl:value-of select="mmax:startItalic()"/>
+<xsl:value-of select="mmax:startSuperscript()"/>
+<xsl:text>
+
+Five to 13 weeks after transplantation of CD34+ PBPC into NOD / SCID mice ( n = 84 ) , a cell dose - dependent multilineage engraftment of human leukocytes up to an average of 33 % was observed .
+The SF-MDR provirus was detected in the bone marrow ( BM ) and in its granulocyte fractions in 96 % and 72 % , respectively , of chimeric NOD / SCID mice .
+SF-MDR provirus integration assessed by quantitative real -time polymerase chain reaction ( PCR ) was optimal in the presence of Flt-3 ligand/thrombopoietin / stem - cell factor , resulting in a 6 - fold ( 24 % +/- 5 % [ mean +/- SE] ) higher average proportion of gene - marked human cells in NOD / SCID mice than that achieved with IL-3 alone ( P &lt; .01 ) .
+A population of clearly rhodamine - 123(dull ) human myeloid progeny cells could be isolated from BM samples from chimeric NOD / SCID mice .
+On the basis of PCR and rhodamine - 123 efflux data , up to 18 % +/- 4 % of transduced cells were calculated to express the transgene .
+Our data suggest that the NOD / SCID model provides a valid assay for estimating the gene - transfer efficiency to repopulating human PBPC that may be achievable in clinical autologous transplantation .
+P-glycoprotein expression sufficient to prevent marrow aplasia in vivo may be obtained with this SF-MDR vector and an optimized transduction protocol .
+( Blood .
+2000 ;95 : 1237-1248 )
+******************************* END ABSTRACT 10666196 ***********************************************
+
+</xsl:text>
+<xsl:value-of select="mmax:endSuperscript()"/>
+<xsl:value-of select="mmax:endItalic()"/>
+
+</xsl:when>
+
+<xsl:when test="@id='word_715'">
+<xsl:value-of select="mmax:startItalic()"/>
+<xsl:value-of select="mmax:startSuperscript()"/>
+<xsl:text>
+***************************** BEGIN ABSTRACT 9128286 ***********************************************
+Expression of MxA protein in blood lymphocytes discriminates between viral and bacterial infections in febrile children .
+Interferons ( IFNs ) , which are induced by viruses , form an essential part of host 's defense systems against viral infections .
+The antiviral actions of IFNs are mediated by several IFN - inducible gene products , one of which is Mx protein .
+To evaluate whether MxA protein expression in lymphocytes could function as an indicator of endogenous IFN production in children with acute febrile illness , we analyzed MxA protein levels in peripheral blood lymphocytes by flow cytometry in the acute phase of the disease .
+
+</xsl:text>
+<xsl:value-of select="mmax:endSuperscript()"/>
+<xsl:value-of select="mmax:endItalic()"/>
+
+<xsl:value-of select="mmax:registerDiscourseElement(@id)"/>
+  <xsl:apply-templates select="mmax:getStartedMarkables(@id)" mode="opening"/>
+  <xsl:value-of select="mmax:setDiscourseElementStart()"/>
+   <xsl:apply-templates/>
+  <xsl:value-of select="mmax:setDiscourseElementEnd()"/>
+  <xsl:apply-templates select="mmax:getEndedMarkables(@id)" mode="closing"/>
+  <xsl:text> </xsl:text>
+
+</xsl:when>
+
+<xsl:when test="@id='word_793'">
+
+<xsl:value-of select="mmax:registerDiscourseElement(@id)"/>
+  <xsl:apply-templates select="mmax:getStartedMarkables(@id)" mode="opening"/>
+  <xsl:value-of select="mmax:setDiscourseElementStart()"/>
+   <xsl:apply-templates/>
+  <xsl:value-of select="mmax:setDiscourseElementEnd()"/>
+  <xsl:apply-templates select="mmax:getEndedMarkables(@id)" mode="closing"/>
+  <xsl:text> </xsl:text>
+
+<xsl:value-of select="mmax:startItalic()"/>
+<xsl:value-of select="mmax:startSuperscript()"/>
+<xsl:text>
+
+To characterize further MxA protein expression during infections , cells from 41 patients were stimulated in vitro with exogenous IFN-alpha , and the level of MxA protein expression was determined .
+The rise in MxA staining levels was significantly higher in the group with bacterial infections compared with those with viral infection ( p &lt; 0.005 ) , further indicating that the MxA protein levels were already elevated in vivo in patients with viral infections .
+This study suggests that elevated MxA protein expression levels can be used in the differential diagnosis of bacterial versus viral disease in febrile children .
+******************************* END ABSTRACT 9128286 ***********************************************
+
+</xsl:text>
+<xsl:value-of select="mmax:endSuperscript()"/>
+<xsl:value-of select="mmax:endItalic()"/>
+
+</xsl:when>
+
+<xsl:when test="@id='word_794'">
+<xsl:value-of select="mmax:startItalic()"/>
+<xsl:value-of select="mmax:startSuperscript()"/>
+<xsl:text>
+***************************** BEGIN ABSTRACT 11386852 ***********************************************
+Is mutated serine hydroxymethyltransferase ( SHMT ) involved in the etiology of neural tube defects ?
+Neural tube defects ( NTD ) arise in the first weeks of pregnancy due to a combination of environmental and genetic factors .
+In mothers of children with NTD elevated homocysteine ( Hcy ) levels and decreased plasma folate levels were observed , which suggests a defect in the folate - dependent Hcy metabolism .
+Therefore , mutations in genes coding for enzymes of this metabolism could be involved in NTD .
+Serine hydroxymethyltransferase ( SHMT ) catalyzes the reversible reaction of serine and tetrahydrofolate ( THF ) to glycine and 5,10 - methylene THF .
+Two different isoforms of SHMT are known , one is present in the cytosol ( cSHMT ) and the other in the mitochondrion ( mSHMT ) .
+Theoretically , mutated SHMT could lead to elevated Hcy levels and to an altered distribution of the different folate derivatives and might therefore become a risk factor for NTD .
+This study concerns the molecular genetic analysis of genes coding for both isoforms of the SHMT enzyme by single - stranded conformation polymorphism analysis .
+Several mutations as well as polymorphisms were found in both genes .
+
+</xsl:text>
+<xsl:value-of select="mmax:endSuperscript()"/>
+<xsl:value-of select="mmax:endItalic()"/>
+
+<xsl:value-of select="mmax:registerDiscourseElement(@id)"/>
+  <xsl:apply-templates select="mmax:getStartedMarkables(@id)" mode="opening"/>
+  <xsl:value-of select="mmax:setDiscourseElementStart()"/>
+   <xsl:apply-templates/>
+  <xsl:value-of select="mmax:setDiscourseElementEnd()"/>
+  <xsl:apply-templates select="mmax:getEndedMarkables(@id)" mode="closing"/>
+  <xsl:text> </xsl:text>
+
+</xsl:when>
+
+<xsl:when test="@id='word_849'">
+
+<xsl:value-of select="mmax:registerDiscourseElement(@id)"/>
+  <xsl:apply-templates select="mmax:getStartedMarkables(@id)" mode="opening"/>
+  <xsl:value-of select="mmax:setDiscourseElementStart()"/>
+   <xsl:apply-templates/>
+  <xsl:value-of select="mmax:setDiscourseElementEnd()"/>
+  <xsl:apply-templates select="mmax:getEndedMarkables(@id)" mode="closing"/>
+  <xsl:text> </xsl:text>
+
+<xsl:value-of select="mmax:startItalic()"/>
+<xsl:value-of select="mmax:startSuperscript()"/>
+<xsl:text>
+
+Neither of the two polymorphisms led to an increased risk of NTD .
+In mothers with the 1420 CC genotype , significant increased Hcy levels are present .
+Also , significantly decreased red blood cell folate and plasma folate levels were present in individuals with the 1420 CC genotype .
+Probably , the 1420 C&gt; T polymorphism causes a shift in distribution of the different folate derivatives .
+The 4-bp deletion of the mSHMT gene did not lead to altered Hcy or folate levels .
+So far , the results of this study provide no direct evidence for a role of defective SHMT functioning in NTD .
+Still , the influence of the 1420 C&gt; T polymorphism of the cSHMT gene on the folate - related risk of NTD needs further investigation .
+******************************* END ABSTRACT 11386852 ***********************************************
+
+</xsl:text>
+<xsl:value-of select="mmax:endSuperscript()"/>
+<xsl:value-of select="mmax:endItalic()"/>
+
+</xsl:when>
+
+<xsl:when test="@id='word_850'">
+<xsl:value-of select="mmax:startItalic()"/>
+<xsl:value-of select="mmax:startSuperscript()"/>
+<xsl:text>
+***************************** BEGIN ABSTRACT 12787913 ***********************************************
+DNA damage and antioxidant defense in peripheral leukocytes of patients with Type I diabetes mellitus .
+We determined relationship among DNA damage , nitric oxide ( NO ) and antioxidant defense in leukocytes of patients with Type 1 DM . DNA damage was evaluated as strand breakage and formamidopyrimidine DNA glycosylase ( Fpg ) - sensitive sites by the comet assay in DNA from leukocytes of the subjects .
+Nitrite level , as a product of NO , superoxide dismutase ( SOD ) activity and glutathione peroxidase ( G-Px ) activity of the leukocytes were measured by spectrophotometric kits .
+Serum glucose level and glycosylated haemoglobin ( HbA( 1c ) ) were higher in the patients , as expected .
+Differences in measured parameters between controls and patients were assessed in men and women separately .
+There was no significant difference between patient and control groups in neither men nor women for nitrite level .
+
+</xsl:text>
+<xsl:value-of select="mmax:endSuperscript()"/>
+<xsl:value-of select="mmax:endItalic()"/>
+
+<xsl:value-of select="mmax:registerDiscourseElement(@id)"/>
+  <xsl:apply-templates select="mmax:getStartedMarkables(@id)" mode="opening"/>
+  <xsl:value-of select="mmax:setDiscourseElementStart()"/>
+   <xsl:apply-templates/>
+  <xsl:value-of select="mmax:setDiscourseElementEnd()"/>
+  <xsl:apply-templates select="mmax:getEndedMarkables(@id)" mode="closing"/>
+  <xsl:text> </xsl:text>
+
+</xsl:when>
+
+<xsl:when test="@id='word_890'">
+
+<xsl:value-of select="mmax:registerDiscourseElement(@id)"/>
+  <xsl:apply-templates select="mmax:getStartedMarkables(@id)" mode="opening"/>
+  <xsl:value-of select="mmax:setDiscourseElementStart()"/>
+   <xsl:apply-templates/>
+  <xsl:value-of select="mmax:setDiscourseElementEnd()"/>
+  <xsl:apply-templates select="mmax:getEndedMarkables(@id)" mode="closing"/>
+  <xsl:text> </xsl:text>
+
+<xsl:value-of select="mmax:startItalic()"/>
+<xsl:value-of select="mmax:startSuperscript()"/>
+<xsl:text>
+
+Significant correlations were determined between strand breakage and HbA( 1c ) ( r = 0.37 , P&lt; 0.05 ) ; Fpg - sensitive sites and HbA( 1c ) ( r = 0.59 , P&lt; 0.01 ) ; Fpg - sensitive sites and glucose ( r = 0.45 , P&lt; 0.02 ) ; Fpg - sensitive sites and SOD ( r = - 0.48 , P&lt; 0.02 ) ; HbA( 1c ) and SOD ( r = - 0.50 , P&lt; 0.02 ) .
+In conclusion , impaired antioxidant defense in leukocytes of patients with Type 1 DM may be one of the responsible mechanisms for increased DNA damage in those patients .
+******************************* END ABSTRACT 12787913 ***********************************************
+
+</xsl:text>
+<xsl:value-of select="mmax:endSuperscript()"/>
+<xsl:value-of select="mmax:endItalic()"/>
+
+</xsl:when>
+
+<xsl:when test="@id='word_891'">
+<xsl:value-of select="mmax:startItalic()"/>
+<xsl:value-of select="mmax:startSuperscript()"/>
+<xsl:text>
+***************************** BEGIN ABSTRACT 9697826 ***********************************************
+Androgen receptors mediate hypertrophy in cardiac myocytes .
+BACKGROUND : The role of androgens in producing cardiac hypertrophy by direct action on cardiac myocytes is uncertain .
+Accordingly , we tested the hypothesis that cardiac myocytes in adult men and women express an androgen receptor gene and that myocytes respond to androgens by a hypertrophic response .
+METHODS AND RESULTS : We used reverse transcription - polymerase chain reaction methods to demonstrate androgen receptor transcripts in multiple tissues and [3H]phenylalanine incorporation and atrial natriuretic peptide secretion as markers of hypertrophy in cultured rat myocytes .
+
+</xsl:text>
+<xsl:value-of select="mmax:endSuperscript()"/>
+<xsl:value-of select="mmax:endItalic()"/>
+
+<xsl:value-of select="mmax:registerDiscourseElement(@id)"/>
+  <xsl:apply-templates select="mmax:getStartedMarkables(@id)" mode="opening"/>
+  <xsl:value-of select="mmax:setDiscourseElementStart()"/>
+   <xsl:apply-templates/>
+  <xsl:value-of select="mmax:setDiscourseElementEnd()"/>
+  <xsl:apply-templates select="mmax:getEndedMarkables(@id)" mode="closing"/>
+  <xsl:text> </xsl:text>
+
+</xsl:when>
+
+<xsl:when test="@id='word_923'">
+
+<xsl:value-of select="mmax:registerDiscourseElement(@id)"/>
+  <xsl:apply-templates select="mmax:getStartedMarkables(@id)" mode="opening"/>
+  <xsl:value-of select="mmax:setDiscourseElementStart()"/>
+   <xsl:apply-templates/>
+  <xsl:value-of select="mmax:setDiscourseElementEnd()"/>
+  <xsl:apply-templates select="mmax:getEndedMarkables(@id)" mode="closing"/>
+  <xsl:text> </xsl:text>
+
+<xsl:value-of select="mmax:startItalic()"/>
+<xsl:value-of select="mmax:startSuperscript()"/>
+<xsl:text>
+
+Both testosterone and dihydrotestosterone produced a robust receptor - specific hypertrophic response in myocytes , determined by indices of protein synthesis and atrial natriuretic peptide secretion .
+CONCLUSIONS : Androgen receptors are present in cardiac myocytes from multiple species , including normal men and women , in a context that permits androgens to modulate the cardiac phenotype and produce hypertrophy by direct , receptor - specific mechanisms .
+There are clinical implications for therapeutic or illicit use of androgens in humans .
+******************************* END ABSTRACT 9697826 ***********************************************
+
+</xsl:text>
+<xsl:value-of select="mmax:endSuperscript()"/>
+<xsl:value-of select="mmax:endItalic()"/>
+
+</xsl:when>
+
+<xsl:when test="@id='word_924'">
+<xsl:value-of select="mmax:startItalic()"/>
+<xsl:value-of select="mmax:startSuperscript()"/>
+<xsl:text>
+***************************** BEGIN ABSTRACT 11175293 ***********************************************
+Mutation analysis of the DCX gene and genotype / phenotype correlation in subcortical band heterotopia .
+Subcortical band heterotopia ( SBH ) comprises part of a spectrum of phenotypes associated with classical lissencephaly ( LIS ) .
+LIS and SBH are caused by alterations in at least two genes : LIS1 ( PAFAH1B1 ) at 17p13.3 and DCX ( doublecortin ) at Xq22.3 -q23 .
+
+</xsl:text>
+<xsl:value-of select="mmax:endSuperscript()"/>
+<xsl:value-of select="mmax:endItalic()"/>
+
+<xsl:value-of select="mmax:registerDiscourseElement(@id)"/>
+  <xsl:apply-templates select="mmax:getStartedMarkables(@id)" mode="opening"/>
+  <xsl:value-of select="mmax:setDiscourseElementStart()"/>
+   <xsl:apply-templates/>
+  <xsl:value-of select="mmax:setDiscourseElementEnd()"/>
+  <xsl:apply-templates select="mmax:getEndedMarkables(@id)" mode="closing"/>
+  <xsl:text> </xsl:text>
+
+</xsl:when>
+
+<xsl:when test="@id='word_951'">
+
+<xsl:value-of select="mmax:registerDiscourseElement(@id)"/>
+  <xsl:apply-templates select="mmax:getStartedMarkables(@id)" mode="opening"/>
+  <xsl:value-of select="mmax:setDiscourseElementStart()"/>
+   <xsl:apply-templates/>
+  <xsl:value-of select="mmax:setDiscourseElementEnd()"/>
+  <xsl:apply-templates select="mmax:getEndedMarkables(@id)" mode="closing"/>
+  <xsl:text> </xsl:text>
+
+<xsl:value-of select="mmax:startItalic()"/>
+<xsl:value-of select="mmax:startSuperscript()"/>
+<xsl:text>
+
+In this study , we performed detailed DCX mutation analysis and genotype -phenotype correlation in a large cohort with typical SBH .
+We screened 26 sporadic SBH females and 11 LIS /SBH families for DCX mutations by direct sequencing .
+We found 29 mutations in 22 sporadic patients and 11 pedigrees , including five deletions , four nonsense mutations , 19 missense mutations and one splice donor site mutation .
+The DCX mutation prevalence was 84.6 % ( 22 of 26 ) in sporadic SBH patients and 100 % ( 11 of 11 ) in SBH pedigrees .
+Maternal germline mosaicism was found in one family .
+Significant differences in genotype were found in relation to band thickness and familial vs sporadic status .
+******************************* END ABSTRACT 11175293 ***********************************************
+
+</xsl:text>
+<xsl:value-of select="mmax:endSuperscript()"/>
+<xsl:value-of select="mmax:endItalic()"/>
+
+</xsl:when>
+
+<xsl:when test="@id='word_952'">
+<xsl:value-of select="mmax:startItalic()"/>
+<xsl:value-of select="mmax:startSuperscript()"/>
+<xsl:text>
+***************************** BEGIN ABSTRACT 12637328 ***********************************************
+Sex significantly influences transduction of murine liver by recombinant adeno- associated viral vectors through an androgen - dependent pathway .
+
+</xsl:text>
+<xsl:value-of select="mmax:endSuperscript()"/>
+<xsl:value-of select="mmax:endItalic()"/>
+
+<xsl:value-of select="mmax:registerDiscourseElement(@id)"/>
+  <xsl:apply-templates select="mmax:getStartedMarkables(@id)" mode="opening"/>
+  <xsl:value-of select="mmax:setDiscourseElementStart()"/>
+   <xsl:apply-templates/>
+  <xsl:value-of select="mmax:setDiscourseElementEnd()"/>
+  <xsl:apply-templates select="mmax:getEndedMarkables(@id)" mode="closing"/>
+  <xsl:text> </xsl:text>
+
+</xsl:when>
+
+<xsl:when test="@id='word_1009'">
+
+<xsl:value-of select="mmax:registerDiscourseElement(@id)"/>
+  <xsl:apply-templates select="mmax:getStartedMarkables(@id)" mode="opening"/>
+  <xsl:value-of select="mmax:setDiscourseElementStart()"/>
+   <xsl:apply-templates/>
+  <xsl:value-of select="mmax:setDiscourseElementEnd()"/>
+  <xsl:apply-templates select="mmax:getEndedMarkables(@id)" mode="closing"/>
+  <xsl:text> </xsl:text>
+
+<xsl:value-of select="mmax:startItalic()"/>
+<xsl:value-of select="mmax:startSuperscript()"/>
+<xsl:text>
+
+Molecular analysis revealed that the rAAV genome was stably retained in male liver at levels that were 7 - fold higher than those observed in females .
+Further , the sex difference in transduction was observed with AAV-2 - and AAV-5- based vectors , which use distinct receptor complexes for infection .
+In concordance with the differences in AAV transduction , gel shift analysis with nuclear extracts derived from the liver of mice and humans revealed substantially higher binding of host nuclear protein to the rep-binding site ( RBS ) of AAV inverted terminal repeat ( ITR ) in males compared with females .
+Transduction efficiency and binding of nuclear protein to RBS was dramatically reduced in male mice by castration .
+In contrast , although oophorectomy did not significantly influence rAAV transduction , administration of 5alpha dihydrotestosterone , prior to gene transfer , increased stable hepatocyte gene transfer in females to levels observed in male mice , implying that androgens significantly influence hepatocyte gene transfer .
+Interestingly , sex did not have a significant effect on AAV gene transfer into nonhepatic tissue , indicating that there are distinct tissue - and sex - specific differences in the mechanisms responsible for efficient transduction with this vector .
+These results have significant implications for gene therapy of autosomal and acquired disorders affecting the liver .
+******************************* END ABSTRACT 12637328 ***********************************************
+
+</xsl:text>
+<xsl:value-of select="mmax:endSuperscript()"/>
+<xsl:value-of select="mmax:endItalic()"/>
+
+</xsl:when>
+
+<xsl:when test="@id='word_1010'">
+<xsl:value-of select="mmax:startItalic()"/>
+<xsl:value-of select="mmax:startSuperscript()"/>
+<xsl:text>
+***************************** BEGIN ABSTRACT 9028959 ***********************************************
+Role of Fas ligand and receptor in the mechanism of T-cell depletion in acquired immunodeficiency syndrome : effect on CD4 + lymphocyte depletion and human immunodeficiency virus replication .
+Direct killing of CD4 + lymphocytes by human immunodeficiency virus-1 ( HIV-1 ) probably cannot account for the magnitude of the loss of these cells during the course of HIV-1 infection .
+Experimental evidence supports a pathophysiologic role of the apoptotic process in depletion of CD4 cells in acquired immunodeficiency syndrome ( AIDS ) .
+The Fas - receptor / Fas - ligand ( Fas-R / Fas-L) system mediates signals for apoptosis of susceptible lymphocytes and lympoblastoid cell lines .
+A number of investigators have recently reported increased expression of the Fas receptor in individuals with HIV infection , along with increased sensitivity of their lymphocytes to anti - Fas antibody mimicking Fas ligand .
+We attempted to determine the role of Fas - mediated apoptosis in disease progression and viral replication .
+
+</xsl:text>
+<xsl:value-of select="mmax:endSuperscript()"/>
+<xsl:value-of select="mmax:endItalic()"/>
+
+<xsl:value-of select="mmax:registerDiscourseElement(@id)"/>
+  <xsl:apply-templates select="mmax:getStartedMarkables(@id)" mode="opening"/>
+  <xsl:value-of select="mmax:setDiscourseElementStart()"/>
+   <xsl:apply-templates/>
+  <xsl:value-of select="mmax:setDiscourseElementEnd()"/>
+  <xsl:apply-templates select="mmax:getEndedMarkables(@id)" mode="closing"/>
+  <xsl:text> </xsl:text>
+
+</xsl:when>
+
+<xsl:when test="@id='word_1076'">
+
+<xsl:value-of select="mmax:registerDiscourseElement(@id)"/>
+  <xsl:apply-templates select="mmax:getStartedMarkables(@id)" mode="opening"/>
+  <xsl:value-of select="mmax:setDiscourseElementStart()"/>
+   <xsl:apply-templates/>
+  <xsl:value-of select="mmax:setDiscourseElementEnd()"/>
+  <xsl:apply-templates select="mmax:getEndedMarkables(@id)" mode="closing"/>
+  <xsl:text> </xsl:text>
+
+<xsl:value-of select="mmax:startItalic()"/>
+<xsl:value-of select="mmax:startSuperscript()"/>
+<xsl:text>
+
+Triggering of the Fas-R by agonistic anti - Fas monoclonal antibody , CH11 , was preferentially associated with apoptosis in the CD4 + cells ; this effect was more pronounced in lymphocytes derived from HIV + individuals .
+Soluble and membrane - bound forms of Fas- L were produced in greater amounts in peripheral blood mononuclear cells ( PBMC ) cultures and in plasma obtained from HIV-1 - infected persons than from normal controls .
+Furthermore , triggering of lymphocytes from HIV - infected persons by CH11 increased levels of interleukin- 1beta converting enzyme ( ICE ) , a protein associated with apoptosis .
+When PBMC were cultured in the presence of CH11 , p24 production per number of viable cells was decreased as compared with the same PBMC without CH11 ( P &lt; .01 ) .
+These findings suggest that multiple mechanisms , including increased production of Fas- L by infected PBMC , increased Fas-R expression , and induction of a protease of ICE family , may play roles in the apoptotic depletion of CD4 + cells in HIV infection .
+******************************* END ABSTRACT 9028959 ***********************************************
+
+</xsl:text>
+<xsl:value-of select="mmax:endSuperscript()"/>
+<xsl:value-of select="mmax:endItalic()"/>
+
+</xsl:when>
+
+<xsl:when test="@id='word_1077'">
+<xsl:value-of select="mmax:startItalic()"/>
+<xsl:value-of select="mmax:startSuperscript()"/>
+<xsl:text>
+***************************** BEGIN ABSTRACT 8809053 ***********************************************
+Changes associated with aging and replicative senescence in the regulation of transcription factor nuclear factor - kappa B.
+Both the aging of animals and the senescence of cultured cells involve an altered pattern of gene expression , suggesting changes in transcription factor regulation .
+We studied age - related changes in transcription factors nuclear factor ( NF ) -kappa B , activator protein factor-1 ( AP-1 ) and Sp-1 by using electrophoretic mobility shift binding assays ; we also analysed changes in the protein components of NF-kappa B complex with Western blot assays .
+
+</xsl:text>
+<xsl:value-of select="mmax:endSuperscript()"/>
+<xsl:value-of select="mmax:endItalic()"/>
+
+<xsl:value-of select="mmax:registerDiscourseElement(@id)"/>
+  <xsl:apply-templates select="mmax:getStartedMarkables(@id)" mode="opening"/>
+  <xsl:value-of select="mmax:setDiscourseElementStart()"/>
+   <xsl:apply-templates/>
+  <xsl:value-of select="mmax:setDiscourseElementEnd()"/>
+  <xsl:apply-templates select="mmax:getEndedMarkables(@id)" mode="closing"/>
+  <xsl:text> </xsl:text>
+
+</xsl:when>
+
+<xsl:when test="@id='word_1118'">
+
+<xsl:value-of select="mmax:registerDiscourseElement(@id)"/>
+  <xsl:apply-templates select="mmax:getStartedMarkables(@id)" mode="opening"/>
+  <xsl:value-of select="mmax:setDiscourseElementStart()"/>
+   <xsl:apply-templates/>
+  <xsl:value-of select="mmax:setDiscourseElementEnd()"/>
+  <xsl:apply-templates select="mmax:getEndedMarkables(@id)" mode="closing"/>
+  <xsl:text> </xsl:text>
+
+<xsl:value-of select="mmax:startItalic()"/>
+<xsl:value-of select="mmax:startSuperscript()"/>
+<xsl:text>
+
+Aging of both mice and rats induced a strong and consistent increase in the nuclear binding activity of NF-kappa B factor in all tissues studied , whereas those of AP-1 and Sp-1 decreased , e.g . in liver .
+Protein levels of p50 , p52 and p65 components of the NF-kappa B complex did not show any age - associated changes in the cytoplasmic fraction but in the nuclear fraction the level of p52 strongly increased in heart and liver during aging .
+The protein levels of inhibitory I kappa B-alpha and Bcl-3 components were not affected by aging in any of the tissues studied .
+Replicative cellular senescence of human WI- 38 fibroblasts induced a strong decrease in nuclear NF-kappa B , AP-1 and Sp-1 binding activities .
+Protein levels of p50 and p52 components of NF-kappa B complex were decreased in the nuclear fraction of senescent WI- 38 fibroblasts but in the cytoplasm of senescent fibroblasts the level of p65 protein was increased .
+Cellular senescence also slightly decreased the protein levels of I kappa B-alpha and Bcl-3 .
+Transfection assays with NF-kappa B-enhancer - driven chloramphenicol acetyltransferase reporter gene showed a significant down - regulation of NF-kappa B promoter activity in senescent WI- 38 fibroblasts .
+Results suggest that the aging process might be regulated differently in tissues and cultured fibroblasts , perhaps reflecting differences between mitotic and post - mitotic cells .
+In tissues , aging seems to involve specific changes in the regulation of NF-kappa B components and perhaps also changes in the DNA - binding affinities of the NF-kappa B complex .
+******************************* END ABSTRACT 8809053 ***********************************************
+
+</xsl:text>
+<xsl:value-of select="mmax:endSuperscript()"/>
+<xsl:value-of select="mmax:endItalic()"/>
+
+</xsl:when>
+
+<xsl:when test="@id='word_1119'">
+<xsl:value-of select="mmax:startItalic()"/>
+<xsl:value-of select="mmax:startSuperscript()"/>
+<xsl:text>
+***************************** BEGIN ABSTRACT 12150339 ***********************************************
+Spontaneous transmission from a father to his son of a Y chromosome microdeletion involving the deleted in azoospermia ( DAZ ) gene .
+Microdeletions of the so-called azoospermia factor ( AZF ) locus of the Y chromosome long arm ( Yq ) have been recognized as an etiological factor of severe oligozoospermia or azoospermia .
+Because of this , patients affected are generally infertile unless assisted reproductive techniques are used .
+We report the case of an oligozoospermic patient ( proband ) who inherited an extensive Yq microdeletion from his father through a spontaneous pregnancy .
+Leukocyte DNA was extracted using a commercially available kit .
+A total of 22 pairs of sequence - tagged site ( STSs ) based primers , spanning the entire AZF region , were used for the screening .
+Both the proband and his father carried a Yq microdeletion of the most distal AZF subregion ( AZFc ) where the deleted in azoospermia ( DAZ ) gene is located .
+
+</xsl:text>
+<xsl:value-of select="mmax:endSuperscript()"/>
+<xsl:value-of select="mmax:endItalic()"/>
+
+<xsl:value-of select="mmax:registerDiscourseElement(@id)"/>
+  <xsl:apply-templates select="mmax:getStartedMarkables(@id)" mode="opening"/>
+  <xsl:value-of select="mmax:setDiscourseElementStart()"/>
+   <xsl:apply-templates/>
+  <xsl:value-of select="mmax:setDiscourseElementEnd()"/>
+  <xsl:apply-templates select="mmax:getEndedMarkables(@id)" mode="closing"/>
+  <xsl:text> </xsl:text>
+
+</xsl:when>
+
+<xsl:when test="@id='word_1142'">
+
+<xsl:value-of select="mmax:registerDiscourseElement(@id)"/>
+  <xsl:apply-templates select="mmax:getStartedMarkables(@id)" mode="opening"/>
+  <xsl:value-of select="mmax:setDiscourseElementStart()"/>
+   <xsl:apply-templates/>
+  <xsl:value-of select="mmax:setDiscourseElementEnd()"/>
+  <xsl:apply-templates select="mmax:getEndedMarkables(@id)" mode="closing"/>
+  <xsl:text> </xsl:text>
+
+<xsl:value-of select="mmax:startItalic()"/>
+<xsl:value-of select="mmax:startSuperscript()"/>
+<xsl:text>
+
+This case adds further evidence that the deletion of the DAZ gene is associated with different phenotypic expressions , including normal fertility .
+******************************* END ABSTRACT 12150339 ***********************************************
+
+</xsl:text>
+<xsl:value-of select="mmax:endSuperscript()"/>
+<xsl:value-of select="mmax:endItalic()"/>
+
+</xsl:when>
+
+<xsl:when test="@id='word_1143'">
+<xsl:value-of select="mmax:startItalic()"/>
+<xsl:value-of select="mmax:startSuperscript()"/>
+<xsl:text>
+***************************** BEGIN ABSTRACT 16274839 ***********************************************
+Tolloid - like 1 is negatively regulated by stress and glucocorticoids .
+Glucocorticoids affect a variety of tissues to enable the organism to adapt to the stress .
+Hippocampal neurons contain glucocorticoid receptors and respond to elevated glucocorticoid levels by down - regulating the HPA axis .
+Chronically , however , stress is deleterious to hippocampal neurons .
+Chronically elevated levels of glucocorticoids result in a decrease in the number of dendritic spines , reduced axonal growth and synaptogenesis , and decreased neurogenesis in the hippocampus .
+Tolloid - like 1 ( Tll-1 ) is a metalloprotease that potentiates the activity of the bone morphogenetic proteins ( BMPs ) .
+Neurogenesis in the hippocampus of both developing and adult mammals requires BMPs .
+In this study , we demonstrate that Tll-1 expression is increased in mice that have increased neurogenesis .
+The Tll-1 promoter contains glucocorticoid response elements which are capable of binding to purified glucocorticoid receptor .
+Glucocorticoids decrease Tll-1 expression in vitro .
+
+</xsl:text>
+<xsl:value-of select="mmax:endSuperscript()"/>
+<xsl:value-of select="mmax:endItalic()"/>
+
+<xsl:value-of select="mmax:registerDiscourseElement(@id)"/>
+  <xsl:apply-templates select="mmax:getStartedMarkables(@id)" mode="opening"/>
+  <xsl:value-of select="mmax:setDiscourseElementStart()"/>
+   <xsl:apply-templates/>
+  <xsl:value-of select="mmax:setDiscourseElementEnd()"/>
+  <xsl:apply-templates select="mmax:getEndedMarkables(@id)" mode="closing"/>
+  <xsl:text> </xsl:text>
+
+</xsl:when>
+
+<xsl:when test="@id='word_1181'">
+
+<xsl:value-of select="mmax:registerDiscourseElement(@id)"/>
+  <xsl:apply-templates select="mmax:getStartedMarkables(@id)" mode="opening"/>
+  <xsl:value-of select="mmax:setDiscourseElementStart()"/>
+   <xsl:apply-templates/>
+  <xsl:value-of select="mmax:setDiscourseElementEnd()"/>
+  <xsl:apply-templates select="mmax:getEndedMarkables(@id)" mode="closing"/>
+  <xsl:text> </xsl:text>
+
+<xsl:value-of select="mmax:startItalic()"/>
+<xsl:value-of select="mmax:startSuperscript()"/>
+<xsl:text>
+
+The results of this study indicate that Tll-1 is responsive to glucocorticoids and this mechanism might influence neurogenesis in the hippocampus .
+******************************* END ABSTRACT 16274839 ***********************************************
+
+</xsl:text>
+<xsl:value-of select="mmax:endSuperscript()"/>
+<xsl:value-of select="mmax:endItalic()"/>
+
+</xsl:when>
+
+<xsl:when test="@id='word_1182'">
+<xsl:value-of select="mmax:startItalic()"/>
+<xsl:value-of select="mmax:startSuperscript()"/>
+<xsl:text>
+***************************** BEGIN ABSTRACT 10467944 ***********************************************
+Transplantation of human pulpal and gingival fibroblasts attached to synthetic scaffolds .
+Autologous tissue grafting for the restoration of oral tissues is limited by several factors , including the availability of sufficient donor tissue .
+One solution to this problem may be to develop substitute tissue grafts by attaching disaggregated autologous cells propagated in vitro to scaffolds composed of natural or synthetic polymers .
+We have earlier demonstrated that human dental pulp and gingival fibroblasts ( HPF , HGF ) adhere to non - woven polyglycolic acid ( PGA ) scaffolds , proliferate and produce extracellular matrix in vitro .
+We now report that such HPF and HGF adhered to PGA scaffolds survive when implanted into subcutaneous sites in immuno - compromised mice .
+The transplanted cells synthesize and secrete type I collagen , cellular fibronectin and may express genes implicated in transducing bone morphogenetic protein ( BMP ) signals .
+Messenger RNA for BMP -2 , -4 , - 7 ( OP-1 ) , the BMP type I receptors Act RI , BMPR-1A and 1B , the type II receptor BMPR-II , and type I collagen were detected by reverse transcription - polymerase chain reaction ( RT - PCR ) .
+
+</xsl:text>
+<xsl:value-of select="mmax:endSuperscript()"/>
+<xsl:value-of select="mmax:endItalic()"/>
+
+<xsl:value-of select="mmax:registerDiscourseElement(@id)"/>
+  <xsl:apply-templates select="mmax:getStartedMarkables(@id)" mode="opening"/>
+  <xsl:value-of select="mmax:setDiscourseElementStart()"/>
+   <xsl:apply-templates/>
+  <xsl:value-of select="mmax:setDiscourseElementEnd()"/>
+  <xsl:apply-templates select="mmax:getEndedMarkables(@id)" mode="closing"/>
+  <xsl:text> </xsl:text>
+
+</xsl:when>
+
+<xsl:when test="@id='word_1226'">
+
+<xsl:value-of select="mmax:registerDiscourseElement(@id)"/>
+  <xsl:apply-templates select="mmax:getStartedMarkables(@id)" mode="opening"/>
+  <xsl:value-of select="mmax:setDiscourseElementStart()"/>
+   <xsl:apply-templates/>
+  <xsl:value-of select="mmax:setDiscourseElementEnd()"/>
+  <xsl:apply-templates select="mmax:getEndedMarkables(@id)" mode="closing"/>
+  <xsl:text> </xsl:text>
+
+<xsl:value-of select="mmax:startItalic()"/>
+<xsl:value-of select="mmax:startSuperscript()"/>
+<xsl:text>
+
+The implanted cells may also express genes associated with responsiveness to BMP - mediated tissue inductive signals .
+******************************* END ABSTRACT 10467944 ***********************************************
+
+</xsl:text>
+<xsl:value-of select="mmax:endSuperscript()"/>
+<xsl:value-of select="mmax:endItalic()"/>
+
+</xsl:when>
+
+<xsl:when test="@id='word_1227'">
+<xsl:value-of select="mmax:startItalic()"/>
+<xsl:value-of select="mmax:startSuperscript()"/>
+<xsl:text>
+***************************** BEGIN ABSTRACT 1955079 ***********************************************
+3 beta-hydroxysteroid dehydrogenase / delta 5----4-isomerase expression in rat and characterization of the testis isoform .
+The isolation , cloning and expression of a DNA insert complementary to mRNA encoding rat testis 3 beta-hydroxysteroid dehydrogenase / delta 5----4-isomerase ( 3 beta-HSD ) is reported .
+The insert contains an open reading frame encoding a protein of 373 amino acids , which exhibits 73 % and 78 % identity to the cDNA encoding the human placental form at the amino acid and nucleotide levels respectively .
+Northern blot analysis of total RNA of rat tissues using as probe a specific radiolabeled cDNA insert encoding rat testis 3 beta-HSD demonstrated high levels of 1.6 kb mRNA species in ovary , adrenal and Leydig tumor , with lower but detectable message in testis and adult male liver , while the probe also hybridized to a 2.1 kb mRNA species in liver .
+The cDNA was inserted into a modified pCMV vector and expressed in COS-1 monkey kidney tumor cells .
+The expressed protein was similar in size to 3 beta-HSD present in H540 Leydig tumor cell homogenate and human placental microsomal 3 beta-HSD , as detected by immunoblot analysis , and catalyzed the conversion of pregnenolone to progesterone , 17 alpha-hydroxypregnenolone to 17 alpha-hydroxyprogesterone , and dehydroepiandrosterone to androstenedione .
+Transfected COS cell homogenates , supplemented with NAD + , but not NADP + , converted pregnenolone to progesterone and dehydroepiandrosterone to androstenedione with apparent Km values of 0.13 and 0.09 microM , respectively .
+
+</xsl:text>
+<xsl:value-of select="mmax:endSuperscript()"/>
+<xsl:value-of select="mmax:endItalic()"/>
+
+<xsl:value-of select="mmax:registerDiscourseElement(@id)"/>
+  <xsl:apply-templates select="mmax:getStartedMarkables(@id)" mode="opening"/>
+  <xsl:value-of select="mmax:setDiscourseElementStart()"/>
+   <xsl:apply-templates/>
+  <xsl:value-of select="mmax:setDiscourseElementEnd()"/>
+  <xsl:apply-templates select="mmax:getEndedMarkables(@id)" mode="closing"/>
+  <xsl:text> </xsl:text>
+
+</xsl:when>
+
+<xsl:when test="@id='word_1272'">
+
+<xsl:value-of select="mmax:registerDiscourseElement(@id)"/>
+  <xsl:apply-templates select="mmax:getStartedMarkables(@id)" mode="opening"/>
+  <xsl:value-of select="mmax:setDiscourseElementStart()"/>
+   <xsl:apply-templates/>
+  <xsl:value-of select="mmax:setDiscourseElementEnd()"/>
+  <xsl:apply-templates select="mmax:getEndedMarkables(@id)" mode="closing"/>
+  <xsl:text> </xsl:text>
+
+<xsl:value-of select="mmax:startItalic()"/>
+<xsl:value-of select="mmax:startSuperscript()"/>
+<xsl:text>
+
+We conclude that while one gene product is highly expressed in testicular Leydig cells , and probably adrenal and ovary , accounting for their 3 beta-HSD content , a 3 beta-HSD is also expressed in liver in a sex - specific manner .
+******************************* END ABSTRACT 1955079 ***********************************************
+
+</xsl:text>
+<xsl:value-of select="mmax:endSuperscript()"/>
+<xsl:value-of select="mmax:endItalic()"/>
+
+</xsl:when>
+
+<xsl:when test="@id='word_1273'">
+<xsl:value-of select="mmax:startItalic()"/>
+<xsl:value-of select="mmax:startSuperscript()"/>
+<xsl:text>
+***************************** BEGIN ABSTRACT 10769071 ***********************************************
+Genetic analysis of the compatibility between polymerase proteins from human and avian strains of influenza A viruses .
+In order to determine how efficiently the polymerase proteins derived from human and avian influenza A viruses can interact with each other in the context of a mammalian cell , a genetic system that allows the in vivo reconstitution of active ribonucleoproteins was used .
+
+</xsl:text>
+<xsl:value-of select="mmax:endSuperscript()"/>
+<xsl:value-of select="mmax:endItalic()"/>
+
+<xsl:value-of select="mmax:registerDiscourseElement(@id)"/>
+  <xsl:apply-templates select="mmax:getStartedMarkables(@id)" mode="opening"/>
+  <xsl:value-of select="mmax:setDiscourseElementStart()"/>
+   <xsl:apply-templates/>
+  <xsl:value-of select="mmax:setDiscourseElementEnd()"/>
+  <xsl:apply-templates select="mmax:getEndedMarkables(@id)" mode="closing"/>
+  <xsl:text> </xsl:text>
+
+</xsl:when>
+
+<xsl:when test="@id='word_1381'">
+
+<xsl:value-of select="mmax:registerDiscourseElement(@id)"/>
+  <xsl:apply-templates select="mmax:getStartedMarkables(@id)" mode="opening"/>
+  <xsl:value-of select="mmax:setDiscourseElementStart()"/>
+   <xsl:apply-templates/>
+  <xsl:value-of select="mmax:setDiscourseElementEnd()"/>
+  <xsl:apply-templates select="mmax:getEndedMarkables(@id)" mode="closing"/>
+  <xsl:text> </xsl:text>
+
+<xsl:value-of select="mmax:startItalic()"/>
+<xsl:value-of select="mmax:startSuperscript()"/>
+<xsl:text>
+
+In accordance with published observations on reassortant viruses , PB2 amino acid 627 was identified as a major determinant of the replication efficiency of heterospecific complexes in COS-1 cells .
+Moreover , the results showed that replication of the viral - like reporter RNA was more efficient when PB2 and NP were both derived from the same avian or human virus or when PB1 was derived from an avian virus , whatever the origin of the other proteins .
+Furthermore , the PB1 and PB2 proteins from the A/ Hong - Kong / 156 / 97 virus exhibited intermediate properties with respect to the corresponding proteins from avian or human influenza viruses , suggesting that some molecular characteristics of PB1 and PB2 proteins might at least partially account for the ability of the A/ Hong Kong / 156 / 97 virus to replicate in humans .
+******************************* END ABSTRACT 10769071 ***********************************************
+
+</xsl:text>
+<xsl:value-of select="mmax:endSuperscript()"/>
+<xsl:value-of select="mmax:endItalic()"/>
+
+</xsl:when>
+
+<xsl:when test="@id='word_1382'">
+<xsl:value-of select="mmax:startItalic()"/>
+<xsl:value-of select="mmax:startSuperscript()"/>
+<xsl:text>
+***************************** BEGIN ABSTRACT 10780882 ***********************************************
+Expression pattern of the Ets - related transcription factor Elf-1 .
+Members of the Ets family of winged helix - loop-helix transcription factors play important roles in the development and function of multiple mammalian cell lineages .
+Elf-1 is an Ets - related transcription factor that is expressed at high levels in T cells and is known to regulate the expression of several T cell genes , including the granulocyte - macrophage colony stimulating factor ( GM -CSF ) gene , the interleukin-2 receptor alpha subunit ( IL-2Ralpha ) gene , and the CD4 gene .
+
+</xsl:text>
+<xsl:value-of select="mmax:endSuperscript()"/>
+<xsl:value-of select="mmax:endItalic()"/>
+
+<xsl:value-of select="mmax:registerDiscourseElement(@id)"/>
+  <xsl:apply-templates select="mmax:getStartedMarkables(@id)" mode="opening"/>
+  <xsl:value-of select="mmax:setDiscourseElementStart()"/>
+   <xsl:apply-templates/>
+  <xsl:value-of select="mmax:setDiscourseElementEnd()"/>
+  <xsl:apply-templates select="mmax:getEndedMarkables(@id)" mode="closing"/>
+  <xsl:text> </xsl:text>
+
+</xsl:when>
+
+<xsl:when test="@id='word_1420'">
+
+<xsl:value-of select="mmax:registerDiscourseElement(@id)"/>
+  <xsl:apply-templates select="mmax:getStartedMarkables(@id)" mode="opening"/>
+  <xsl:value-of select="mmax:setDiscourseElementStart()"/>
+   <xsl:apply-templates/>
+  <xsl:value-of select="mmax:setDiscourseElementEnd()"/>
+  <xsl:apply-templates select="mmax:getEndedMarkables(@id)" mode="closing"/>
+  <xsl:text> </xsl:text>
+
+<xsl:value-of select="mmax:startItalic()"/>
+<xsl:value-of select="mmax:startSuperscript()"/>
+<xsl:text>
+
+Elf-1 is expressed at high levels throughout thymocyte development , with equivalent levels of Elf-1 expression seen in all subsets of maturing thymocytes and T cells .
+Somewhat surprisingly , however , Elf-1 is also expressed at high levels in epithelial cells lining the oral cavity , the lung , the CNS , and the gastrointestinal and urinary tracts as well as in the skin of the developing mouse embryo and at lower levels in the adult mouse testis and liver .
+Western blot analyses of a large number of immortalized cell lines demonstrated high - level Elf-1 expression in T and B lymphocyte and macrophage cell lines as well as in two prostate carcinoma cell lines .
+Low- level expression was observed in fibroblasts , embryonic stem cells , and myoblasts .
+Taken together , our data suggest that in addition to its role in regulating T cell development and function , Elf-1 may regulate gene expression in the B cell and myelomonocytic lineages , as well as in multiple epithelial cell types during murine embryonic development .
+******************************* END ABSTRACT 10780882 ***********************************************
+
+</xsl:text>
+<xsl:value-of select="mmax:endSuperscript()"/>
+<xsl:value-of select="mmax:endItalic()"/>
+
+</xsl:when>
+
+<xsl:when test="@id='word_1421'">
+<xsl:value-of select="mmax:startItalic()"/>
+<xsl:value-of select="mmax:startSuperscript()"/>
+<xsl:text>
+***************************** BEGIN ABSTRACT 14688799 ***********************************************
+Hematopoietic progenitor cells as possible origins of epithelial thymoma in a human T lymphocyte virus type I pX gene transgenic rat model .
+
+</xsl:text>
+<xsl:value-of select="mmax:endSuperscript()"/>
+<xsl:value-of select="mmax:endItalic()"/>
+
+<xsl:value-of select="mmax:registerDiscourseElement(@id)"/>
+  <xsl:apply-templates select="mmax:getStartedMarkables(@id)" mode="opening"/>
+  <xsl:value-of select="mmax:setDiscourseElementStart()"/>
+   <xsl:apply-templates/>
+  <xsl:value-of select="mmax:setDiscourseElementEnd()"/>
+  <xsl:apply-templates select="mmax:getEndedMarkables(@id)" mode="closing"/>
+  <xsl:text> </xsl:text>
+
+</xsl:when>
+
+<xsl:when test="@id='word_1480'">
+
+<xsl:value-of select="mmax:registerDiscourseElement(@id)"/>
+  <xsl:apply-templates select="mmax:getStartedMarkables(@id)" mode="opening"/>
+  <xsl:value-of select="mmax:setDiscourseElementStart()"/>
+   <xsl:apply-templates/>
+  <xsl:value-of select="mmax:setDiscourseElementEnd()"/>
+  <xsl:apply-templates select="mmax:getEndedMarkables(@id)" mode="closing"/>
+  <xsl:text> </xsl:text>
+
+<xsl:value-of select="mmax:startItalic()"/>
+<xsl:value-of select="mmax:startSuperscript()"/>
+<xsl:text>
+
+To investigate the role of bone marrow cells carrying the HTLV-I pX gene in development of thymomas , the bone marrow of normal F344 rats after lethal irradiation was reconstituted by bone marrow mononuclear cells ( BMMC ) of lck - pX rats .
+Epithelial thymomas similar to the original thymoma of lck - pX rats frequently developed in the nontransgenic recipients within 5 months after the BMMC transplantation .
+The thymomas expressed the pX gene , thereby indicating the thymoma cells to be of donor BMMC origin .
+Since the thymoma also developed in nontransgenic recipients reconstituted by BMMC depleted of adherent cells , it is suggested that nonadherent BMMC of donor lck - pX rats may migrate to and lodge in the thymus of recipient nontransgenic rats then transform into thymoma cells with epithelial characteristics .
+The thymoma cells were shown to bind to Ulex europaeus Agglutinin-1 ( UEA -1 ) lectin , which binds epithelial cells in the thymic medulla .
+It was also shown that the nonadherent BMMC fraction used for bone marrow reconstitution contained a number of UEA -1 - positive cells .
+Taken together , UEA -1 positive BMMC may be progenitor cells of the epithelial thymoma .
+The epithelial thymoma in lck - pX rats sheds light on epithelial cell development in thymic medulla and for oncogenesis of epithelial thymoma in humans .
+******************************* END ABSTRACT 14688799 ***********************************************
+
+</xsl:text>
+<xsl:value-of select="mmax:endSuperscript()"/>
+<xsl:value-of select="mmax:endItalic()"/>
+
+</xsl:when>
+
+<xsl:when test="@id='word_1481'">
+<xsl:value-of select="mmax:startItalic()"/>
+<xsl:value-of select="mmax:startSuperscript()"/>
+<xsl:text>
+***************************** BEGIN ABSTRACT 12637241 ***********************************************
+mRNA and protein expression of dog liver cytochromes P450 in relation to the metabolism of human CYP2C substrates .
+1 .
+Interpretation of novel drug exposure and toxicology data from the dog is tempered by our limited molecular and functional knowledge of dog cytochromes P450 ( CYPs ) .
+The aim was to study the mRNA and protein expression of hepatic dog CYPs in relation to the metabolism of substrates of human CYP , particularly those of the CYP2C subfamily .
+2 .
+
+</xsl:text>
+<xsl:value-of select="mmax:endSuperscript()"/>
+<xsl:value-of select="mmax:endItalic()"/>
+
+<xsl:value-of select="mmax:registerDiscourseElement(@id)"/>
+  <xsl:apply-templates select="mmax:getStartedMarkables(@id)" mode="opening"/>
+  <xsl:value-of select="mmax:setDiscourseElementStart()"/>
+   <xsl:apply-templates/>
+  <xsl:value-of select="mmax:setDiscourseElementEnd()"/>
+  <xsl:apply-templates select="mmax:getEndedMarkables(@id)" mode="closing"/>
+  <xsl:text> </xsl:text>
+
+</xsl:when>
+
+<xsl:when test="@id='word_1530'">
+
+<xsl:value-of select="mmax:registerDiscourseElement(@id)"/>
+  <xsl:apply-templates select="mmax:getStartedMarkables(@id)" mode="opening"/>
+  <xsl:value-of select="mmax:setDiscourseElementStart()"/>
+   <xsl:apply-templates/>
+  <xsl:value-of select="mmax:setDiscourseElementEnd()"/>
+  <xsl:apply-templates select="mmax:getEndedMarkables(@id)" mode="closing"/>
+  <xsl:text> </xsl:text>
+
+<xsl:value-of select="mmax:startItalic()"/>
+<xsl:value-of select="mmax:startSuperscript()"/>
+<xsl:text>
+
+3 .
+The rate of 4'-hydroxylation of S-mephenytoin , catalysed in humans by CYP2C19 , was also low in dog liver ( 4.6 +/-1.5 pmol mg(-1 ) protein min(-1) ) compared with human liver .
+In contrast , the rate of 4'-hydroxylation of the R-enantiomer of mephenytoin by dog liver was much higher .
+The kinetics of this reaction ( range of K(m) or K(0.5 ) 15 -22 micro M , V(max) 35 -59 pmol mg(-1 ) protein min(-1 ) , n = 4 livers ) were consistent with the involvement of a single enzyme .
+4 . In contrast to our findings for S-mephenytoin , dog liver microsomes 5 '-hydroxylated omeprazole ( also catalysed by CYP2C19 in humans ) at considerably higher rates ( range of K(m) 42 - 64 micro M , V(max) 22-46 pmol mg(-1 ) protein min(-1 ) , n = 4 livers ) .
+5 .
+For all the substrates except omeprazole , a sex difference in their metabolism was observed in the dog ( dextromethorphan N-demethylation : female range = 0.7 - 0.9 , male = 0.4 - 0.8 nmol mg(-1 ) protein min(-1 ) ( p &lt; 0.02 ) ; S-warfarin 7-hydroxylation : female = 9-15.5 , male = 8-12 fmol mg(-1 ) protein min(-1 ) ( p &lt; 0.02 ) ; R-mephenytoin 4'-hydroxylation : female = 16-35 , male = 11.5 -19 pmol mg(-1 ) protein min(-1 ) ( p &lt; 0.01 ) ; omeprazole 5 '-hydroxylation : female = 15 -20 , male 13-22 pmol mg(-1 ) protein min(-1 ) ( p &lt; 0.2 ) ) .
+6 .
+All dog livers expressed mRNA and CYP3A12 , CYP2B11 , CYP2C21 proteins , with no sex differences being found .
+Expression of CYP2C41 mRNA was undetectable in the livers of six of 11 dogs . 7 . Correlation analysis suggested that CYP2B11 catalyses the N-demethylation of dextromethorphan ( mediated in humans by CYP3A ) and the 4'-hydroxylation of mephenytoin ( mediated in humans by CYP2C19 ) in the dog , and that this enzyme and CYP3A12 contribute to S-warfarin 7-hydroxylation ( mediated in humans by CYP2C9 ) .
+8 .
+In conclusion , we have identified a distinct pattern of hepatic expression of the CYP2C41 gene in the Alderley Park beagle dog .
+Furthermore , marked differences in the metabolism of human CYP2C substrates were observed in this dog strain compared with humans with respect to rate of reaction , stereoselectivity and CYP enzyme selectivity .
+******************************* END ABSTRACT 12637241 ***********************************************
+
+</xsl:text>
+<xsl:value-of select="mmax:endSuperscript()"/>
+<xsl:value-of select="mmax:endItalic()"/>
+
+</xsl:when>
+
+<xsl:when test="@id='word_1531'">
+<xsl:value-of select="mmax:startItalic()"/>
+<xsl:value-of select="mmax:startSuperscript()"/>
+<xsl:text>
+***************************** BEGIN ABSTRACT 11777997 ***********************************************
+Chimerism of the transplanted heart .
+
+</xsl:text>
+<xsl:value-of select="mmax:endSuperscript()"/>
+<xsl:value-of select="mmax:endItalic()"/>
+
+<xsl:value-of select="mmax:registerDiscourseElement(@id)"/>
+  <xsl:apply-templates select="mmax:getStartedMarkables(@id)" mode="opening"/>
+  <xsl:value-of select="mmax:setDiscourseElementStart()"/>
+   <xsl:apply-templates/>
+  <xsl:value-of select="mmax:setDiscourseElementEnd()"/>
+  <xsl:apply-templates select="mmax:getEndedMarkables(@id)" mode="closing"/>
+  <xsl:text> </xsl:text>
+
+</xsl:when>
+
+<xsl:when test="@id='word_1581'">
+<xsl:value-of select="mmax:startItalic()"/>
+<xsl:value-of select="mmax:startSuperscript()"/>
+<xsl:text>
+
+The Y chromosome can be used to detect migrated undifferentiated cells expressing stem - cell antigens and to discriminate between primitive cells derived from the recipient and those derived from the donor .
+
+</xsl:text>
+<xsl:value-of select="mmax:endSuperscript()"/>
+<xsl:value-of select="mmax:endItalic()"/>
+
+<xsl:value-of select="mmax:registerDiscourseElement(@id)"/>
+  <xsl:apply-templates select="mmax:getStartedMarkables(@id)" mode="opening"/>
+  <xsl:value-of select="mmax:setDiscourseElementStart()"/>
+   <xsl:apply-templates/>
+  <xsl:value-of select="mmax:setDiscourseElementEnd()"/>
+  <xsl:apply-templates select="mmax:getEndedMarkables(@id)" mode="closing"/>
+  <xsl:text> </xsl:text>
+
+</xsl:when>
+
+<xsl:when test="@id='word_1622'">
+
+<xsl:value-of select="mmax:registerDiscourseElement(@id)"/>
+  <xsl:apply-templates select="mmax:getStartedMarkables(@id)" mode="opening"/>
+  <xsl:value-of select="mmax:setDiscourseElementStart()"/>
+   <xsl:apply-templates/>
+  <xsl:value-of select="mmax:setDiscourseElementEnd()"/>
+  <xsl:apply-templates select="mmax:getEndedMarkables(@id)" mode="closing"/>
+  <xsl:text> </xsl:text>
+
+<xsl:value-of select="mmax:startItalic()"/>
+<xsl:value-of select="mmax:startSuperscript()"/>
+<xsl:text>
+
+Primitive cells bearing Y chromosomes that expressed c-kit , MDR1 , and Sca-1 were also investigated .
+RESULTS : Myocytes , coronary arterioles , and capillaries that had a Y chromosome made up 7 to 10 percent of those in the donor hearts and were highly proliferative .
+As compared with the ventricles of control hearts , the ventricles of the transplanted hearts had markedly increased numbers of cells that were positive for c-kit , MDR1 , or Sca-1 .
+The number of primitive cells was higher in the atria of the hosts and the atria of the donor hearts than in the ventricles of the donor hearts , and 12 to 16 percent of these cells contained a Y chromosome .
+Undifferentiated cells were negative for markers of bone marrow origin .
+Progenitor cells expressing MEF2 , GATA-4 , and nestin ( which identify the cells as myocytes ) and Flk1 ( which identifies the cells as endothelial cells ) were identified .
+CONCLUSIONS : Our results show a high level of cardiac chimerism caused by the migration of primitive cells from the recipient to the grafted heart .
+Putative stem cells and progenitor cells were identified in control myocardium and in increased numbers in transplanted hearts .
+******************************* END ABSTRACT 11777997 ***********************************************
+
+</xsl:text>
+<xsl:value-of select="mmax:endSuperscript()"/>
+<xsl:value-of select="mmax:endItalic()"/>
+
+</xsl:when>
+
+<xsl:when test="@id='word_1623'">
+<xsl:value-of select="mmax:startItalic()"/>
+<xsl:value-of select="mmax:startSuperscript()"/>
+<xsl:text>
+***************************** BEGIN ABSTRACT 8186286 ***********************************************
+Retroviral vector - mediated gene transfer into human primary myogenic cells leads to expression in muscle fibers in vivo .
+
+</xsl:text>
+<xsl:value-of select="mmax:endSuperscript()"/>
+<xsl:value-of select="mmax:endItalic()"/>
+
+<xsl:value-of select="mmax:registerDiscourseElement(@id)"/>
+  <xsl:apply-templates select="mmax:getStartedMarkables(@id)" mode="opening"/>
+  <xsl:value-of select="mmax:setDiscourseElementStart()"/>
+   <xsl:apply-templates/>
+  <xsl:value-of select="mmax:setDiscourseElementEnd()"/>
+  <xsl:apply-templates select="mmax:getEndedMarkables(@id)" mode="closing"/>
+  <xsl:text> </xsl:text>
+
+</xsl:when>
+
+<xsl:when test="@id='word_1667'">
+
+<xsl:value-of select="mmax:registerDiscourseElement(@id)"/>
+  <xsl:apply-templates select="mmax:getStartedMarkables(@id)" mode="opening"/>
+  <xsl:value-of select="mmax:setDiscourseElementStart()"/>
+   <xsl:apply-templates/>
+  <xsl:value-of select="mmax:setDiscourseElementEnd()"/>
+  <xsl:apply-templates select="mmax:getEndedMarkables(@id)" mode="closing"/>
+  <xsl:text> </xsl:text>
+
+<xsl:value-of select="mmax:startItalic()"/>
+<xsl:value-of select="mmax:startSuperscript()"/>
+<xsl:text>
+
+Gene transfer efficiency averaged 50 % in both fetal myoblasts and adult satellite cells , as revealed by beta-gal staining .
+The reporter gene was stably integrated , faithfully inherited , and expressed at significant levels in myogenic cells for at least 10 generations under clonal growth conditions , and throughout the culture life span upon differentiation into myotubes .
+Comparable gene transfer efficiency was obtained in myogenic cells from muscle biopsies of patients affected by a number of genetic or acquired myopathies , including Duchenne muscular dystrophy .
+Transduced normal human satellite cells were injected into regenerating muscle of immunodeficient mice , where they formed new muscle fibers in which the product of the reporter gene was detectable for 2 months after injection .
+These results show that retroviral vectors can be used to transfer foreign genes with high efficiency into normal or abnormal primary human myogenic cells , leading to stable expression into mature muscle .
+Satellite cells engineered in this way might represent an effective tool for gene therapy of muscular dystrophies as well as for systemic delivery of recombinant gene products for correction of inherited and acquired disorders .
+The human- mouse model described here will allow in vivo testing of such gene therapy approaches .
+******************************* END ABSTRACT 8186286 ***********************************************
+
+</xsl:text>
+<xsl:value-of select="mmax:endSuperscript()"/>
+<xsl:value-of select="mmax:endItalic()"/>
+
+</xsl:when>
+
+<xsl:when test="@id='word_1668'">
+<xsl:value-of select="mmax:startItalic()"/>
+<xsl:value-of select="mmax:startSuperscript()"/>
+<xsl:text>
+***************************** BEGIN ABSTRACT 11110681 ***********************************************
+Stable in vivo expression of glucose -6-phosphate dehydrogenase ( G6PD ) and rescue of G6PD deficiency in stem cells by gene transfer .
+Many mutations of the housekeeping gene encoding glucose -6-phosphate dehydrogenase ( G6PD ) cause G6PD deficiency in humans .
+Some underlie severe forms of chronic nonspherocytic hemolytic anemia ( CNSHA ) for which there is no definitive treatment .
+
+</xsl:text>
+<xsl:value-of select="mmax:endSuperscript()"/>
+<xsl:value-of select="mmax:endItalic()"/>
+
+<xsl:value-of select="mmax:registerDiscourseElement(@id)"/>
+  <xsl:apply-templates select="mmax:getStartedMarkables(@id)" mode="opening"/>
+  <xsl:value-of select="mmax:setDiscourseElementStart()"/>
+   <xsl:apply-templates/>
+  <xsl:value-of select="mmax:setDiscourseElementEnd()"/>
+  <xsl:apply-templates select="mmax:getEndedMarkables(@id)" mode="closing"/>
+  <xsl:text> </xsl:text>
+
+</xsl:when>
+
+<xsl:when test="@id='word_1720'">
+
+<xsl:value-of select="mmax:registerDiscourseElement(@id)"/>
+  <xsl:apply-templates select="mmax:getStartedMarkables(@id)" mode="opening"/>
+  <xsl:value-of select="mmax:setDiscourseElementStart()"/>
+   <xsl:apply-templates/>
+  <xsl:value-of select="mmax:setDiscourseElementEnd()"/>
+  <xsl:apply-templates select="mmax:getEndedMarkables(@id)" mode="closing"/>
+  <xsl:text> </xsl:text>
+
+<xsl:value-of select="mmax:startItalic()"/>
+<xsl:value-of select="mmax:startSuperscript()"/>
+<xsl:text>
+
+These findings demonstrate the integration of a functional gene in totipotent stem cells .
+The average total G6PD in peripheral blood cells of these transplanted mice , measured as enzyme activity , was twice that of untransplanted control mice .
+This allowed the inference that the amount of G6PD produced by the transduced gene must be therapeutically effective .
+With the same vectors both the cloning efficiency and the ability to form embryoid bodies were restored in embryonic stem cells , in which the G6PD gene had been inactivated by targeted homologous recombination , thus effectively rescuing their defective phenotype .
+Finally , expression of normal human G6PD in hG6PD - deficient primary hematopoietic cells and in human hematopoietic cells engrafted in nonobese diabetic /severe combined immunodeficient mice was obtained .
+This approach could cure severe CNSHA caused by G6PD deficiency .
+******************************* END ABSTRACT 11110681 ***********************************************
+
+</xsl:text>
+<xsl:value-of select="mmax:endSuperscript()"/>
+<xsl:value-of select="mmax:endItalic()"/>
+
+</xsl:when>
+
+<xsl:when test="@id='word_1721'">
+<xsl:value-of select="mmax:startItalic()"/>
+<xsl:value-of select="mmax:startSuperscript()"/>
+<xsl:text>
+***************************** BEGIN ABSTRACT 10775791 ***********************************************
+Effect of different promoters on immune responses elicited by HIV-1 gag /env multigenic DNA vaccine in Macaca mulatta and Macaca nemestrina .
+
+</xsl:text>
+<xsl:value-of select="mmax:endSuperscript()"/>
+<xsl:value-of select="mmax:endItalic()"/>
+
+<xsl:value-of select="mmax:registerDiscourseElement(@id)"/>
+  <xsl:apply-templates select="mmax:getStartedMarkables(@id)" mode="opening"/>
+  <xsl:value-of select="mmax:setDiscourseElementStart()"/>
+   <xsl:apply-templates/>
+  <xsl:value-of select="mmax:setDiscourseElementEnd()"/>
+  <xsl:apply-templates select="mmax:getEndedMarkables(@id)" mode="closing"/>
+  <xsl:text> </xsl:text>
+
+</xsl:when>
+
+<xsl:when test="@id='word_1773'">
+
+<xsl:value-of select="mmax:registerDiscourseElement(@id)"/>
+  <xsl:apply-templates select="mmax:getStartedMarkables(@id)" mode="opening"/>
+  <xsl:value-of select="mmax:setDiscourseElementStart()"/>
+   <xsl:apply-templates/>
+  <xsl:value-of select="mmax:setDiscourseElementEnd()"/>
+  <xsl:apply-templates select="mmax:getEndedMarkables(@id)" mode="closing"/>
+  <xsl:text> </xsl:text>
+
+<xsl:value-of select="mmax:startItalic()"/>
+<xsl:value-of select="mmax:startSuperscript()"/>
+<xsl:text>
+
+Analysis of the immune responses elicited by direct DNA injection of pCMV-NL( Deltapol ) and pAKV-NL( Deltapol ) in macaques indicated that generation of the humoral and T-cell proliferative responses correlated directly with the promoter strength of the vaccine DNAs .
+In Macaca mulatta , pCMV-NL( Deltapol ) generated stronger humoral responses and T-cell proliferative responses to Gag and Env using less DNA and fewer number of injections than pAKV-NL( Deltapol ) .
+Similarly , in Macaca nemestrina pCMV-NL( Deltapol ) elicited high humoral responses , which persisted long - term and were boostable .
+Injection of large amounts of pAKV-NL( Deltapol ) , in general , failed to produce antibody levels comparable to pCMV-NL( Deltapol ) .
+However , injection of a control animal with large amounts of vector DNA produced a generalized enzyme - linked immunosorbent assay ( ELISA ) reactivity to HIV-1 .
+The results indicated that generation of high immune responses to HIV-1 cannot be achieved by increasing the vaccine DNA dose and may require high protein expression from the DNA by including a strong promoter or by the use of other boosting agents .
+Furthermore , safety concerns may arise with increasing the DNA dose that could need additional investigation .
+******************************* END ABSTRACT 10775791 ***********************************************
+
+</xsl:text>
+<xsl:value-of select="mmax:endSuperscript()"/>
+<xsl:value-of select="mmax:endItalic()"/>
+
+</xsl:when>
+
+<xsl:when test="@id='word_1774'">
+<xsl:value-of select="mmax:startItalic()"/>
+<xsl:value-of select="mmax:startSuperscript()"/>
+<xsl:text>
+***************************** BEGIN ABSTRACT 7849294 ***********************************************
+Lymphomagenesis in the SCID- hu mouse involves abundant production of human interleukin-10 .
+Both human ( hu) and viral ( v) interleukin- 10 ( IL-10 ) appear to be important cofactors in the survival and growth of lymphoblastoid cell lines infected with Epstein - Barr virus ( EBV ) .
+
+</xsl:text>
+<xsl:value-of select="mmax:endSuperscript()"/>
+<xsl:value-of select="mmax:endItalic()"/>
+
+<xsl:value-of select="mmax:registerDiscourseElement(@id)"/>
+  <xsl:apply-templates select="mmax:getStartedMarkables(@id)" mode="opening"/>
+  <xsl:value-of select="mmax:setDiscourseElementStart()"/>
+   <xsl:apply-templates/>
+  <xsl:value-of select="mmax:setDiscourseElementEnd()"/>
+  <xsl:apply-templates select="mmax:getEndedMarkables(@id)" mode="closing"/>
+  <xsl:text> </xsl:text>
+
+</xsl:when>
+
+<xsl:when test="@id='word_1836'">
+
+<xsl:value-of select="mmax:registerDiscourseElement(@id)"/>
+  <xsl:apply-templates select="mmax:getStartedMarkables(@id)" mode="opening"/>
+  <xsl:value-of select="mmax:setDiscourseElementStart()"/>
+   <xsl:apply-templates/>
+  <xsl:value-of select="mmax:setDiscourseElementEnd()"/>
+  <xsl:apply-templates select="mmax:getEndedMarkables(@id)" mode="closing"/>
+  <xsl:text> </xsl:text>
+
+<xsl:value-of select="mmax:startItalic()"/>
+<xsl:value-of select="mmax:startSuperscript()"/>
+<xsl:text>
+
+The role of huIL-10 or vIL-10 in this chimeric mouse model of EBV-LPD is unknown .
+In the present study , we show that hu- PBL-SCID mice that develop EBV-LPD have significant elevation of serum huIL-10 levels compared with mice that do not develop EBV-LPD ( P = .005 ) .
+vIL-10 was undetectable in all animals .
+The EBV + tumor samples express transcript for huIL-10 and huIL-10 receptor , express huIL-10 protein by immunohistochemical staining , and show specific binding of recombinant ( r ) huIL-10 .
+In vitro analysis of the functional consequences of rhuIL-10 binding to IL-10 receptors on fresh EBV + tumor cells shows that rhuIL-10 can prevent programmed cell death as well as promote proliferation and can do so at concentrations of huIL-10 found in vivo .
+Thus , huIL-10 production by EBV + tumor cells may contribute directly to their malignant outgrowth in the hu- PBL-SCID mouse by two autocrine mechanisms : prevention of programmed cell death and proliferation .
+The implications of such findings with regard to EBV-LPD in humans is discussed .
+******************************* END ABSTRACT 7849294 ***********************************************
+
+</xsl:text>
+<xsl:value-of select="mmax:endSuperscript()"/>
+<xsl:value-of select="mmax:endItalic()"/>
+
+</xsl:when>
+
+<xsl:when test="@id='word_1837'">
+<xsl:value-of select="mmax:startItalic()"/>
+<xsl:value-of select="mmax:startSuperscript()"/>
+<xsl:text>
+***************************** BEGIN ABSTRACT 12682271 ***********************************************
+Frequencies of circulating cytolytic , CD45RA+CD27 - , CD8 + T lymphocytes depend on infection with CMV .
+Viral infections may cause serious disease unless the adaptive immune system is able to clear the viral agents through its effector arms .
+
+</xsl:text>
+<xsl:value-of select="mmax:endSuperscript()"/>
+<xsl:value-of select="mmax:endItalic()"/>
+
+<xsl:value-of select="mmax:registerDiscourseElement(@id)"/>
+  <xsl:apply-templates select="mmax:getStartedMarkables(@id)" mode="opening"/>
+  <xsl:value-of select="mmax:setDiscourseElementStart()"/>
+   <xsl:apply-templates/>
+  <xsl:value-of select="mmax:setDiscourseElementEnd()"/>
+  <xsl:apply-templates select="mmax:getEndedMarkables(@id)" mode="closing"/>
+  <xsl:text> </xsl:text>
+
+</xsl:when>
+
+<xsl:when test="@id='word_1897'">
+
+<xsl:value-of select="mmax:registerDiscourseElement(@id)"/>
+  <xsl:apply-templates select="mmax:getStartedMarkables(@id)" mode="opening"/>
+  <xsl:value-of select="mmax:setDiscourseElementStart()"/>
+   <xsl:apply-templates/>
+  <xsl:value-of select="mmax:setDiscourseElementEnd()"/>
+  <xsl:apply-templates select="mmax:getEndedMarkables(@id)" mode="closing"/>
+  <xsl:text> </xsl:text>
+
+<xsl:value-of select="mmax:startItalic()"/>
+<xsl:value-of select="mmax:startSuperscript()"/>
+<xsl:text>
+
+In a cohort of 220 healthy children we analyzed lymphocytes and subpopulations of CD4 ( + ) and CD8 ( + ) T cells .
+The presence of the cytolytic CD45RA( +)CD27( - ) subset of CD8 ( + ) T cells correlated with prior CMV infection as defined by seroconversion ( p &lt; 0.0001 ) .
+The number of this CD8 ( + ) T cell subset remained stable during follow - up over 3 years in 40 children .
+The CD45RA( +)CD27( - ) subset of CD8 ( + ) T cells first appeared during acute CMV infection and subsequently stabilized at an individual set - point defined by age and immunocompetence .
+The functional importance of these cells in CMV surveillance was reflected by their increased numbers in immunosuppressed pediatric kidney transplant patients .
+Preferential expansion of CD8 ( +)CD45RA( +)CD27( - ) cytolytic T cells seems unique for CMV .
+******************************* END ABSTRACT 12682271 ***********************************************
+
+</xsl:text>
+<xsl:value-of select="mmax:endSuperscript()"/>
+<xsl:value-of select="mmax:endItalic()"/>
+
+</xsl:when>
+
+<xsl:when test="@id='word_1898'">
+<xsl:value-of select="mmax:startItalic()"/>
+<xsl:value-of select="mmax:startSuperscript()"/>
+<xsl:text>
+***************************** BEGIN ABSTRACT 11390979 ***********************************************
+A gene family required for human germ cell development evolved from an ancient meiotic gene conserved in metazoans .
+The Deleted in AZoospermia ( DAZ ) genes encode potential RNA - binding proteins that are expressed exclusively in prenatal and postnatal germ cells and are strong candidates for human fertility factors .
+Here we report the identification of an additional member of the DAZ gene family , which we have called BOULE .
+
+</xsl:text>
+<xsl:value-of select="mmax:endSuperscript()"/>
+<xsl:value-of select="mmax:endItalic()"/>
+
+<xsl:value-of select="mmax:registerDiscourseElement(@id)"/>
+  <xsl:apply-templates select="mmax:getStartedMarkables(@id)" mode="opening"/>
+  <xsl:value-of select="mmax:setDiscourseElementStart()"/>
+   <xsl:apply-templates/>
+  <xsl:value-of select="mmax:setDiscourseElementEnd()"/>
+  <xsl:apply-templates select="mmax:getEndedMarkables(@id)" mode="closing"/>
+  <xsl:text> </xsl:text>
+
+</xsl:when>
+
+<xsl:when test="@id='word_1998'">
+
+<xsl:value-of select="mmax:registerDiscourseElement(@id)"/>
+  <xsl:apply-templates select="mmax:getStartedMarkables(@id)" mode="opening"/>
+  <xsl:value-of select="mmax:setDiscourseElementStart()"/>
+   <xsl:apply-templates/>
+  <xsl:value-of select="mmax:setDiscourseElementEnd()"/>
+  <xsl:apply-templates select="mmax:getEndedMarkables(@id)" mode="closing"/>
+  <xsl:text> </xsl:text>
+
+<xsl:value-of select="mmax:startItalic()"/>
+<xsl:value-of select="mmax:startSuperscript()"/>
+<xsl:text>
+
+Human and mouse BOULE resemble the invertebrate meiotic regulator Boule , the proposed ortholog of DAZ , in sequence and expression pattern and hence likely perform a similar meiotic function .
+In contrast , the previously identified human DAZ and DAZL are expressed much earlier than BOULE in prenatal germ stem cells and spermatogonia ; DAZL also is expressed in female germ cells .
+These data suggest that homologs of the DAZ gene family can be grouped into two subfamilies ( BOULE and DAZL ) and that members of the DAZ family evolved from an ancestral meiotic regulator , Boule , to assume distinct , yet overlapping , functions in germ cell development .
+******************************* END ABSTRACT 11390979 ***********************************************
+
+</xsl:text>
+<xsl:value-of select="mmax:endSuperscript()"/>
+<xsl:value-of select="mmax:endItalic()"/>
+
+</xsl:when>
+
+<xsl:when test="@id='word_1999'">
+<xsl:value-of select="mmax:startItalic()"/>
+<xsl:value-of select="mmax:startSuperscript()"/>
+<xsl:text>
+***************************** BEGIN ABSTRACT 11067934 ***********************************************
+Bacterial killing is enhanced by expression of lysozyme in the lungs of transgenic mice .
+To assess the role of lysozyme in pulmonary host defense in vivo , transgenic mice expressing rat lysozyme cDNA in distal respiratory epithelial cells were generated .
+Two transgenic mouse lines were established in which the level of lysozyme protein in bronchoalveolar ( BAL ) lavage fluid was increased 2 - or 4 - fold relative to that in WT mice .
+Lung structure and cellular composition of BAL were not altered by the expression of lysozyme .
+Lysozyme activity in BAL was significantly increased ( 6.6 - and 17 - fold ) in 5-wk - old animals from each transgenic line .
+
+</xsl:text>
+<xsl:value-of select="mmax:endSuperscript()"/>
+<xsl:value-of select="mmax:endItalic()"/>
+
+<xsl:value-of select="mmax:registerDiscourseElement(@id)"/>
+  <xsl:apply-templates select="mmax:getStartedMarkables(@id)" mode="opening"/>
+  <xsl:value-of select="mmax:setDiscourseElementStart()"/>
+   <xsl:apply-templates/>
+  <xsl:value-of select="mmax:setDiscourseElementEnd()"/>
+  <xsl:apply-templates select="mmax:getEndedMarkables(@id)" mode="closing"/>
+  <xsl:text> </xsl:text>
+
+</xsl:when>
+
+<xsl:when test="@id='word_2044'">
+
+<xsl:value-of select="mmax:registerDiscourseElement(@id)"/>
+  <xsl:apply-templates select="mmax:getStartedMarkables(@id)" mode="opening"/>
+  <xsl:value-of select="mmax:setDiscourseElementStart()"/>
+   <xsl:apply-templates/>
+  <xsl:value-of select="mmax:setDiscourseElementEnd()"/>
+  <xsl:apply-templates select="mmax:getEndedMarkables(@id)" mode="closing"/>
+  <xsl:text> </xsl:text>
+
+<xsl:value-of select="mmax:startItalic()"/>
+<xsl:value-of select="mmax:startSuperscript()"/>
+<xsl:text>
+
+Killing of group B streptococci was significantly enhanced ( 2 - and 3 - fold ) in the mouse transgenic lines at 6 h postinfection and was accompanied by a decrease in systemic dissemination of pathogen .
+Killing of Pseudomonas aeruginosa was also enhanced in the transgenic lines ( 5 - and 30 - fold ) .
+Twenty - four hours after administration of Pseudomonas aeruginosa , all transgenic mice survived , whereas 20 % of the WT mice died .
+Increased production of lysozyme in respiratory epithelial cells of transgenic mice enhanced bacterial killing in the lung in vivo , and was associated with decreased systemic dissemination of pathogen and increased survival following infection .
+******************************* END ABSTRACT 11067934 ***********************************************
+
+</xsl:text>
+<xsl:value-of select="mmax:endSuperscript()"/>
+<xsl:value-of select="mmax:endItalic()"/>
+
+</xsl:when>
+
+<xsl:when test="@id='word_2045'">
+<xsl:value-of select="mmax:startItalic()"/>
+<xsl:value-of select="mmax:startSuperscript()"/>
+<xsl:text>
+***************************** BEGIN ABSTRACT 14502781 ***********************************************
+Absence of HER2 overexpression in metastatic malignant melanoma .
+BACKGROUND AND OBJECTIVES : Currently available systemic therapies for malignant melanoma produce low response rates in patients , and more effective treatment modalities are clearly needed .
+Trastuzumab ( Herceptin ) , the antibody to the HER2 oncoprotein , has had a significant impact on therapy for patients with HER2 - overexpressing metastatic breast cancer .
+This study examined the incidences of HER2 protein overexpression and HER2 gene amplification in metastatic malignant melanoma , which remain unclear in the literature .
+METHODS : The study evaluated patients with stage III and stage IV malignant melanoma who were treated between 1983 and 1999 .
+Tissue blocks were retrieved and reviewed to confirm the diagnosis .
+From the 101 cases identified , 49 ( 31 stage III and 18 stage IV ) had sufficient residual tumor sample to enable an assay to be performed .
+The blocks were tested for HER2 overexpression using the DAKO HercepTest immunohistochemical ( IHC ) assay .
+Any sample that tested 1+ or greater for HER2 expression on IHC and a randomly selected subset of HER2 - negative samples were tested for the presence of HER2 gene amplification using the Vysis PathVysion fluorescence in situ hybridization ( FISH ) assay .
+
+</xsl:text>
+<xsl:value-of select="mmax:endSuperscript()"/>
+<xsl:value-of select="mmax:endItalic()"/>
+
+<xsl:value-of select="mmax:registerDiscourseElement(@id)"/>
+  <xsl:apply-templates select="mmax:getStartedMarkables(@id)" mode="opening"/>
+  <xsl:value-of select="mmax:setDiscourseElementStart()"/>
+   <xsl:apply-templates/>
+  <xsl:value-of select="mmax:setDiscourseElementEnd()"/>
+  <xsl:apply-templates select="mmax:getEndedMarkables(@id)" mode="closing"/>
+  <xsl:text> </xsl:text>
+
+</xsl:when>
+
+<xsl:when test="@id='word_2077'">
+
+<xsl:value-of select="mmax:registerDiscourseElement(@id)"/>
+  <xsl:apply-templates select="mmax:getStartedMarkables(@id)" mode="opening"/>
+  <xsl:value-of select="mmax:setDiscourseElementStart()"/>
+   <xsl:apply-templates/>
+  <xsl:value-of select="mmax:setDiscourseElementEnd()"/>
+  <xsl:apply-templates select="mmax:getEndedMarkables(@id)" mode="closing"/>
+  <xsl:text> </xsl:text>
+
+<xsl:value-of select="mmax:startItalic()"/>
+<xsl:value-of select="mmax:startSuperscript()"/>
+<xsl:text>
+
+All of the 49 cases of malignant melanoma were negative for HER2 overexpression by IHC .
+However , two samples ( 3 % ) were found to have a weak level of HER2 expression ( 1+ level of staining ) .
+Subsequent FISH results on the samples that were 1+ on IHC were negative for HER2 gene amplification .
+FISH results on 21 other randomly selected IHC - negative samples were also negative for HER2 amplification .
+Flow cytometry failed to show HER2 overexpression in two melanoma cell lines , and treatment of these cells with trastuzumab did not affect their proliferation rate .
+CONCLUSIONS : We found a low incidence of HER2 expression and no evidence of HER2 protein overexpression or HER2 gene amplification in metastatic malignant melanoma tissues .
+Therefore , routine testing for HER2 overexpression or HER2 amplification would not be of benefit in this patient population .
+These results also imply that anti - HER2 therapy with trastuzumab is highly unlikely to provide benefit for patients with metastatic melanoma .
+******************************* END ABSTRACT 14502781 ***********************************************
+
+</xsl:text>
+<xsl:value-of select="mmax:endSuperscript()"/>
+<xsl:value-of select="mmax:endItalic()"/>
+
+</xsl:when>
+
+<xsl:when test="@id='word_2078'">
+<xsl:value-of select="mmax:startItalic()"/>
+<xsl:value-of select="mmax:startSuperscript()"/>
+<xsl:text>
+***************************** BEGIN ABSTRACT 11149241 ***********************************************
+Elevated transferrin concentration in cerebral spinal fluid after subarachnoid hemorrhage .
+Calcium - elevating protein cross - reacted with anti - human transferrin ( TF ) was purified in cerebrospinal fluid ( CSF ) after subarachnoid hemorrhage ( SAH ) .
+The concentration of TF in CSF after SAH was measured , and the effects of TF on cultured smooth muscle cells ( SMCs ) were evaluated in order to understand the relationship between TF and cerebral vasospasm .
+
+</xsl:text>
+<xsl:value-of select="mmax:endSuperscript()"/>
+<xsl:value-of select="mmax:endItalic()"/>
+
+<xsl:value-of select="mmax:registerDiscourseElement(@id)"/>
+  <xsl:apply-templates select="mmax:getStartedMarkables(@id)" mode="opening"/>
+  <xsl:value-of select="mmax:setDiscourseElementStart()"/>
+   <xsl:apply-templates/>
+  <xsl:value-of select="mmax:setDiscourseElementEnd()"/>
+  <xsl:apply-templates select="mmax:getEndedMarkables(@id)" mode="closing"/>
+  <xsl:text> </xsl:text>
+
+</xsl:when>
+
+<xsl:when test="@id='word_2109'">
+<xsl:value-of select="mmax:startItalic()"/>
+<xsl:value-of select="mmax:startSuperscript()"/>
+<xsl:text>
+
+
+</xsl:text>
+<xsl:value-of select="mmax:endSuperscript()"/>
+<xsl:value-of select="mmax:endItalic()"/>
+
+<xsl:value-of select="mmax:registerDiscourseElement(@id)"/>
+  <xsl:apply-templates select="mmax:getStartedMarkables(@id)" mode="opening"/>
+  <xsl:value-of select="mmax:setDiscourseElementStart()"/>
+   <xsl:apply-templates/>
+  <xsl:value-of select="mmax:setDiscourseElementEnd()"/>
+  <xsl:apply-templates select="mmax:getEndedMarkables(@id)" mode="closing"/>
+  <xsl:text> </xsl:text>
+
+</xsl:when>
+
+<xsl:when test="@id='word_2170'">
+
+<xsl:value-of select="mmax:registerDiscourseElement(@id)"/>
+  <xsl:apply-templates select="mmax:getStartedMarkables(@id)" mode="opening"/>
+  <xsl:value-of select="mmax:setDiscourseElementStart()"/>
+   <xsl:apply-templates/>
+  <xsl:value-of select="mmax:setDiscourseElementEnd()"/>
+  <xsl:apply-templates select="mmax:getEndedMarkables(@id)" mode="closing"/>
+  <xsl:text> </xsl:text>
+
+<xsl:value-of select="mmax:startItalic()"/>
+<xsl:value-of select="mmax:startSuperscript()"/>
+<xsl:text>
+
+The concentration of TF in CSF was measured using Speriol micro-transferrin measure assay method .
+Nitrite accumulation in the culture media of SMCs incubated with TF was determined by diazotization method .
+The mRNA levels of inducible isoform of NOS ( iNOS ) in SMC incubated with TF were measured by the reverse transcription - coupled polymerase chain reaction method .
+Levels of TF were markedly different in the SAH and the control subjects .
+In the control group , all subjects had no detectable quantity of TF .
+In contrast , all patients after SAH had quantifiable TF in their CSF .
+Moreover , there was a significant difference between the vasospasm group and the non - vasospasm group in TF levels ( p &lt; 0.05 ) .
+In the vasospasm group , the average value was 10.43 +/- 2.8 mg dl-1 .
+In the non - vasospasm group , the average was 3.69 +/- 0.31 mg dl-1 .
+The nitrite content in the culture medium incubated with TF was three times the content of control .
+TF also induced iNOS mRNA in SMC .
+This study demonstrated that an elevation of TF concentration in CSF after SAH was detected and iNOS mRNA in SMCs was also induced by TF .
+This may be involved in some roles of the development of the pathological series of events after SAH , including vasospasm .
+******************************* END ABSTRACT 11149241 ***********************************************
+
+</xsl:text>
+<xsl:value-of select="mmax:endSuperscript()"/>
+<xsl:value-of select="mmax:endItalic()"/>
+
+</xsl:when>
+
+<xsl:when test="@id='word_2171'">
+<xsl:value-of select="mmax:startItalic()"/>
+<xsl:value-of select="mmax:startSuperscript()"/>
+<xsl:text>
+***************************** BEGIN ABSTRACT 10369160 ***********************************************
+Genetic variations in human fetal globin gene microsatellites and their functional relevance .
+Short tandem repeats are abundantly present within the genome .
+They are commonly used as polymorphic markers but their potential functional role is poorly documented .
+Several of these microsatellites have been described within the beta-globin locus and some could be involved in controlling gene expression .
+Our purpose was to investigate the extent and significance of the ( TG )n( CG )m dinucleotide repeat polymorphisms in the two gamma-globin gene IVS2s .
+
+</xsl:text>
+<xsl:value-of select="mmax:endSuperscript()"/>
+<xsl:value-of select="mmax:endItalic()"/>
+
+<xsl:value-of select="mmax:registerDiscourseElement(@id)"/>
+  <xsl:apply-templates select="mmax:getStartedMarkables(@id)" mode="opening"/>
+  <xsl:value-of select="mmax:setDiscourseElementStart()"/>
+   <xsl:apply-templates/>
+  <xsl:value-of select="mmax:setDiscourseElementEnd()"/>
+  <xsl:apply-templates select="mmax:getEndedMarkables(@id)" mode="closing"/>
+  <xsl:text> </xsl:text>
+
+</xsl:when>
+
+<xsl:when test="@id='word_2215'">
+
+<xsl:value-of select="mmax:registerDiscourseElement(@id)"/>
+  <xsl:apply-templates select="mmax:getStartedMarkables(@id)" mode="opening"/>
+  <xsl:value-of select="mmax:setDiscourseElementStart()"/>
+   <xsl:apply-templates/>
+  <xsl:value-of select="mmax:setDiscourseElementEnd()"/>
+  <xsl:apply-templates select="mmax:getEndedMarkables(@id)" mode="closing"/>
+  <xsl:text> </xsl:text>
+
+<xsl:value-of select="mmax:startItalic()"/>
+<xsl:value-of select="mmax:startSuperscript()"/>
+<xsl:text>
+
+A high heterogeneity of the polymorphic repeats was demonstrated , extending the range of the published alleles from 13 to 22 and allowing a first attempt at making a phenotype / genotype correlation .
+One specific allele , ( TG )13 in the Agamma -gene , was highly enriched in the TI patients ( 46.1 % vs 2.9 % of the Cooley 's anaemia cases , P &lt; 0.0002 , and 23.3 % in the normal controls , P &lt; 0.008 ) and preferentially observed in TI patients with a high haemoglobin F ( Hb F ) .
+Transient transfection assays in K562 cells , with the growth hormone gene as a reporter , showed a positive regulatory action mediated by a ( TG )13 - containing 243 nt IVS2 fragment .
+Finally , a first set of mobility shift experiments with erythroid ( K562 and MEL ) and nonerythroid ( HeLa ) cell lines showed binding of erythroid component(s) in this DNA region and the binding pattern was modified upon induction of MEL cells by DMSO .
+Thus , our in vivo and in vitro data raise the question of a possible contribution of the gamma-gene IVS2s polymorphic microsatellites to the variable Hb F synthesis in the major haemoglobinopathies : a well known , puzzling and still unanswered question .
+******************************* END ABSTRACT 10369160 ***********************************************
+
+</xsl:text>
+<xsl:value-of select="mmax:endSuperscript()"/>
+<xsl:value-of select="mmax:endItalic()"/>
+
+</xsl:when>
+
+<xsl:when test="@id='word_2216'">
+<xsl:value-of select="mmax:startItalic()"/>
+<xsl:value-of select="mmax:startSuperscript()"/>
+<xsl:text>
+***************************** BEGIN ABSTRACT 2082179 ***********************************************
+Functional characterization of naturally occurring mutant androgen receptors from subjects with complete androgen insensitivity .
+
+</xsl:text>
+<xsl:value-of select="mmax:endSuperscript()"/>
+<xsl:value-of select="mmax:endItalic()"/>
+
+<xsl:value-of select="mmax:registerDiscourseElement(@id)"/>
+  <xsl:apply-templates select="mmax:getStartedMarkables(@id)" mode="opening"/>
+  <xsl:value-of select="mmax:setDiscourseElementStart()"/>
+   <xsl:apply-templates/>
+  <xsl:value-of select="mmax:setDiscourseElementEnd()"/>
+  <xsl:apply-templates select="mmax:getEndedMarkables(@id)" mode="closing"/>
+  <xsl:text> </xsl:text>
+
+</xsl:when>
+
+<xsl:when test="@id='word_2251'">
+
+<xsl:value-of select="mmax:registerDiscourseElement(@id)"/>
+  <xsl:apply-templates select="mmax:getStartedMarkables(@id)" mode="opening"/>
+  <xsl:value-of select="mmax:setDiscourseElementStart()"/>
+   <xsl:apply-templates/>
+  <xsl:value-of select="mmax:setDiscourseElementEnd()"/>
+  <xsl:apply-templates select="mmax:getEndedMarkables(@id)" mode="closing"/>
+  <xsl:text> </xsl:text>
+
+<xsl:value-of select="mmax:startItalic()"/>
+<xsl:value-of select="mmax:startSuperscript()"/>
+<xsl:text>
+
+Assays of AR binding in cultured skin fibroblasts from subjects with CAIS show either an apparent absence of AR ( AR - ) or normal levels of AR ( AR+ ) binding .
+In several subjects with CAIS , AR - , no gross AR mutation was detected by Southern blot analyses of genomic DNA and normal sized 10 kilobase mRNA was present on Northern blots of poly( A+ ) RNA from cultured genital skin fibroblasts .
+We have used the polymerase chain reaction to amplify individual exons within the human AR gene of subjects with CAIS and have identified point mutations in three subjects .
+In one AR - subject ( R774C ) , amino acid 774 was changed from arginine ( CGC ) to cysteine ( TGC ) , in another AR - subject ( R831Q ) , arginine ( CGA ) was changed to glutamine ( CAA ) at position 831 , and in an AR + subject ( V866M ) a methionine ( ATG ) was substituted for valine ( GTG ) at position 866 .
+Transfection of wild type and mutant AR cDNA clones into COS cells results in detection of AR protein by immunoblotting .
+AR ligand binding activity is absent in cells transfected with AR mutants R774C and R831Q , but present with AR mutant V866M .
+Androgen binding in cells transfected with AR mutant V866M has a 6 - fold lower apparent binding affinity than that of wild - type AR .
+Transcriptional activation of the MMTV-CAT reporter gene was androgen dependent and specific and nearly maximal at physiological concentrations ( 10(-10 ) M ) of androgen when wild - type AR was transfected into cells , whereas neither AR mutants R774C nor R831Q were able to stimulate CAT activity even at 10(-8) M androgen .
+AR mutant V866M was able to stimulate CAT activity but the androgen dose dependency was shifted toward pharmacological concentrations of steroid that exceed in vivo levels .
+The molecular basis of CAIS in humans exhibits genetic heterogeneity .
+Our study shows that some cases of CAIS are explained by an inability to form a functional AR - steroid complex and hence , the AR is unable to activate transcription of genes essential for male sex differentiation during fetal development .
+******************************* END ABSTRACT 2082179 ***********************************************
+
+</xsl:text>
+<xsl:value-of select="mmax:endSuperscript()"/>
+<xsl:value-of select="mmax:endItalic()"/>
+
+</xsl:when>
+
+<xsl:when test="@id='word_2252'">
+<xsl:value-of select="mmax:startItalic()"/>
+<xsl:value-of select="mmax:startSuperscript()"/>
+<xsl:text>
+***************************** BEGIN ABSTRACT 11261779 ***********************************************
+DNA damage and apoptosis in mononuclear cells from glucose -6-phosphate dehydrogenase - deficient patients ( G6PD Aachen variant ) after UV irradiation .
+Patients affected with X chromosome - linked , hereditary glucose -6-phosphate dehydrogenase ( G6PD ) deficiency suffer from life - threatening hemolytic crises after intake of certain drugs or foods .
+G6PD deficiency is associated with low levels of reduced glutathione .
+
+</xsl:text>
+<xsl:value-of select="mmax:endSuperscript()"/>
+<xsl:value-of select="mmax:endItalic()"/>
+
+<xsl:value-of select="mmax:registerDiscourseElement(@id)"/>
+  <xsl:apply-templates select="mmax:getStartedMarkables(@id)" mode="opening"/>
+  <xsl:value-of select="mmax:setDiscourseElementStart()"/>
+   <xsl:apply-templates/>
+  <xsl:value-of select="mmax:setDiscourseElementEnd()"/>
+  <xsl:apply-templates select="mmax:getEndedMarkables(@id)" mode="closing"/>
+  <xsl:text> </xsl:text>
+
+</xsl:when>
+
+<xsl:when test="@id='word_2324'">
+
+<xsl:value-of select="mmax:registerDiscourseElement(@id)"/>
+  <xsl:apply-templates select="mmax:getStartedMarkables(@id)" mode="opening"/>
+  <xsl:value-of select="mmax:setDiscourseElementStart()"/>
+   <xsl:apply-templates/>
+  <xsl:value-of select="mmax:setDiscourseElementEnd()"/>
+  <xsl:apply-templates select="mmax:getEndedMarkables(@id)" mode="closing"/>
+  <xsl:text> </xsl:text>
+
+<xsl:value-of select="mmax:startItalic()"/>
+<xsl:value-of select="mmax:startSuperscript()"/>
+<xsl:text>
+
+J/ cm2 ) .
+As determined by PCR stop assays , there was more UV - induced DNA damage in MNC of G6PD - deficient male patients than in those of healthy subjects .
+MNC of G6PD - deficient patients showed a higher rate of apoptosis after UV irradiation than MNC of healthy donors .
+MNC of heterozygote females showed intermediate rates of DNA damage and apoptosis .
+It is concluded that increased DNA damage may be a result of deficient detoxification of reactive oxygen species by glutathione and may ultimately account for the higher rate of apoptosis in G6PD - deficient MNC .
+******************************* END ABSTRACT 11261779 ***********************************************
+
+</xsl:text>
+<xsl:value-of select="mmax:endSuperscript()"/>
+<xsl:value-of select="mmax:endItalic()"/>
+
+</xsl:when>
+
+<xsl:when test="@id='word_2325'">
+<xsl:value-of select="mmax:startItalic()"/>
+<xsl:value-of select="mmax:startSuperscript()"/>
+<xsl:text>
+***************************** BEGIN ABSTRACT 15841391 ***********************************************
+Identification of deletions and duplications of the DMD gene in affected males and carrier females by multiple ligation probe amplification ( MLPA ) .
+Duchenne muscular dystrophy ( DMD ) and Becker muscular dystrophy ( BMD ) are caused in the majority of cases by deletions of the DMD gene and are readily detectable in affected males by multiplex polymerase chain reaction ( PCR ) .
+However , different approaches must be used for the identification of female carriers , in which deletions are not detectable by PCR , because of the presence of a normal X chromosome .
+In this study , we used the multiple ligation probe amplification ( MLPA ) tool for the identification of female carriers of DMD deletions or duplications in 12 families with a single affected male , 10 of which were previously diagnosed as carriers of a DMD rearrangement , and the remaining two as having an unknown disease - causing mutation .
+In all the investigated affected males , MLPA analysis confirmed the presence of a DMD rearrangement , and in six of them allowed the refinement of the breakpoints .
+In 12 female relatives of the affected patients , MLPA analysis showed a DMD deletion or duplication , confirming their carrier status .
+Two of these were the mother and the sister of a patient whose disease - causing mutation was not known .
+
+</xsl:text>
+<xsl:value-of select="mmax:endSuperscript()"/>
+<xsl:value-of select="mmax:endItalic()"/>
+
+<xsl:value-of select="mmax:registerDiscourseElement(@id)"/>
+  <xsl:apply-templates select="mmax:getStartedMarkables(@id)" mode="opening"/>
+  <xsl:value-of select="mmax:setDiscourseElementStart()"/>
+   <xsl:apply-templates/>
+  <xsl:value-of select="mmax:setDiscourseElementEnd()"/>
+  <xsl:apply-templates select="mmax:getEndedMarkables(@id)" mode="closing"/>
+  <xsl:text> </xsl:text>
+
+</xsl:when>
+
+<xsl:when test="@id='word_2374'">
+
+<xsl:value-of select="mmax:registerDiscourseElement(@id)"/>
+  <xsl:apply-templates select="mmax:getStartedMarkables(@id)" mode="opening"/>
+  <xsl:value-of select="mmax:setDiscourseElementStart()"/>
+   <xsl:apply-templates/>
+  <xsl:value-of select="mmax:setDiscourseElementEnd()"/>
+  <xsl:apply-templates select="mmax:getEndedMarkables(@id)" mode="closing"/>
+  <xsl:text> </xsl:text>
+
+<xsl:value-of select="mmax:startItalic()"/>
+<xsl:value-of select="mmax:startSuperscript()"/>
+<xsl:text>
+
+******************************* END ABSTRACT 15841391 ***********************************************
+
+</xsl:text>
+<xsl:value-of select="mmax:endSuperscript()"/>
+<xsl:value-of select="mmax:endItalic()"/>
+
+</xsl:when>
+
+<xsl:when test="@id='word_2375'">
+<xsl:value-of select="mmax:startItalic()"/>
+<xsl:value-of select="mmax:startSuperscript()"/>
+<xsl:text>
+***************************** BEGIN ABSTRACT 14522500 ***********************************************
+Androgens up -regulate atherosclerosis - related genes in macrophages from males but not females : molecular insights into gender differences in atherosclerosis .
+OBJECTIVES : This study investigated the effects of androgens on gene expression in male - and female - donor macrophages .
+BACKGROUND : Men have more severe coronary disease than women .
+Androgen exposure increases foam cell formation in male but not female macrophages , and male macrophages express &gt;4 - fold more androgen receptor messenger ribonucleic acid than female macrophages .
+Therefore , androgen exposure may have gender - specific and potentially pro -atherogenic effects in macrophages .
+
+</xsl:text>
+<xsl:value-of select="mmax:endSuperscript()"/>
+<xsl:value-of select="mmax:endItalic()"/>
+
+<xsl:value-of select="mmax:registerDiscourseElement(@id)"/>
+  <xsl:apply-templates select="mmax:getStartedMarkables(@id)" mode="opening"/>
+  <xsl:value-of select="mmax:setDiscourseElementStart()"/>
+   <xsl:apply-templates/>
+  <xsl:value-of select="mmax:setDiscourseElementEnd()"/>
+  <xsl:apply-templates select="mmax:getEndedMarkables(@id)" mode="closing"/>
+  <xsl:text> </xsl:text>
+
+</xsl:when>
+
+<xsl:when test="@id='word_2423'">
+
+<xsl:value-of select="mmax:registerDiscourseElement(@id)"/>
+  <xsl:apply-templates select="mmax:getStartedMarkables(@id)" mode="opening"/>
+  <xsl:value-of select="mmax:setDiscourseElementStart()"/>
+   <xsl:apply-templates/>
+  <xsl:value-of select="mmax:setDiscourseElementEnd()"/>
+  <xsl:apply-templates select="mmax:getEndedMarkables(@id)" mode="closing"/>
+  <xsl:text> </xsl:text>
+
+<xsl:value-of select="mmax:startItalic()"/>
+<xsl:value-of select="mmax:startSuperscript()"/>
+<xsl:text>
+
+Differential expression of atherosclerosis - related genes was confirmed by real -time reverse transcription - polymerase chain reaction ( RT - PCR ) in five male and five female donors .
+Functional corroboration of foam cell formation - related findings was undertaken by experiments using ( 125)I-acetylated low - density lipoprotein ( AcLDL ) .
+RESULTS : In male macrophages , androgen treatment produced differential up -regulation of 27 genes concentrated in five functional classes : 1 ) lipoprotein processing ; 2 ) cell - surface adhesion ; 3 ) extracellular signaling ; 4 ) coagulation and fibrinolysis ; and 5 ) transport protein genes .
+By contrast , none of 588 genes were up -regulated in female macrophages .
+By RT - PCR , we confirmed the gender - specific up -regulation of six of these atherosclerosis - related genes : acyl coenzyme A: cholesterol acyl transferase I , lysosomal acid lipase ( LAL ) , caveolin -2 , CD40 , vascular endothelial growth factor-165 receptor , and tissue factor pathway inhibitor .
+Functionally , androgen - treated male macrophages showed increased rates of lysosomal AcLDL degradation , by 45 % to 75 % after 15 to 20 h of ( 125)I-AcLDL incubation ( p = 0.001 ) , consistent with increased LAL activity .
+CONCLUSIONS : Androgens increase expression of atherosclerosis - related genes in male but not female macrophages , with functional consequences .
+These findings may contribute to the male predisposition to atherosclerosis .
+******************************* END ABSTRACT 14522500 ***********************************************
+
+</xsl:text>
+<xsl:value-of select="mmax:endSuperscript()"/>
+<xsl:value-of select="mmax:endItalic()"/>
+
+</xsl:when>
+
+<xsl:when test="@id='word_2424'">
+<xsl:value-of select="mmax:startItalic()"/>
+<xsl:value-of select="mmax:startSuperscript()"/>
+<xsl:text>
+***************************** BEGIN ABSTRACT 10879746 ***********************************************
+Pathogenesis of placental site trophoblastic tumor may require the presence of a paternally derived X chromosome .
+Placental site trophoblastic tumor ( PSTT ) is a neoplastic proliferation of intermediate trophoblasts that invades the myometrium at the placental site after a pregnancy .
+Less than 100 cases have been reported .
+Information of the sex assignment of the antecedent gestation is available in 21 cases : 18 of these were female .
+To explore this interesting phenomenon , we have determined the sex chromosome composition of the tumor tissue preserved in paraffin blocks for five new cases of this condition .
+
+</xsl:text>
+<xsl:value-of select="mmax:endSuperscript()"/>
+<xsl:value-of select="mmax:endItalic()"/>
+
+<xsl:value-of select="mmax:registerDiscourseElement(@id)"/>
+  <xsl:apply-templates select="mmax:getStartedMarkables(@id)" mode="opening"/>
+  <xsl:value-of select="mmax:setDiscourseElementStart()"/>
+   <xsl:apply-templates/>
+  <xsl:value-of select="mmax:setDiscourseElementEnd()"/>
+  <xsl:apply-templates select="mmax:getEndedMarkables(@id)" mode="closing"/>
+  <xsl:text> </xsl:text>
+
+</xsl:when>
+
+<xsl:when test="@id='word_2460'">
+
+<xsl:value-of select="mmax:registerDiscourseElement(@id)"/>
+  <xsl:apply-templates select="mmax:getStartedMarkables(@id)" mode="opening"/>
+  <xsl:value-of select="mmax:setDiscourseElementStart()"/>
+   <xsl:apply-templates/>
+  <xsl:value-of select="mmax:setDiscourseElementEnd()"/>
+  <xsl:apply-templates select="mmax:getEndedMarkables(@id)" mode="closing"/>
+  <xsl:text> </xsl:text>
+
+<xsl:value-of select="mmax:startItalic()"/>
+<xsl:value-of select="mmax:startSuperscript()"/>
+<xsl:text>
+
+Using the X - linked human androgen receptor ( AR ) gene as a polymorphic marker , we showed that in all five cases the tumor had a likely XX chromosomal composition ; and in four cases it was possible to determine that one of the X chromosomes was of paternal origin .
+In one case , the paternal X chromosome showed no polymorphism to either maternal X chromosomes .
+In addition , sensitive semi- nested PCR failed to show a human Y chromosome element in any of the five cases of PSTT .
+Overall , of 21 cases from the literature and 5 cases of ours , 89 % ( 23 of 26 ) showed an XX genomic composition in PSTT , either by history or genetic analysis .
+These results suggest that most PSTT were derived from the antecedent female conceptus and were likely to have possessed a functional paternal X chromosome .
+Methylation status analysis at the AR locus was performed in the three PSTT in which the paternal X chromosome was identifiable .
+In two cases , the paternal AR locus was hypomethylated while the corresponding maternal locus was hypermethylated .
+The methylation status of other loci was not investigated .
+Collectively , sex chromosome analysis of five cases of PSTT with literature support suggests a unique genetic basis for the development of PSTT that involves the paternal X chromosome .
+Although largely speculative , an active paternal X chromosome may be of importance in the pathogenesis of PSTT .
+******************************* END ABSTRACT 10879746 ***********************************************
+
+</xsl:text>
+<xsl:value-of select="mmax:endSuperscript()"/>
+<xsl:value-of select="mmax:endItalic()"/>
+
+</xsl:when>
+
+
+<xsl:otherwise>
+ <xsl:value-of select="mmax:registerDiscourseElement(@id)"/>
+  <xsl:apply-templates select="mmax:getStartedMarkables(@id)" mode="opening"/>
+  <xsl:value-of select="mmax:setDiscourseElementStart()"/>
+ <xsl:apply-templates/>
+  <xsl:value-of select="mmax:setDiscourseElementEnd()"/>
+  <xsl:apply-templates select="mmax:getEndedMarkables(@id)" mode="closing"/>
+<xsl:text> </xsl:text>
+</xsl:otherwise>
+
+</xsl:choose>
+</xsl:template>
+
+<xsl:template match="organism:markable" mode="opening">
+<xsl:value-of select="mmax:startBold()"/>
+<xsl:value-of select="mmax:addLeftMarkableHandle(@mmax_level, @id, '[')"/>
+<xsl:value-of select="mmax:endBold()"/>
+</xsl:template>
+
+<xsl:template match="organism:markable" mode="closing">
+<xsl:value-of select="mmax:startBold()"/>
+<xsl:value-of select="mmax:addRightMarkableHandle(@mmax_level, @id, ']')"/>
+<xsl:value-of select="mmax:endBold()"/>
+</xsl:template>
+</xsl:stylesheet>
+                
+                
+                   
+

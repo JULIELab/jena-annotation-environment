@@ -1,0 +1,5 @@
+JAMA is a basic linear algebra package for Java. JANE uses JAME to estimated
+the AL selection times.
+
+JAME is a cooperative product of The MathWorks and the National Institute of Standards and Technology (NIST) which has been released to the public domain.
+Check their website for more information: http://math.nist.gov/javanumerics/jama/

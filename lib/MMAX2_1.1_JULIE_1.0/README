@@ -1,0 +1,9 @@
+This is a copy of MMAX2_1.1 which can also be obtained from
+http://mmax2.sourceforge.net/
+
+This folder also contains external Apache libraries which are needed by MMAX2. The
+respective license conditions are stored in the following files:
+
+* jakarta-oro-2.0.8_LICENSE
+* xalan-j_2_4_D1_LICENSE
+* xerces-2_0_2_LICENSE

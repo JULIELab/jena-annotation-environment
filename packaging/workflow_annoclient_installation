@@ -1,0 +1,7 @@
+* get JANE-annoclient-1.5.tgz
+* extract somewhere
+* get MMAX JULIE Version
+* go to lib dir of JANE, extract MMAX there
+* get our settings (database and activelearnig)
+* copy to settings directory
+* go to dir scripts, run configAnnoClient.sh

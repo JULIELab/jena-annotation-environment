@@ -1,0 +1,9 @@
+for the tok and pos corpora:
+/data/data_corpora/genomics/StemNet/abstractsVersion2/annotations/entities/training
+
+there are 222753 abstracts
+
+use the subdirectories pos and tok
+
+the respective bincorpus is here:
+/data/data_corpora/genomics/StemNet/abstractsVersion2/annotations/cd_antigens/bincorpus/corpus.bin

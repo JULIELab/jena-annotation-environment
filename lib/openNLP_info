@@ -1,0 +1,7 @@
+openNLP is a collection of NLP tools. 
+
+Here, the POS tagger is used for one deployment mode in the administration
+GUI.
+
+References:
+* http://opennlp.sourceforge.net/

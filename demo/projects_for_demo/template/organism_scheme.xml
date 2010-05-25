@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<annotationscheme>
+
+  <attribute id="organism" name="organism" text="" type="nominal_button">
+    <value id="unspecified_organism" name="unspecified_organism"/>
+    <value id="TaxID:9606" name="human"/>
+    <value id="TaxID:10090" name="mouse"/>
+    <!-- =Mus Musculus-->
+    <value id="TaxID:10116" name="rat"/>
+    <!-- =Rattus Norvegicus. Rattus: TaxID:10114-->
+    <value id="TaxID:7215" name="drosophila" text="Any drosophila, not only D.melanogaster!"/>
+    <!-- =Drosophila allg., nicht melanogaster!-->
+    <value id="TaxID:4932" name="s_cerevisiae"/>
+    <!-- =Saccheromyces Cerevisiae. Nicht allg. Hefe!-->
+    <value id="TaxID:562" name="e_coli"/>
+<!--    <value id="TaxID:40674" name="mammal"/>-->
+    <value id="TaxID:33208" name="animal"/>
+    <value id="TaxID:3193" name="plant"/>
+    <value id="TaxID:4751" name="fungi"/>
+    <!--<value id="TaxID:2" name="bacterium"/>-->
+    <!--<value id="TaxID:2157" name="archebacterium"/>-->
+    <value id="TaxID:2759" name="eukaryote"/>
+    <value id="prokaryote" name="prokaryote"/>
+    <!--Statt Prokaryote koennte auch Bacterium+Archebacterium verwendet werden -->
+    <value id="TaxID:10239" name="virus"/>
+   </attribute>
+
+</annotationscheme>
+
+
+

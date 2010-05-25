@@ -1,0 +1,1063 @@
+<xsl:stylesheet xmlns:xsl="http://www.w3.org/1999/XSL/Transform" version="1.0"
+xmlns:mmax="org.eml.MMAX2.discourse.MMAX2DiscourseLoader"
+xmlns:bioentity="www.eml.org/NameSpaces/bioentity">
+<xsl:output method="text" indent="yes" omit-xml-declaration="yes"/>
+<xsl:strip-space elements="*"/>
+
+<xsl:template match="words">
+<xsl:apply-templates/>
+</xsl:template>
+
+<xsl:template match="word">
+<xsl:choose>
+
+<xsl:when test="@id='word_1'">
+<xsl:value-of select="mmax:startItalic()"/>
+<xsl:value-of select="mmax:startSuperscript()"/>
+<xsl:text>
+***************************** BEGIN ABSTRACT 11869688 ***********************************************
+Constitutive expression of PU.1 in fetal hematopoietic progenitors blocks T cell development at the pro - T cell stage .
+The essential hematopoietic transcription factor PU.1 is expressed in multipotent thymic precursors but downregulated during T lineage commitment .
+The significance of PU.1 downregulation was tested using retroviral vectors to force hematopoietic precursors to maintain PU.1 expression during differentiation in fetal thymic organ culture .
+PU.1 reduced thymocyte expansion and blocked development at the pro - T cell stage .
+PU.1 - expressing cells could be rescued by switching to conditions permissive for macrophage development ; thus , the inhibition depends on both lineage and developmental stage .
+
+</xsl:text>
+<xsl:value-of select="mmax:endSuperscript()"/>
+<xsl:value-of select="mmax:endItalic()"/>
+
+<xsl:value-of select="mmax:registerDiscourseElement(@id)"/>
+  <xsl:apply-templates select="mmax:getStartedMarkables(@id)" mode="opening"/>
+  <xsl:value-of select="mmax:setDiscourseElementStart()"/>
+   <xsl:apply-templates/>
+  <xsl:value-of select="mmax:setDiscourseElementEnd()"/>
+  <xsl:apply-templates select="mmax:getEndedMarkables(@id)" mode="closing"/>
+  <xsl:text> </xsl:text>
+
+</xsl:when>
+
+<xsl:when test="@id='word_11'">
+
+<xsl:value-of select="mmax:registerDiscourseElement(@id)"/>
+  <xsl:apply-templates select="mmax:getStartedMarkables(@id)" mode="opening"/>
+  <xsl:value-of select="mmax:setDiscourseElementStart()"/>
+   <xsl:apply-templates/>
+  <xsl:value-of select="mmax:setDiscourseElementEnd()"/>
+  <xsl:apply-templates select="mmax:getEndedMarkables(@id)" mode="closing"/>
+  <xsl:text> </xsl:text>
+
+<xsl:value-of select="mmax:startItalic()"/>
+<xsl:value-of select="mmax:startSuperscript()"/>
+<xsl:text>
+
+PU.1 expression can downregulate pre - Talpha , Rag-1 , and Rag-2 in a dose - dependent manner , and higher PU.1 levels induce Mac-1 and Id-2 .
+Thus , downregulation of PU.1 is specifically required for progression in the T cell lineage .
+******************************* END ABSTRACT 11869688 ***********************************************
+
+</xsl:text>
+<xsl:value-of select="mmax:endSuperscript()"/>
+<xsl:value-of select="mmax:endItalic()"/>
+
+</xsl:when>
+
+<xsl:when test="@id='word_12'">
+<xsl:value-of select="mmax:startItalic()"/>
+<xsl:value-of select="mmax:startSuperscript()"/>
+<xsl:text>
+***************************** BEGIN ABSTRACT 8964076 ***********************************************
+Suppression of experimental autoimmune uveitis in Lewis rats by oral administration of recombinant Escherichia coli expressing retinal S-antigen .
+
+</xsl:text>
+<xsl:value-of select="mmax:endSuperscript()"/>
+<xsl:value-of select="mmax:endItalic()"/>
+
+<xsl:value-of select="mmax:registerDiscourseElement(@id)"/>
+  <xsl:apply-templates select="mmax:getStartedMarkables(@id)" mode="opening"/>
+  <xsl:value-of select="mmax:setDiscourseElementStart()"/>
+   <xsl:apply-templates/>
+  <xsl:value-of select="mmax:setDiscourseElementEnd()"/>
+  <xsl:apply-templates select="mmax:getEndedMarkables(@id)" mode="closing"/>
+  <xsl:text> </xsl:text>
+
+</xsl:when>
+
+<xsl:when test="@id='word_43'">
+
+<xsl:value-of select="mmax:registerDiscourseElement(@id)"/>
+  <xsl:apply-templates select="mmax:getStartedMarkables(@id)" mode="opening"/>
+  <xsl:value-of select="mmax:setDiscourseElementStart()"/>
+   <xsl:apply-templates/>
+  <xsl:value-of select="mmax:setDiscourseElementEnd()"/>
+  <xsl:apply-templates select="mmax:getEndedMarkables(@id)" mode="closing"/>
+  <xsl:text> </xsl:text>
+
+<xsl:value-of select="mmax:startItalic()"/>
+<xsl:value-of select="mmax:startSuperscript()"/>
+<xsl:text>
+
+S-antigen , a photoreceptor cell protein , is highly efficient in inducing EAU showing severe inflammation of the uveal tract and retina of the eye .
+We have demonstrated previously that recombinant Escherichia coli expressing retinal S-antigen induces EAU in Lewis rats .
+The oral administration of S-antigen prior to the uveitopathogenic challenge results in significant suppression of the disease and of the cellular responses .
+We examined the effect of oral administration of E. coli expressing retinal S-antigen on the development of EAU induced with native S-antigen in Lewis rats .
+Feeding rats with 1 mg of bacteria on Days 7 , 5 , 3 , 2 and 1 prior to immunization with 50 micrograms of retinal S-antigen caused a significant suppression of the disease .
+Moderate suppression was found in animals fed 0.5 and 0.25 mg of recombinant bacteria .
+Oral feeding of 1 mg of JM105 transfected with plasmid alone had no significant effect on the subsequent induction of EAU by S-antigen .
+Feeding recombinant E. coli expressing retinal S-antigen before immunization significantly decreased the proliferative response of lymphocytes to native S-antigen in vitro .
+Our results indicate that recombinant microorganism - expressing autoantigen administered orally induces suppression of specific autoimmune disease as well as cellular response to particular autoantigen .
+******************************* END ABSTRACT 8964076 ***********************************************
+
+</xsl:text>
+<xsl:value-of select="mmax:endSuperscript()"/>
+<xsl:value-of select="mmax:endItalic()"/>
+
+</xsl:when>
+
+<xsl:when test="@id='word_44'">
+<xsl:value-of select="mmax:startItalic()"/>
+<xsl:value-of select="mmax:startSuperscript()"/>
+<xsl:text>
+***************************** BEGIN ABSTRACT 10220263 ***********************************************
+IgG titer , subclass , and light - chain phenotype of pregnancy - induced HPA-5b antibodies that cause or do not cause neonatal alloimmune thrombocytopenia .
+BACKGROUND :
+
+</xsl:text>
+<xsl:value-of select="mmax:endSuperscript()"/>
+<xsl:value-of select="mmax:endItalic()"/>
+
+<xsl:value-of select="mmax:registerDiscourseElement(@id)"/>
+  <xsl:apply-templates select="mmax:getStartedMarkables(@id)" mode="opening"/>
+  <xsl:value-of select="mmax:setDiscourseElementStart()"/>
+   <xsl:apply-templates/>
+  <xsl:value-of select="mmax:setDiscourseElementEnd()"/>
+  <xsl:apply-templates select="mmax:getEndedMarkables(@id)" mode="closing"/>
+  <xsl:text> </xsl:text>
+
+</xsl:when>
+
+<xsl:when test="@id='word_56'">
+
+<xsl:value-of select="mmax:registerDiscourseElement(@id)"/>
+  <xsl:apply-templates select="mmax:getStartedMarkables(@id)" mode="opening"/>
+  <xsl:value-of select="mmax:setDiscourseElementStart()"/>
+   <xsl:apply-templates/>
+  <xsl:value-of select="mmax:setDiscourseElementEnd()"/>
+  <xsl:apply-templates select="mmax:getEndedMarkables(@id)" mode="closing"/>
+  <xsl:text> </xsl:text>
+
+<xsl:value-of select="mmax:startItalic()"/>
+<xsl:value-of select="mmax:startSuperscript()"/>
+<xsl:text>
+
+Neonatal alloimmune thrombocytopenia that results from anti - HPA-5b may cause severe hemorrhage in only a few infants , but the sequelae for the affected children can be severe .
+It is therefore essential that infants at risk for neonatal alloimmune thrombocytopenia are identified .
+STUDY DESIGN AND METHODS :
+The IgG titer , subclass , and light - chain composition of pregnancy - induced anti - HPA-5b were determined by the monoclonal antibody - specific immobilization of platelet antigens assay .
+Sera were from 12 mothers , who among them had 16 pregnancies that resulted in an HPA-5-mismatched fetus ( positive for HPA-5b ) .
+Eight mothers gave birth to an infant with a normal platelet count .
+Three maternal sera were obtained after delivery of a severely thrombocytopenic infant .
+Three alloimmunized women were followed repeatedly during the course of a subsequent pregnancy , again with an HPA-5-mismatched infant .
+RESULTS :
+There was no difference in the antibody titer or its subclass in mothers who had a thrombocytopenic child and the titer or subclass in mothers compared with those who had a child with a normal platelet count .
+All pregnancy - induced HPA-5b antibodies were of a predominant , lambda , light - chain type .
+The IgG subclass did not change during pregnancy .
+CONCLUSION :
+Neither the antibody titer nor the subclass composition predict the occurrence of thrombocytopenia in a newborn whose mother is alloimmunized against HPA-5b .
+******************************* END ABSTRACT 10220263 ***********************************************
+
+</xsl:text>
+<xsl:value-of select="mmax:endSuperscript()"/>
+<xsl:value-of select="mmax:endItalic()"/>
+
+</xsl:when>
+
+<xsl:when test="@id='word_57'">
+<xsl:value-of select="mmax:startItalic()"/>
+<xsl:value-of select="mmax:startSuperscript()"/>
+<xsl:text>
+***************************** BEGIN ABSTRACT 15558045 ***********************************************
+Adoptive transfer of small numbers of DX5 + cells alleviates graft - versus - host disease in a murine model of semiallogeneic bone marrow transplantation : a potential role for NKT lymphocytes .
+
+</xsl:text>
+<xsl:value-of select="mmax:endSuperscript()"/>
+<xsl:value-of select="mmax:endItalic()"/>
+
+<xsl:value-of select="mmax:registerDiscourseElement(@id)"/>
+  <xsl:apply-templates select="mmax:getStartedMarkables(@id)" mode="opening"/>
+  <xsl:value-of select="mmax:setDiscourseElementStart()"/>
+   <xsl:apply-templates/>
+  <xsl:value-of select="mmax:setDiscourseElementEnd()"/>
+  <xsl:apply-templates select="mmax:getEndedMarkables(@id)" mode="closing"/>
+  <xsl:text> </xsl:text>
+
+</xsl:when>
+
+<xsl:when test="@id='word_75'">
+
+<xsl:value-of select="mmax:registerDiscourseElement(@id)"/>
+  <xsl:apply-templates select="mmax:getStartedMarkables(@id)" mode="opening"/>
+  <xsl:value-of select="mmax:setDiscourseElementStart()"/>
+   <xsl:apply-templates/>
+  <xsl:value-of select="mmax:setDiscourseElementEnd()"/>
+  <xsl:apply-templates select="mmax:getEndedMarkables(@id)" mode="closing"/>
+  <xsl:text> </xsl:text>
+
+<xsl:value-of select="mmax:startItalic()"/>
+<xsl:value-of select="mmax:startSuperscript()"/>
+<xsl:text>
+
+Our aim was to evaluate the effect of transplantation of NKT lymphocytes on graft versus host disease ( GVHD ) in a murine model of semiallogeneic BMT .
+GVHD was generated by infusion of 2 x 107 splenocytes from C57BL/6 donor mice into irradiated ( C57BL/6 x Balb / c ) F1 recipient mice .
+Adoptive transfer of increasing numbers of DX5 + cells was performed .
+Recipient mice were followed for histological parameters of GVHD - associated liver , bowel , and cutaneous injury .
+Intrahepatic and intrasplenic lymphocytes were isolated and analyzed by FACS for CD4 + and CD8 + subpopulations .
+It was seen that adoptive transfer of 4.5 x 106 DX5 + cells significantly alleviated GVHD - related hepatic , bowel , and cutaneous injury , and improved survival ( 85 % survival on day 28 ) .
+In contrast , depletion of DX5 + cells led to severe GVHD - associated multiorgan injury and 100 % mortality .
+A direct correlation with the number of transplanted DX5 + cells was noted ( maximal effect with transplantation of 4.5 x 106 DX5 + cells ) .
+Tolerance induction was associated with an increased peripheral CD4 / CD8 ratio , intrahepatic trapping of CD8 lymphocytes and a shift towards a Th2 - type cytokine profile , manifested by decreased IL-12 / IL10 , IL-12 / IL-4 , IFNgamma / IL-10 , and IFNgamma / IL-4 ratios .
+Transplantation of DX5 + cells holds promise as a novel therapeutic measure for GVHD .
+******************************* END ABSTRACT 15558045 ***********************************************
+
+</xsl:text>
+<xsl:value-of select="mmax:endSuperscript()"/>
+<xsl:value-of select="mmax:endItalic()"/>
+
+</xsl:when>
+
+<xsl:when test="@id='word_76'">
+<xsl:value-of select="mmax:startItalic()"/>
+<xsl:value-of select="mmax:startSuperscript()"/>
+<xsl:text>
+***************************** BEGIN ABSTRACT 9920855 ***********************************************
+The novel synthetic retinoid 6-[3-adamantyl-4-hydroxyphenyl]-2-naphthalene carboxylic acid ( CD437 ) causes apoptosis in acute promyelocytic leukemia cells through rapid activation of caspases .
+The synthetic retinoid 6-[3-adamantyl-4-hydroxyphenyl]-2-naphthalene carboxylic acid ( CD437 ) , which was originally developed as an retinoic acid receptor ( RAR ) - gamma agonist , induces rapid apoptosis in all - trans retinoic acid ( ATRA ) - sensitive and ATRA - resistant clones of the NB4 cell line , a widely used experimental model of acute promyelocytic leukemia ( APL ) .
+In addition , the compound is apoptogenic in primary cultures of freshly isolated APL blasts obtained from a newly diagnosed case and an ATRA - resistant relapsed patient .
+NB4 cells in the S-phase of the cycle are most sensitive to CD437 - triggered apoptosis .
+CD437 - dependent apoptosis does not require de novo protein synthesis and activation of RAR-gamma or any of the other nuclear retinoic acid receptors .
+
+</xsl:text>
+<xsl:value-of select="mmax:endSuperscript()"/>
+<xsl:value-of select="mmax:endItalic()"/>
+
+<xsl:value-of select="mmax:registerDiscourseElement(@id)"/>
+  <xsl:apply-templates select="mmax:getStartedMarkables(@id)" mode="opening"/>
+  <xsl:value-of select="mmax:setDiscourseElementStart()"/>
+   <xsl:apply-templates/>
+  <xsl:value-of select="mmax:setDiscourseElementEnd()"/>
+  <xsl:apply-templates select="mmax:getEndedMarkables(@id)" mode="closing"/>
+  <xsl:text> </xsl:text>
+
+</xsl:when>
+
+<xsl:when test="@id='word_102'">
+
+<xsl:value-of select="mmax:registerDiscourseElement(@id)"/>
+  <xsl:apply-templates select="mmax:getStartedMarkables(@id)" mode="opening"/>
+  <xsl:value-of select="mmax:setDiscourseElementStart()"/>
+   <xsl:apply-templates/>
+  <xsl:value-of select="mmax:setDiscourseElementEnd()"/>
+  <xsl:apply-templates select="mmax:getEndedMarkables(@id)" mode="closing"/>
+  <xsl:text> </xsl:text>
+
+<xsl:value-of select="mmax:startItalic()"/>
+<xsl:value-of select="mmax:startSuperscript()"/>
+<xsl:text>
+
+Increased caspase activity correlates with caspase-3 and caspase-7 activation .
+Inhibition of caspases by z-VAD suppresses the nuclear DNA degradation observed in NB4 cells treated with CD437 , as well as the degradation of pro-caspase-3 and pro-caspase-7 .
+CD437 - dependent activation of caspases is preceded by release of cytochrome c from the mitochondria into the cytosol of treated cells .
+Leakage of cytochrome c lays upstream of caspase activation , because the phenomenon is left unaffected by pretreatment of NB4 cells with z-VAD .
+Treatment of APL cells with CD437 is associated with a caspase - dependent degradation of promyelocytic leukemia-RAR-alpha , which can be completely inhibited by z-VAD .
+******************************* END ABSTRACT 9920855 ***********************************************
+
+</xsl:text>
+<xsl:value-of select="mmax:endSuperscript()"/>
+<xsl:value-of select="mmax:endItalic()"/>
+
+</xsl:when>
+
+<xsl:when test="@id='word_103'">
+<xsl:value-of select="mmax:startItalic()"/>
+<xsl:value-of select="mmax:startSuperscript()"/>
+<xsl:text>
+***************************** BEGIN ABSTRACT 7658909 ***********************************************
+Cytokine - to - brain communication : a review &amp; analysis of alternative mechanisms .
+It is becoming well accepted that products of the immune system ( cytokines ) can signal the brain that infection has occurred .
+This cytokine - to - brain communication can result in marked alterations in brain function and behavior .
+This review examines alternative mechanisms that have been proposed to explain how such immune products can reach the brain via the blood to cause centrally - mediated &quot; illness &quot; responses .
+
+</xsl:text>
+<xsl:value-of select="mmax:endSuperscript()"/>
+<xsl:value-of select="mmax:endItalic()"/>
+
+<xsl:value-of select="mmax:registerDiscourseElement(@id)"/>
+  <xsl:apply-templates select="mmax:getStartedMarkables(@id)" mode="opening"/>
+  <xsl:value-of select="mmax:setDiscourseElementStart()"/>
+   <xsl:apply-templates/>
+  <xsl:value-of select="mmax:setDiscourseElementEnd()"/>
+  <xsl:apply-templates select="mmax:getEndedMarkables(@id)" mode="closing"/>
+  <xsl:text> </xsl:text>
+
+</xsl:when>
+
+<xsl:when test="@id='word_136'">
+
+<xsl:value-of select="mmax:registerDiscourseElement(@id)"/>
+  <xsl:apply-templates select="mmax:getStartedMarkables(@id)" mode="opening"/>
+  <xsl:value-of select="mmax:setDiscourseElementStart()"/>
+   <xsl:apply-templates/>
+  <xsl:value-of select="mmax:setDiscourseElementEnd()"/>
+  <xsl:apply-templates select="mmax:getEndedMarkables(@id)" mode="closing"/>
+  <xsl:text> </xsl:text>
+
+<xsl:value-of select="mmax:startItalic()"/>
+<xsl:value-of select="mmax:startSuperscript()"/>
+<xsl:text>
+
+******************************* END ABSTRACT 7658909 ***********************************************
+
+</xsl:text>
+<xsl:value-of select="mmax:endSuperscript()"/>
+<xsl:value-of select="mmax:endItalic()"/>
+
+</xsl:when>
+
+<xsl:when test="@id='word_137'">
+<xsl:value-of select="mmax:startItalic()"/>
+<xsl:value-of select="mmax:startSuperscript()"/>
+<xsl:text>
+***************************** BEGIN ABSTRACT 10586120 ***********************************************
+Tumor necrosis factor is required for the priming of peritoneal macrophages by trehalose dimycolate .
+Trehalose dimycolate ( TDM ) , a glycolipid present in the cell wall of Mycobacterium spp. , is a powerful immunostimulant .
+We have developed an original model of macrophage activation where TDM is injected in vivo to prime peritoneal macrophages .
+These primed macrophages do not express inducible NO synthase ( NOS II ) , however , they can be fully activated , i.e. induced to express NOS II and to develop a NOS II - dependent antiproliferative activity , following in vitro exposure to low concentrations of LPS .
+
+</xsl:text>
+<xsl:value-of select="mmax:endSuperscript()"/>
+<xsl:value-of select="mmax:endItalic()"/>
+
+<xsl:value-of select="mmax:registerDiscourseElement(@id)"/>
+  <xsl:apply-templates select="mmax:getStartedMarkables(@id)" mode="opening"/>
+  <xsl:value-of select="mmax:setDiscourseElementStart()"/>
+   <xsl:apply-templates/>
+  <xsl:value-of select="mmax:setDiscourseElementEnd()"/>
+  <xsl:apply-templates select="mmax:getEndedMarkables(@id)" mode="closing"/>
+  <xsl:text> </xsl:text>
+
+</xsl:when>
+
+<xsl:when test="@id='word_161'">
+
+<xsl:value-of select="mmax:registerDiscourseElement(@id)"/>
+  <xsl:apply-templates select="mmax:getStartedMarkables(@id)" mode="opening"/>
+  <xsl:value-of select="mmax:setDiscourseElementStart()"/>
+   <xsl:apply-templates/>
+  <xsl:value-of select="mmax:setDiscourseElementEnd()"/>
+  <xsl:apply-templates select="mmax:getEndedMarkables(@id)" mode="closing"/>
+  <xsl:text> </xsl:text>
+
+<xsl:value-of select="mmax:startItalic()"/>
+<xsl:value-of select="mmax:startSuperscript()"/>
+<xsl:text>
+
+In the present paper , we investigated the role of TNF in the priming of macrophages by TDM .
+By semi - quantitative RT - PCR , we have shown that TDM injection induced transcription of TNF-alpha in peritoneal cells .
+TNF-mRNA levels peaked 5 hours after TDM injection and remained elevated for at least 32 hours .
+TNF expression was absolutely necessary for macrophage priming , as injection of an anti - TNF monoclonal antibody , 4 h before and 20 hours after TDM injection , prevented LPS - dependent activation of macrophages in vitro .
+This result was confirmed by the inability of TDM to prime macrophages from LT-alpha / TNF-alpha knockout ( LT / TNFKO ) mice .
+In addition , analysis of LT / TNFKO mice treated with TDM revealed that induction of the IL-12 transcript in their peritoneal cells and expression of a functional NADPH oxidase in macrophages are TNF - independent events .
+******************************* END ABSTRACT 10586120 ***********************************************
+
+</xsl:text>
+<xsl:value-of select="mmax:endSuperscript()"/>
+<xsl:value-of select="mmax:endItalic()"/>
+
+</xsl:when>
+
+<xsl:when test="@id='word_162'">
+<xsl:value-of select="mmax:startItalic()"/>
+<xsl:value-of select="mmax:startSuperscript()"/>
+<xsl:text>
+***************************** BEGIN ABSTRACT 15550123 ***********************************************
+Challenges facing adjuvants for cancer immunotherapy .
+
+</xsl:text>
+<xsl:value-of select="mmax:endSuperscript()"/>
+<xsl:value-of select="mmax:endItalic()"/>
+
+<xsl:value-of select="mmax:registerDiscourseElement(@id)"/>
+  <xsl:apply-templates select="mmax:getStartedMarkables(@id)" mode="opening"/>
+  <xsl:value-of select="mmax:setDiscourseElementStart()"/>
+   <xsl:apply-templates/>
+  <xsl:value-of select="mmax:setDiscourseElementEnd()"/>
+  <xsl:apply-templates select="mmax:getEndedMarkables(@id)" mode="closing"/>
+  <xsl:text> </xsl:text>
+
+</xsl:when>
+
+<xsl:when test="@id='word_182'">
+
+<xsl:value-of select="mmax:registerDiscourseElement(@id)"/>
+  <xsl:apply-templates select="mmax:getStartedMarkables(@id)" mode="opening"/>
+  <xsl:value-of select="mmax:setDiscourseElementStart()"/>
+   <xsl:apply-templates/>
+  <xsl:value-of select="mmax:setDiscourseElementEnd()"/>
+  <xsl:apply-templates select="mmax:getEndedMarkables(@id)" mode="closing"/>
+  <xsl:text> </xsl:text>
+
+<xsl:value-of select="mmax:startItalic()"/>
+<xsl:value-of select="mmax:startSuperscript()"/>
+<xsl:text>
+
+Based on this general definition many authors have postulated that the ideal adjuvant should increase the potency of the immune response , while being non - toxic and safe .
+Although dozens of different adjuvants have been shown to be effective in preclinical and clinical studies , only aluminium - based salts ( Alum ) and squalene - oil - water emulsion ( MF59 ) have been approved for human use .
+However , for the development of therapeutic vaccines to treat cancer patients , the prerequisites for an ideal cancer adjuvant differ from conventional adjuvants for many reasons .
+First , the patients that will receive the vaccines are immuno - compromised because of , for example , impaired mechanisms of antigen presentation , non - responsiveness of activated T cells and enhanced inhibition of self - reactivity by regulatory T cells .
+Second , the tumour Ag are usually self - derived and are , therefore , poorly immunogenic .
+Third , tumours develop escape mechanisms to avoid the immune system , such as tumour editing , low or non - expression of MHC class I molecules or secretion of suppressive cytokines .
+Thus , adjuvants for cancer vaccines need to be more potent than for prophylactic vaccines and consequently may be more toxic and may even induce autoimmune reactions .
+In summary , the ideal cancer adjuvant should rescue and increase the immune response against tumours in immuno - compromised patients , with acceptable profiles of toxicity and safety .
+The present review discusses the role of cancer adjuvants at the different phases of the generation of antitumour immunity following vaccination .
+******************************* END ABSTRACT 15550123 ***********************************************
+
+</xsl:text>
+<xsl:value-of select="mmax:endSuperscript()"/>
+<xsl:value-of select="mmax:endItalic()"/>
+
+</xsl:when>
+
+<xsl:when test="@id='word_183'">
+<xsl:value-of select="mmax:startItalic()"/>
+<xsl:value-of select="mmax:startSuperscript()"/>
+<xsl:text>
+***************************** BEGIN ABSTRACT 8911005 ***********************************************
+Kinetics of humoral antibody response to trivalent inactivated split influenza vaccine in subjects previously vaccinated or vaccinated for the first time .
+We studied differences in immune responses after first time immunization with a trivalent inactivated split influenza vaccine , or after vaccination in the preceding year , in 42 healthy volunteers ( 40 +/- 13 years ) .
+Sequential serum samples were collected over 40 weeks .
+
+</xsl:text>
+<xsl:value-of select="mmax:endSuperscript()"/>
+<xsl:value-of select="mmax:endItalic()"/>
+
+<xsl:value-of select="mmax:registerDiscourseElement(@id)"/>
+  <xsl:apply-templates select="mmax:getStartedMarkables(@id)" mode="opening"/>
+  <xsl:value-of select="mmax:setDiscourseElementStart()"/>
+   <xsl:apply-templates/>
+  <xsl:value-of select="mmax:setDiscourseElementEnd()"/>
+  <xsl:apply-templates select="mmax:getEndedMarkables(@id)" mode="closing"/>
+  <xsl:text> </xsl:text>
+
+</xsl:when>
+
+<xsl:when test="@id='word_198'">
+
+<xsl:value-of select="mmax:registerDiscourseElement(@id)"/>
+  <xsl:apply-templates select="mmax:getStartedMarkables(@id)" mode="opening"/>
+  <xsl:value-of select="mmax:setDiscourseElementStart()"/>
+   <xsl:apply-templates/>
+  <xsl:value-of select="mmax:setDiscourseElementEnd()"/>
+  <xsl:apply-templates select="mmax:getEndedMarkables(@id)" mode="closing"/>
+  <xsl:text> </xsl:text>
+
+<xsl:value-of select="mmax:startItalic()"/>
+<xsl:value-of select="mmax:startSuperscript()"/>
+<xsl:text>
+
+Subjects vaccinated for the first time had higher response rates and meanfold antibody increases than those vaccinated previously .
+Both groups had protective antibody titres 59 % 7 days after vaccination and 70 % of vaccinees maintained protective antibody titres after 280 days .
+The results corroborate earlier findings on the rapid immune response and may have a bearing on future vaccination policy .
+******************************* END ABSTRACT 8911005 ***********************************************
+
+</xsl:text>
+<xsl:value-of select="mmax:endSuperscript()"/>
+<xsl:value-of select="mmax:endItalic()"/>
+
+</xsl:when>
+
+<xsl:when test="@id='word_199'">
+<xsl:value-of select="mmax:startItalic()"/>
+<xsl:value-of select="mmax:startSuperscript()"/>
+<xsl:text>
+***************************** BEGIN ABSTRACT 7691616 ***********************************************
+CD21 expressed on basophilic cells is involved in histamine release triggered by CD23 and anti - CD21 antibodies .
+
+</xsl:text>
+<xsl:value-of select="mmax:endSuperscript()"/>
+<xsl:value-of select="mmax:endItalic()"/>
+
+<xsl:value-of select="mmax:registerDiscourseElement(@id)"/>
+  <xsl:apply-templates select="mmax:getStartedMarkables(@id)" mode="opening"/>
+  <xsl:value-of select="mmax:setDiscourseElementStart()"/>
+   <xsl:apply-templates/>
+  <xsl:value-of select="mmax:setDiscourseElementEnd()"/>
+  <xsl:apply-templates select="mmax:getEndedMarkables(@id)" mode="closing"/>
+  <xsl:text> </xsl:text>
+
+</xsl:when>
+
+<xsl:when test="@id='word_226'">
+
+<xsl:value-of select="mmax:registerDiscourseElement(@id)"/>
+  <xsl:apply-templates select="mmax:getStartedMarkables(@id)" mode="opening"/>
+  <xsl:value-of select="mmax:setDiscourseElementStart()"/>
+   <xsl:apply-templates/>
+  <xsl:value-of select="mmax:setDiscourseElementEnd()"/>
+  <xsl:apply-templates select="mmax:getEndedMarkables(@id)" mode="closing"/>
+  <xsl:text> </xsl:text>
+
+<xsl:value-of select="mmax:startItalic()"/>
+<xsl:value-of select="mmax:startSuperscript()"/>
+<xsl:text>
+
+Based on our recent finding that CD23 interacts with CD21 on subsets of B and T cells , we investigated if the same ligand was involved on KU 812 cells .
+An anti - CD21 monoclonal antibody ( mAb ) BU - 33 , was able to totally block CD23 - liposome binding to KU 812 cells .
+Moreover , KU 812 cells express CD21 mRNA and have a cell surface molecule that reacts with anti - CD21 mAb .
+The CD23 / CD21 interaction was not merely physical but was also associated with an increase in histamine release by KU 812 cells .
+Both recombinant soluble CD23 and an anti - CD21 mAb - mediated effect on histamine release was not restricted to and anti - CD21 mAb - mediated effect on histamine release was not restricted to the leukemic cell line , but was also observed with normal human blood basophils .
+These data demonstrate that CD21 is expressed on basophilic cells and that CD21 controls histamine production upon ligand - induced stimulation ( CD23 or anti - CD21 mAb ) .
+******************************* END ABSTRACT 7691616 ***********************************************
+
+</xsl:text>
+<xsl:value-of select="mmax:endSuperscript()"/>
+<xsl:value-of select="mmax:endItalic()"/>
+
+</xsl:when>
+
+<xsl:when test="@id='word_227'">
+<xsl:value-of select="mmax:startItalic()"/>
+<xsl:value-of select="mmax:startSuperscript()"/>
+<xsl:text>
+***************************** BEGIN ABSTRACT 9933849 ***********************************************
+Screening of blood donors for human parvovirus B19 and characterization of the results .
+BACKGROUND AND OBJECTIVES :
+
+</xsl:text>
+<xsl:value-of select="mmax:endSuperscript()"/>
+<xsl:value-of select="mmax:endItalic()"/>
+
+<xsl:value-of select="mmax:registerDiscourseElement(@id)"/>
+  <xsl:apply-templates select="mmax:getStartedMarkables(@id)" mode="opening"/>
+  <xsl:value-of select="mmax:setDiscourseElementStart()"/>
+   <xsl:apply-templates/>
+  <xsl:value-of select="mmax:setDiscourseElementEnd()"/>
+  <xsl:apply-templates select="mmax:getEndedMarkables(@id)" mode="closing"/>
+  <xsl:text> </xsl:text>
+
+</xsl:when>
+
+<xsl:when test="@id='word_245'">
+
+<xsl:value-of select="mmax:registerDiscourseElement(@id)"/>
+  <xsl:apply-templates select="mmax:getStartedMarkables(@id)" mode="opening"/>
+  <xsl:value-of select="mmax:setDiscourseElementStart()"/>
+   <xsl:apply-templates/>
+  <xsl:value-of select="mmax:setDiscourseElementEnd()"/>
+  <xsl:apply-templates select="mmax:getEndedMarkables(@id)" mode="closing"/>
+  <xsl:text> </xsl:text>
+
+<xsl:value-of select="mmax:startItalic()"/>
+<xsl:value-of select="mmax:startSuperscript()"/>
+<xsl:text>
+
+In a previous report , we utilized the simple hemagglutination method based on the interaction between the B19 virus and P antigen on human erythrocytes in order to screen the blood donors .
+We called this method receptor - mediated hemagglutination ( RHA ) [ Lancet 1995 ; 346 : 1237 - 1238 ] .
+In this paper , we report on a large - scale screening of the B19 virus by RHA and discuss the results .
+MATERIALS AND METHODS :
+Donor sera from September 1995 to March 1997 and seroconversion panels were enrolled .
+Donor sera were examined by RHA for large - scale screening .
+The positive sera in the first screening were then further investigated by the RHA inhibition test , countercurrent immunoelectrophoresis ( CIE ) , an enzyme - linked immunosorbent assay , and polymerase chain reaction ( PCR ) .
+We also evaluated the infectivity and neutralizing activity of various kinds of sera by the erythroid colony forming unit ( CFU-e ) assay .
+To examine the detection limits of the B19 virus by RHA , B19 - viremic sera were purified by sucrose gradient ultracentrifugation .
+RESULTS :
+Among 257 , 710 sera specimens , 293 sera ( 0.11 % ) gave a positive reaction in the first screening using RHA .
+Out of these 293 sera specimens , 31 were positive for PCR , of which 28 were also RHA inhibition - positive , and 25 of the 28 CIE - positive .
+In the CFU - e injury assay , all the RHA inhibition (+) sera showed a decrease in the number of erythroid colonies .
+The RHA inhibition (-) PCR (+) B19 antibody (+) sera did not affect the erythroid colony formation and protected CFU-e from injury by the B19 virus .
+By measuring the amount of purified B19 protein and its RHA titer , the detection limit of the B19 virus by RHA was calculated to the 0.37 +/- 0.03 ng / ml .
+CONCLUSION :
+These results suggest that the RHA ( + ) RHA inhibition ( + ) sera were infectious in vitro .
+The combination of RHA and the RHA inhibition test is considered to be useful for the large - scale screening of infectious B19 virus in blood donors with high specificity .
+******************************* END ABSTRACT 9933849 ***********************************************
+
+</xsl:text>
+<xsl:value-of select="mmax:endSuperscript()"/>
+<xsl:value-of select="mmax:endItalic()"/>
+
+</xsl:when>
+
+<xsl:when test="@id='word_246'">
+<xsl:value-of select="mmax:startItalic()"/>
+<xsl:value-of select="mmax:startSuperscript()"/>
+<xsl:text>
+***************************** BEGIN ABSTRACT 9990861 ***********************************************
+Janus kinases and focal adhesion kinases play in the 4.1 band : a superfamily of band 4.1 domains important for cell structure and signal transduction .
+
+</xsl:text>
+<xsl:value-of select="mmax:endSuperscript()"/>
+<xsl:value-of select="mmax:endItalic()"/>
+
+<xsl:value-of select="mmax:registerDiscourseElement(@id)"/>
+  <xsl:apply-templates select="mmax:getStartedMarkables(@id)" mode="opening"/>
+  <xsl:value-of select="mmax:setDiscourseElementStart()"/>
+   <xsl:apply-templates/>
+  <xsl:value-of select="mmax:setDiscourseElementEnd()"/>
+  <xsl:apply-templates select="mmax:getEndedMarkables(@id)" mode="closing"/>
+  <xsl:text> </xsl:text>
+
+</xsl:when>
+
+<xsl:when test="@id='word_298'">
+
+<xsl:value-of select="mmax:registerDiscourseElement(@id)"/>
+  <xsl:apply-templates select="mmax:getStartedMarkables(@id)" mode="opening"/>
+  <xsl:value-of select="mmax:setDiscourseElementStart()"/>
+   <xsl:apply-templates/>
+  <xsl:value-of select="mmax:setDiscourseElementEnd()"/>
+  <xsl:apply-templates select="mmax:getEndedMarkables(@id)" mode="closing"/>
+  <xsl:text> </xsl:text>
+
+<xsl:value-of select="mmax:startItalic()"/>
+<xsl:value-of select="mmax:startSuperscript()"/>
+<xsl:text>
+
+Recently , the presence of a structurally related domain has been demonstrated in the N - terminal region of two groups of tyrosine kinases : the focal adhesion kinases ( FAK ) and the Janus kinases ( JAK ) .
+Additional proteins containing the 4.1 / JEF ( JAK , ERM , FAK ) domain include plant kinesin - like calmodulin - binding proteins ( KCBP ) and a number of uncharacterized open reading frames identified by systematic DNA sequencing .
+Phylogenetic analysis of amino acid sequences suggests that band 4.1 / JEF domains can be grouped in several families that have probably diverged early during evolution .
+Hydrophobic cluster analysis indicates that the band 4.1 / JEF domains might consist of a duplicated module of approximately 140 residues and a central hinge region .
+A conserved property of the domain is its capacity to bind to the membrane - proximal region of the C - terminal cytoplasmic tail of proteins with a single transmembrane segment .
+Many proteins with band 4.1 / JEF domains undergo regulated intra - or intermolecular homotypic interactions .
+Additional properties common to band 4.1 / JEF domains of several proteins are binding of phosphoinositides and regulation by GTPases of the Rho family .
+Many proteins with band 4 .
+1 / JEF domains are associated with the actin - based cytoskeleton and are enriched at points of contact with other cells or the extracellular matrix , from which they can exert control over cell growth .
+Thus , proteins with band 4.1 / JEF domain are at the crossroads between cytoskeletal organization and signal transduction in multicellular organisms .
+Their importance is underlined by the variety of diseases that can result from their mutations .
+******************************* END ABSTRACT 9990861 ***********************************************
+
+</xsl:text>
+<xsl:value-of select="mmax:endSuperscript()"/>
+<xsl:value-of select="mmax:endItalic()"/>
+
+</xsl:when>
+
+<xsl:when test="@id='word_299'">
+<xsl:value-of select="mmax:startItalic()"/>
+<xsl:value-of select="mmax:startSuperscript()"/>
+<xsl:text>
+***************************** BEGIN ABSTRACT 11447151 ***********************************************
+Potential virulence role of the Legionella pneumophila ptsP ortholog .
+
+</xsl:text>
+<xsl:value-of select="mmax:endSuperscript()"/>
+<xsl:value-of select="mmax:endItalic()"/>
+
+<xsl:value-of select="mmax:registerDiscourseElement(@id)"/>
+  <xsl:apply-templates select="mmax:getStartedMarkables(@id)" mode="opening"/>
+  <xsl:value-of select="mmax:setDiscourseElementStart()"/>
+   <xsl:apply-templates/>
+  <xsl:value-of select="mmax:setDiscourseElementEnd()"/>
+  <xsl:apply-templates select="mmax:getEndedMarkables(@id)" mode="closing"/>
+  <xsl:text> </xsl:text>
+
+</xsl:when>
+
+<xsl:when test="@id='word_331'">
+
+<xsl:value-of select="mmax:registerDiscourseElement(@id)"/>
+  <xsl:apply-templates select="mmax:getStartedMarkables(@id)" mode="opening"/>
+  <xsl:value-of select="mmax:setDiscourseElementStart()"/>
+   <xsl:apply-templates/>
+  <xsl:value-of select="mmax:setDiscourseElementEnd()"/>
+  <xsl:apply-templates select="mmax:getEndedMarkables(@id)" mode="closing"/>
+  <xsl:text> </xsl:text>
+
+<xsl:value-of select="mmax:startItalic()"/>
+<xsl:value-of select="mmax:startSuperscript()"/>
+<xsl:text>
+
+In this study , we further defined the phenotypic properties of L. pneumophila ptsP and its complete sequence .
+The L. pneumophila ptsP was 2 , 295 bases in length .
+Its deduced amino acid sequence had high similarity with ptsP orthologs of Pseudomonas aeruginosa , Azotobacter vinelandii , and Escherichia coli , with nearly identical lengths .
+Here we show that while the mutant grew well in laboratory media , it was defective in both lung and spleen multiplication in guinea pigs .
+It grew slowly in guinea pig alveolar macrophages despite good uptake into the cells .
+Furthermore , there was minimal growth in a human alveolar epithelial cell line ( A549 ) .
+Transcomplementation of the L. pneumophila ptsP mutant almost completely rescued its growth in alveolar macrophages , in A549 cells , and in guinea pig lung and spleen .
+The L. pneumophila ptsP mutant was capable of evasion of phagosome - lysosome fusion and resided in ribosome - studded phagosomes .
+Pore formation activity of the mutant was normal .
+The L. pneumophila ptsP mutant expressed DotA and IcmX in apparently normal amounts , suggesting that the ptsP mutation did not affect dotA and icmX regulation .
+In addition , the mutant was resistant to serum and neutrophil killing .
+Taken together , these findings show that L. pneumophila ptsP is required for full in vivo virulence of L. pneumophila , most probably by affecting intracellular growth .
+******************************* END ABSTRACT 11447151 ***********************************************
+
+</xsl:text>
+<xsl:value-of select="mmax:endSuperscript()"/>
+<xsl:value-of select="mmax:endItalic()"/>
+
+</xsl:when>
+
+<xsl:when test="@id='word_332'">
+<xsl:value-of select="mmax:startItalic()"/>
+<xsl:value-of select="mmax:startSuperscript()"/>
+<xsl:text>
+***************************** BEGIN ABSTRACT 7630185 ***********************************************
+Waldenström 's macroglobulinemia with the AML / MDS - associated t ( 1 ; 3 ) ( p36 ; q21 ) .
+Two unusual , and perhaps causally related , clinical and cytogenetic features in a patient with Waldenström 's macroglobulinemia are presented .
+Firstly , during the progression of the primary macroglobulinemia bone destruction and hypercalcemia occurred .
+
+</xsl:text>
+<xsl:value-of select="mmax:endSuperscript()"/>
+<xsl:value-of select="mmax:endItalic()"/>
+
+<xsl:value-of select="mmax:registerDiscourseElement(@id)"/>
+  <xsl:apply-templates select="mmax:getStartedMarkables(@id)" mode="opening"/>
+  <xsl:value-of select="mmax:setDiscourseElementStart()"/>
+   <xsl:apply-templates/>
+  <xsl:value-of select="mmax:setDiscourseElementEnd()"/>
+  <xsl:apply-templates select="mmax:getEndedMarkables(@id)" mode="closing"/>
+  <xsl:text> </xsl:text>
+
+</xsl:when>
+
+<xsl:when test="@id='word_354'">
+
+<xsl:value-of select="mmax:registerDiscourseElement(@id)"/>
+  <xsl:apply-templates select="mmax:getStartedMarkables(@id)" mode="opening"/>
+  <xsl:value-of select="mmax:setDiscourseElementStart()"/>
+   <xsl:apply-templates/>
+  <xsl:value-of select="mmax:setDiscourseElementEnd()"/>
+  <xsl:apply-templates select="mmax:getEndedMarkables(@id)" mode="closing"/>
+  <xsl:text> </xsl:text>
+
+<xsl:value-of select="mmax:startItalic()"/>
+<xsl:value-of select="mmax:startSuperscript()"/>
+<xsl:text>
+
+This translocation is characteristic of acute myeloid leukemia ( AML ) and myelodysplastic syndromes with a high propensity for progressing to AML .
+The t ( 1 ; 3 ) has previously never been reported in a lymphoproliferative disorder .
+Since the abnormality is associated with acute transformation of cells of the myelopoietic lineages , it is possible that the t ( 1 ; 3 ) , found in cells of lymphoid origin in the present case , not only induced the neoplastic process as such but also brought about the unusually malignant tumor progression .
+******************************* END ABSTRACT 7630185 ***********************************************
+
+</xsl:text>
+<xsl:value-of select="mmax:endSuperscript()"/>
+<xsl:value-of select="mmax:endItalic()"/>
+
+</xsl:when>
+
+<xsl:when test="@id='word_355'">
+<xsl:value-of select="mmax:startItalic()"/>
+<xsl:value-of select="mmax:startSuperscript()"/>
+<xsl:text>
+***************************** BEGIN ABSTRACT 11999683 ***********************************************
+Compound heterozygosity for the common sulfonylurea receptor mutations can cause mild diazoxide - sensitive hyperinsulinism .
+Persistent hyperinsulinemic hypoglycemia of infancy ( PHHI ) is a disorder characterized by dysregulation of insulin secretion and prolonged hypoglycemia .
+Mutations in the genes of both subunits of the beta-cell KATP channel , Kir 6.2 ( potassium channel ) and SUR1 ( sulfonylurea receptor ) have been associated with the autosomal recessive form of this disorder .
+
+</xsl:text>
+<xsl:value-of select="mmax:endSuperscript()"/>
+<xsl:value-of select="mmax:endItalic()"/>
+
+<xsl:value-of select="mmax:registerDiscourseElement(@id)"/>
+  <xsl:apply-templates select="mmax:getStartedMarkables(@id)" mode="opening"/>
+  <xsl:value-of select="mmax:setDiscourseElementStart()"/>
+   <xsl:apply-templates/>
+  <xsl:value-of select="mmax:setDiscourseElementEnd()"/>
+  <xsl:apply-templates select="mmax:getEndedMarkables(@id)" mode="closing"/>
+  <xsl:text> </xsl:text>
+
+</xsl:when>
+
+<xsl:when test="@id='word_371'">
+
+<xsl:value-of select="mmax:registerDiscourseElement(@id)"/>
+  <xsl:apply-templates select="mmax:getStartedMarkables(@id)" mode="opening"/>
+  <xsl:value-of select="mmax:setDiscourseElementStart()"/>
+   <xsl:apply-templates/>
+  <xsl:value-of select="mmax:setDiscourseElementEnd()"/>
+  <xsl:apply-templates select="mmax:getEndedMarkables(@id)" mode="closing"/>
+  <xsl:text> </xsl:text>
+
+<xsl:value-of select="mmax:startItalic()"/>
+<xsl:value-of select="mmax:startSuperscript()"/>
+<xsl:text>
+
+A patient is reported of compound heterozygosity for the 2 most common mutations previously reported to be associated with PHHI in Ashkenazi Jews ; splice mutation of intron 32 ( 3993 - 9G --&gt; A ) and deletion of phenylalanine at position 1388 .
+Relatively low glucose utilization ( &lt; 10 mg / kg / min ) was needed to maintain blood gllucose concentrations .
+In addition , treatment with diazoxide was highly effective .
+We suggest that diazoxide unresponsiveness is not always present in patients with SUR1 mutations and that the probable cause of the milder phenotype in this compund heterozygote state e
+******************************* END ABSTRACT 11999683 ***********************************************
+
+</xsl:text>
+<xsl:value-of select="mmax:endSuperscript()"/>
+<xsl:value-of select="mmax:endItalic()"/>
+
+</xsl:when>
+
+<xsl:when test="@id='word_372'">
+<xsl:value-of select="mmax:startItalic()"/>
+<xsl:value-of select="mmax:startSuperscript()"/>
+<xsl:text>
+***************************** BEGIN ABSTRACT 15557817 ***********************************************
+Phospholipase D activity is elevated in hepatitis C virus core protein - transformed NIH3T3 mouse fibroblast cells .
+Hepatitis C Virus ( HCV ) is associated with a severe liver disease and increased frequency in the development of hepatocellular carcinoma .
+Overexpression of HCV core protein is known to transform fibroblast cells .
+Phospholipase D ( PLD ) activity is commonly elevated in response to mitogenic signals , and has also been overexpressed and hyperactivated in some human cancer cells .
+
+</xsl:text>
+<xsl:value-of select="mmax:endSuperscript()"/>
+<xsl:value-of select="mmax:endItalic()"/>
+
+<xsl:value-of select="mmax:registerDiscourseElement(@id)"/>
+  <xsl:apply-templates select="mmax:getStartedMarkables(@id)" mode="opening"/>
+  <xsl:value-of select="mmax:setDiscourseElementStart()"/>
+   <xsl:apply-templates/>
+  <xsl:value-of select="mmax:setDiscourseElementEnd()"/>
+  <xsl:apply-templates select="mmax:getEndedMarkables(@id)" mode="closing"/>
+  <xsl:text> </xsl:text>
+
+</xsl:when>
+
+<xsl:when test="@id='word_395'">
+
+<xsl:value-of select="mmax:registerDiscourseElement(@id)"/>
+  <xsl:apply-templates select="mmax:getStartedMarkables(@id)" mode="opening"/>
+  <xsl:value-of select="mmax:setDiscourseElementStart()"/>
+   <xsl:apply-templates/>
+  <xsl:value-of select="mmax:setDiscourseElementEnd()"/>
+  <xsl:apply-templates select="mmax:getEndedMarkables(@id)" mode="closing"/>
+  <xsl:text> </xsl:text>
+
+<xsl:value-of select="mmax:startItalic()"/>
+<xsl:value-of select="mmax:startSuperscript()"/>
+<xsl:text>
+
+We observed that PLD activity was elevated in the NIH3T3 cells overexpressing HCV core protein over the vector alone - transfected control cells , however , expression levels of PLD protein and protein kinase C ( PKC ) in the HCV core protein - transformed cells was similar to the control cells .
+Phorbol 12-myristate 13-acetate ( PMA ) , which is known to activate PKC , stimulated PLD activity significantly more in the core protein - transformed cells , in comparison with that of the control cells .
+PLD activity assay using PKC isozyme - specific inhibitor and PKC translocation experiment showed that PKC - delta was mainly involved in the PMA - induced PLD activation in the core - transformed cells .
+Moreover , in cells overexpressing HCV core protein , PMA also stimulated p38 kinase more potently than that of the control cells , and an inhibitor of p38 kinase abolished PMA - induced PLD activation in cells overexpressing HCV core protein .
+Taken together , these results suggest that PLD might be implicated in core protein - induced transformation .
+******************************* END ABSTRACT 15557817 ***********************************************
+
+</xsl:text>
+<xsl:value-of select="mmax:endSuperscript()"/>
+<xsl:value-of select="mmax:endItalic()"/>
+
+</xsl:when>
+
+<xsl:when test="@id='word_396'">
+<xsl:value-of select="mmax:startItalic()"/>
+<xsl:value-of select="mmax:startSuperscript()"/>
+<xsl:text>
+***************************** BEGIN ABSTRACT 1333290 ***********************************************
+Clinical aspects of platelet transfusion .
+
+</xsl:text>
+<xsl:value-of select="mmax:endSuperscript()"/>
+<xsl:value-of select="mmax:endItalic()"/>
+
+<xsl:value-of select="mmax:registerDiscourseElement(@id)"/>
+  <xsl:apply-templates select="mmax:getStartedMarkables(@id)" mode="opening"/>
+  <xsl:value-of select="mmax:setDiscourseElementStart()"/>
+   <xsl:apply-templates/>
+  <xsl:value-of select="mmax:setDiscourseElementEnd()"/>
+  <xsl:apply-templates select="mmax:getEndedMarkables(@id)" mode="closing"/>
+  <xsl:text> </xsl:text>
+
+</xsl:when>
+
+<xsl:when test="@id='word_422'">
+
+<xsl:value-of select="mmax:registerDiscourseElement(@id)"/>
+  <xsl:apply-templates select="mmax:getStartedMarkables(@id)" mode="opening"/>
+  <xsl:value-of select="mmax:setDiscourseElementStart()"/>
+   <xsl:apply-templates/>
+  <xsl:value-of select="mmax:setDiscourseElementEnd()"/>
+  <xsl:apply-templates select="mmax:getEndedMarkables(@id)" mode="closing"/>
+  <xsl:text> </xsl:text>
+
+<xsl:value-of select="mmax:startItalic()"/>
+<xsl:value-of select="mmax:startSuperscript()"/>
+<xsl:text>
+
+Both alloimmunization to class I human leucocyte antigens ( HLA ) , which causes febrile transfusion reactions and refractoriness to transfused platelets , and transmission of cytomegalovirus have been shown to be reduced by 3-log10 leucodepletion by filtration .
+Lesser degree of leucodepletion , e.g. by platelet preparation from buffy coats , will control febrile transfusion reactions , but will not reliably prevent other complications .
+The clinical implications and cost - effectiveness of different strategies of platelet production remain a matter of debate .
+******************************* END ABSTRACT 1333290 ***********************************************
+
+</xsl:text>
+<xsl:value-of select="mmax:endSuperscript()"/>
+<xsl:value-of select="mmax:endItalic()"/>
+
+</xsl:when>
+
+<xsl:when test="@id='word_423'">
+<xsl:value-of select="mmax:startItalic()"/>
+<xsl:value-of select="mmax:startSuperscript()"/>
+<xsl:text>
+***************************** BEGIN ABSTRACT 8999802 ***********************************************
+Tumor infarction in mice by antibody - directed targeting of tissue factor to tumor vasculature .
+Selective occlusion of tumor vasculature was tested as a therapy for solid tumors in a mouse model .
+The formation of blood clots ( thrombosis ) within the tumor vessels was initiated by targeting the cell surface domain of human tissue factor , by means of a bispecific antibody , to an experimentally induced marker on tumor vascular endothelial cells .
+This truncated form of tissue factor ( tTF ) had limited ability to initiate thrombosis when free in the circulation , but became an effective and selective thrombogen when targeted to tumor endothelial cells .
+
+</xsl:text>
+<xsl:value-of select="mmax:endSuperscript()"/>
+<xsl:value-of select="mmax:endItalic()"/>
+
+<xsl:value-of select="mmax:registerDiscourseElement(@id)"/>
+  <xsl:apply-templates select="mmax:getStartedMarkables(@id)" mode="opening"/>
+  <xsl:value-of select="mmax:setDiscourseElementStart()"/>
+   <xsl:apply-templates/>
+  <xsl:value-of select="mmax:setDiscourseElementEnd()"/>
+  <xsl:apply-templates select="mmax:getEndedMarkables(@id)" mode="closing"/>
+  <xsl:text> </xsl:text>
+
+</xsl:when>
+
+<xsl:when test="@id='word_447'">
+
+<xsl:value-of select="mmax:registerDiscourseElement(@id)"/>
+  <xsl:apply-templates select="mmax:getStartedMarkables(@id)" mode="opening"/>
+  <xsl:value-of select="mmax:setDiscourseElementStart()"/>
+   <xsl:apply-templates/>
+  <xsl:value-of select="mmax:setDiscourseElementEnd()"/>
+  <xsl:apply-templates select="mmax:getEndedMarkables(@id)" mode="closing"/>
+  <xsl:text> </xsl:text>
+
+<xsl:value-of select="mmax:startItalic()"/>
+<xsl:value-of select="mmax:startSuperscript()"/>
+<xsl:text>
+
+******************************* END ABSTRACT 8999802 ***********************************************
+
+</xsl:text>
+<xsl:value-of select="mmax:endSuperscript()"/>
+<xsl:value-of select="mmax:endItalic()"/>
+
+</xsl:when>
+
+<xsl:when test="@id='word_448'">
+<xsl:value-of select="mmax:startItalic()"/>
+<xsl:value-of select="mmax:startSuperscript()"/>
+<xsl:text>
+***************************** BEGIN ABSTRACT 12645948 ***********************************************
+CCR8 - dependent activation of the RAS / MAPK pathway mediates anti - apoptotic activity of I-309 / CCL1 and vMIP-I .
+We have previously shown that the CC - chemokine 1-309 ( CCL1 ) protects mouse thymic lymphomas against corticoid - induced apoptosis .
+Here , we analyzed the signal transduction pathways involved in this activity on BW5147 lymphoma .
+Inhibition of the CCL1 activity by pertussis toxin suggested the involvement of a G protein - coupled chemokine receptor .
+The role of CCR8 was supported by the observation that vMIP-I , another CCR8 - ligand identified from the genome of a T cell transforming herpes virus , shared CCL1 anti - apoptotic activity .
+In addition to CCR8 , BW5147 cells also expressed the CXCR4 receptor but its ligand , SDF-1 ( CXCL12 ) showed only a modest anti - apoptotic activity .
+
+</xsl:text>
+<xsl:value-of select="mmax:endSuperscript()"/>
+<xsl:value-of select="mmax:endItalic()"/>
+
+<xsl:value-of select="mmax:registerDiscourseElement(@id)"/>
+  <xsl:apply-templates select="mmax:getStartedMarkables(@id)" mode="opening"/>
+  <xsl:value-of select="mmax:setDiscourseElementStart()"/>
+   <xsl:apply-templates/>
+  <xsl:value-of select="mmax:setDiscourseElementEnd()"/>
+  <xsl:apply-templates select="mmax:getEndedMarkables(@id)" mode="closing"/>
+  <xsl:text> </xsl:text>
+
+</xsl:when>
+
+<xsl:when test="@id='word_476'">
+
+<xsl:value-of select="mmax:registerDiscourseElement(@id)"/>
+  <xsl:apply-templates select="mmax:getStartedMarkables(@id)" mode="opening"/>
+  <xsl:value-of select="mmax:setDiscourseElementStart()"/>
+   <xsl:apply-templates/>
+  <xsl:value-of select="mmax:setDiscourseElementEnd()"/>
+  <xsl:apply-templates select="mmax:getEndedMarkables(@id)" mode="closing"/>
+  <xsl:text> </xsl:text>
+
+<xsl:value-of select="mmax:startItalic()"/>
+<xsl:value-of select="mmax:startSuperscript()"/>
+<xsl:text>
+
+By contrast , both CCL1 and vMIP-I up - regulated ERK1 / 2 MAPK phosphorylation in BW5147 cells .
+Further analysis demonstrated that CCL1 activates the MAPK pathway in CCR8 - transfected CHO cells .
+The implication of this pathway was confirmed by the fact that PD98059 , an inhibitor of MEK kinases , as well as a dominant negative isoform of the M-RAS protein specifically blocked the anti - apoptotic activity of CCL1 .
+******************************* END ABSTRACT 12645948 ***********************************************
+
+</xsl:text>
+<xsl:value-of select="mmax:endSuperscript()"/>
+<xsl:value-of select="mmax:endItalic()"/>
+
+</xsl:when>
+
+<xsl:when test="@id='word_477'">
+<xsl:value-of select="mmax:startItalic()"/>
+<xsl:value-of select="mmax:startSuperscript()"/>
+<xsl:text>
+***************************** BEGIN ABSTRACT 10890736 ***********************************************
+Gene therapy using hematopoietic stem cells : Sisyphus approaches the crest .
+Gene transfer targeting cells of the blood and immune system was one of the first areas of investigation in the field of gene therapy .
+Despite the encouraging results achieved in early studies using murine bone marrow , the task of gene transfer into human hematopoietic stem cells proved to be far more difficult .
+As a result , progress has been disappointingly slow and initial clinical trials generally failed to achieve significant levels of gene marking .
+The continued application of new advances in vectorology and hematopoietic stem cell biology has now led to improvements in preclinical models that are being translated into clinical trials .
+
+</xsl:text>
+<xsl:value-of select="mmax:endSuperscript()"/>
+<xsl:value-of select="mmax:endItalic()"/>
+
+<xsl:value-of select="mmax:registerDiscourseElement(@id)"/>
+  <xsl:apply-templates select="mmax:getStartedMarkables(@id)" mode="opening"/>
+  <xsl:value-of select="mmax:setDiscourseElementStart()"/>
+   <xsl:apply-templates/>
+  <xsl:value-of select="mmax:setDiscourseElementEnd()"/>
+  <xsl:apply-templates select="mmax:getEndedMarkables(@id)" mode="closing"/>
+  <xsl:text> </xsl:text>
+
+</xsl:when>
+
+<xsl:when test="@id='word_488'">
+
+<xsl:value-of select="mmax:registerDiscourseElement(@id)"/>
+  <xsl:apply-templates select="mmax:getStartedMarkables(@id)" mode="opening"/>
+  <xsl:value-of select="mmax:setDiscourseElementStart()"/>
+   <xsl:apply-templates/>
+  <xsl:value-of select="mmax:setDiscourseElementEnd()"/>
+  <xsl:apply-templates select="mmax:getEndedMarkables(@id)" mode="closing"/>
+  <xsl:text> </xsl:text>
+
+<xsl:value-of select="mmax:startItalic()"/>
+<xsl:value-of select="mmax:startSuperscript()"/>
+<xsl:text>
+
+******************************* END ABSTRACT 10890736 ***********************************************
+
+</xsl:text>
+<xsl:value-of select="mmax:endSuperscript()"/>
+<xsl:value-of select="mmax:endItalic()"/>
+
+</xsl:when>
+
+
+<xsl:otherwise>
+ <xsl:value-of select="mmax:registerDiscourseElement(@id)"/>
+  <xsl:apply-templates select="mmax:getStartedMarkables(@id)" mode="opening"/>
+  <xsl:value-of select="mmax:setDiscourseElementStart()"/>
+ <xsl:apply-templates/>
+  <xsl:value-of select="mmax:setDiscourseElementEnd()"/>
+  <xsl:apply-templates select="mmax:getEndedMarkables(@id)" mode="closing"/>
+<xsl:text> </xsl:text>
+</xsl:otherwise>
+
+</xsl:choose>
+</xsl:template>
+
+<xsl:template match="bioentity:markable" mode="opening">
+<xsl:value-of select="mmax:startBold()"/>
+<xsl:value-of select="mmax:addLeftMarkableHandle(@mmax_level, @id, '[')"/>
+<xsl:value-of select="mmax:endBold()"/>
+</xsl:template>
+
+<xsl:template match="bioentity:markable" mode="closing">
+<xsl:value-of select="mmax:startBold()"/>
+<xsl:value-of select="mmax:addRightMarkableHandle(@mmax_level, @id, ']')"/>
+<xsl:value-of select="mmax:endBold()"/>
+</xsl:template>
+</xsl:stylesheet>
+                
+                
+                   
+

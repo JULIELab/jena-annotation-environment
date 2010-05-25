@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<annotationscheme>
+
+  <attribute id="bioentities" name="bioentities" text="" type="nominal_button">
+    <value id="organism" name="organism"/>
+	<value id="gene_protein" name="gene_protein"/>
+	<value id="cell" name="cell"/>
+	<value id="malignancy" name="malignancy"/>
+   </attribute>
+
+</annotationscheme>
+
+
+

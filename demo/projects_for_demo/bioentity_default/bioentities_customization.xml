@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<customization>
+<rule pattern="bioentities={organism}" style="background=green"/>
+<rule pattern="bioentities={gene_protein}" style="background=blue"/>
+<rule pattern="bioentities={cell}" style="background=red"/>
+<rule pattern="bioentities={malignancy}" style="background=yellow"/>
+</customization>

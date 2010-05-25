@@ -1,0 +1,17 @@
+um AL zu testen, sollte folgendes gemacht werden
+1) kleine AL testprojekt anlegen: demo/projects_for_demo/news_al
+ --> MUC test
+ --> corpus fraction niedrig einstellen (0.001)
+
+2) bincorpus und tok/pos corpus liegen auf anno0
+  --> /usr/local/annoenv/testing/
+
+3) aktuelle JANE Version unter /usr/local/annoenv/testing/ installieren
+
+4) AL Server starten (port 7777)
+
+5) auf eigenen Rechner anno0:/usr/local/annoenv mit sshfs in selbigen
+Verzeichnisnamen mounten
+
+6) in test-Package ALHanderTest auf oben genanntes Testprojekt laufen
+lassen, evtl. im Debug Modus

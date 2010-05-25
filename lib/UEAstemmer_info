@@ -1,0 +1,6 @@
+UEA lite is a word stemmer developed at the School of Computing Sciences,
+University of East Anglia. It is based on a set of rules. It was used during
+active learning selection, at the moment, however, it is not really used.
+
+References:
+* http://www.cmp.uea.ac.uk/Research/stemmer/
