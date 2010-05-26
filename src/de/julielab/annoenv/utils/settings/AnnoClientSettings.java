@@ -51,7 +51,7 @@ public class AnnoClientSettings {
 	public final static String PROPERTIES_FILE = "settings" + File.separator
 			+ "annoclient.properties";
 
-	public static String RELEASE_STRING = "JANE V 2.0(01.04.2010)";
+	public static String RELEASE_STRING = "JANE V 2.0(May 2010)";
 
 	public File SESSION_DIR = null;
 
