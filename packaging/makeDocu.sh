@@ -13,8 +13,3 @@ pdflatex installation.tex
 bibtex installation
 pdflatex installation.tex
 pdflatex installation.tex
-
-pdflatex JANE_demo.tex
-bibtex JANE_demo
-pdflatex JANE_demo.tex
-pdflatex JANE_demo.tex
