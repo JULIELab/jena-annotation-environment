@@ -32,11 +32,11 @@ pdfproducer={pdfeTeX},%
 
 \title{JANE -- Annotation GUI}
 
-\author{\normalsize Katrin Tomanek ~~~~~~~~~~~~~ Alexander Klaue\\
+\author{\normalsize Katrin Tomanek\\
   \normalsize  Jena University Language \& Information Engineering (JULIE) Lab\\
   \normalsize F\"urstengraben 30 \\
   \normalsize D-07743 Jena, Germany\\
-  {\normalsize \tt \{tomanek|klaue\}@coling-uni-jena.de} } \date{}
+  {\normalsize \tt \{katrin.tomanek\}@uni-jena.de} } \date{}
 
 \begin{document}
 \maketitle
@@ -49,11 +49,12 @@ pdfproducer={pdfeTeX},%
 
 This documentation is a user howto for the annotation GUI of JANE.
 Throughout the documentation it is assumed that JANE annotation GUI is
-installed on your PC. For installation, just unpack the GZIP-package,
-change to folder \url{scripts} and run \url{configAnnoClient.sh} to
-configure the annotation GUI settings. For details, please refer to
-the installation howto. The annotation GUI has been tested on both
-Windows (XP) and Linux (Ubuntu 7.*).
+installed on your PC. To configure the JANE annotation GUI, change to
+folder \url{scripts} and run \url{configAnnoClient.sh}. For details,
+please refer to the installation howto. The annotation GUI has been
+tested on both Linux and Windows. However, Linux is
+preferred.\footnote{Some of the start scripts are currently only
+  available for Linux but could be created for Windows, as well.}
 
 
 \subsection{Jena Annotation Environment}
@@ -260,9 +261,15 @@ for AL iteration 5) is than displayed for the respective project.
 \subsection{Annotating in External Editor}
 Till now, we have only described several operations, however not the
 annotation itself. Annotation it done using the external annotation
-editor MMAX2\footnote{MMAX2 was originally developed at the European
+editor MMAX2.\footnote{MMAX2 was originally developed at the European
   Media Lab and is now an open source project, see
-  \url{http://mmax2.sourceforge.net}}
+  \url{http://mmax2.sourceforge.net}} While earlier versions of JANE
+(up to JANE-1.2) used the original MMAX2 editor, current versions
+(after JANE-1.2) can now make use of the JULIE Lab version of
+MMAX2. This version is an extension of MMAX2 Version 1.1. We made some
+changes for convenience: a) basedata editing works properly (there
+were bugs in the MMAX2 Version 1.1.) and b) the annotation color is
+now also shown in the annotation schema selection frame.
 
 In both default and AL projects, the annotation editor is started by
 double-clicking on a selected document in the list. It might take some
@@ -310,7 +317,12 @@ only shortly discuss how to use MMAX2 for annotation:
 After MMAX2 has started, go to the control panel window and change the
 mode for the \emph{sentence} level to visible (as you don't want to
 annotate the sentence level but the other level, in our example e.g.
-``t cells''). Further, go to the annotation schema window and also
+``t cells''). Note: this is necessary for older versions of JANE
+(below JANE-1.5); as of JANE 1.5 the non-main level is automatically
+set to visible so using current versions of JANE, you don't have to do
+anything in the control panel.
+
+Further, go to the annotation schema window and also
 select your according annotation schema here (if not selected already)
 which will reveal the labels you can assign. Now you can make
 annotations in your MMAX2 main annotation window: after having selected
@@ -346,23 +358,6 @@ manual.
 \textbf{In AL projects}, the MMAX2 main annotation window contains many
 sentences in italics. These sentences cannot be annotated but are
 shown as the original context of the selected sentences.
-
-
-\section{Copyright and License}
-
-This software is Copyright (C) 2007 Jena University Language \&
-Information Engineering Lab (Friedrich-Schiller University Jena,
-Germany). It can be used free of charge for academic non-commercial,
-non-profit research purposes only. If you want to use JANE other than
-in the demo version you have to fill out and send us the license
-agreement
-(\url{https://watchtower.coling.uni-jena.de/~tomanek/coling/JANE/JULIE_JANE_LICENSE.pdf}).
-
-JANE is provided on an ``as is'' basis, without any warranties or
-conditions of any kind. Each recipient is solely responsible for
-determining the appropriateness of using JANE.
-
-Further, please note that JANE-1.2 is still a beta version!
 
 
 

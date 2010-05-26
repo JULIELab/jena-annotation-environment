@@ -36,7 +36,7 @@ pdfproducer={pdfeTeX},%
   \normalsize  Jena University Language \& Information Engineering (JULIE) Lab\\
   \normalsize F\"urstengraben 30 \\
   \normalsize D-07743 Jena, Germany\\
-  {\normalsize \tt tomanek@coling-uni-jena.de} } \date{}
+  {\normalsize \tt katrin.tomanek@uni-jena.de} } \date{}
 
 \begin{document}
 \maketitle
@@ -56,8 +56,8 @@ machine. However, in this case the configuration settings (especially
 paths) will have to be changed accordingly -- please note that we
 won't be able to help you running JANE on Windows.
 
-JANE requires Sun's Java 1.5. It will not run with older versions of
-Java and has not been tested with Java 1.6.
+JANE requires Sun's Java 1.5; JAVA 1.6 is preferred. It will not run
+with older versions of Java (because of the usage of generics).
 
 Before installing JANE, have a look at JANE's system architecture in
 section \ref{sec:architecture}. There, the important concepts and
@@ -151,9 +151,9 @@ active learning server (step 4).
 
 \subsection{Unpacking JANE}
 
-To install JANE, unpack the \url{tgz} file you have
-downloaded.  A new directory (\url{JANE-1.0)} is created. The
-directory will have the following file and directory structure:
+To install JANE, unpack the \url{tgz} file you have downloaded.  A new
+directory (e.g., \url{JANE-2.0)} is created. The directory will have
+the following file and directory structure:
 
 \begin{verbatim}
  bin            -> contains scripts to run the single components of JANE
@@ -161,7 +161,9 @@ directory will have the following file and directory structure:
  doc            -> documentation (user howtos, installation guide)
  install        -> installation stuff 
  lib            -> java libraries used (JANE, and also external ones)
- lib/MMAX2_1.1  -> libraries for MMAX2
+ lib/MMAX2_1.1_JULIE_1.0  -> libraries for MMAX2 (this is the JULIE
+Lab Version of MMAX, in the lib directory you will also find other
+(older) versions of MMAX)
  resources      -> external resources (such as POS dictionary)
  settings       -> configuration files for the single components of JANE
 \end{verbatim}
@@ -200,7 +202,7 @@ you will find in the directory \url{install} directory:
  \item no go back to the command line and import the MYSQL dump from
    the install directory
 \begin{verbatim}
-    tomanek@localhost:/home/tomanek/JANE-1.0/install$ mysql 
+    tomanek@localhost:/home/tomanek/JANE-2.0/install$ mysql 
            -u JaneDBUser -p myJaneDB < myJaneDB.sql
 \end{verbatim}
 \end{enumerate}
@@ -288,19 +290,22 @@ the following configuration parameters:
   installation. Finish it with a slash (``/'').
 
   Example: when I unpack JANE in my home directory (\url{/home/tomanek})
-  I would have to write: \url{/home/tomanek/JANE-1.0/}
+  I would have to write: \url{/home/tomanek/JANE-2.0/}
 
 \item[Directory for temporary files] enter the complete path to a
   directory (you need write access) where JANE can store
   temporary files. Just press enter to accept the default (\url{/tmp}).
 
 \item[Directory with MMAX libraries] MMAX2 is the annotation editor
-  used by JANE. You can use the MMAX2 libraries provided with JANE.
-  These are contained in the subdirectory \url{libs/MMAX2_1.1}.  You
-  have to enter the full path to the MMAX2 libraries.
+  used by JANE. Please use the MMAX2 libraries provided with JANE.
+  These are contained in the directory \url{libs}.  You will find 3
+  versions of MMAX2 there, one (\url{libs/MMAX2_1.1_JULIE_1.0}) is the
+  JULIE Lab version of MMAX where some changes to MMAX2 V. 1.1 were
+  made for convenience. You have to enter the full path to the MMAX2
+  libraries.
 
   Example: I might enter
-  \url{/home/tomanek/JANE-1.0/lib/MMAX2_1.1}
+  \url{/home/tomanek/JANE-2.0/lib/MMAX2_1.1_JULIE_1.0}
 \end{description}
 
 You can further manually change the following parameters by editing the file
@@ -326,7 +331,7 @@ the following configuration parameters:
   (``/'').
 
   Example: if I unpack JANE in my home directory (\url{/home/tomanek})
-  I would have to write: \url{/home/tomanek/JANE-1.0/}
+  I would have to write: \url{/home/tomanek/JANE-2.0/}
 
 \item[Directory for temporary files] enter the complete path to a
   directory (you need write access) where JANE can store
@@ -409,20 +414,5 @@ point to check the output of the AL server (therefore, you might want
 to dettach your \url{screen} session).
 
 
-\section{Copyright and License}
-
-This software is Copyright (C) 2007 Jena University Language \&
-Information Engineering Lab (Friedrich-Schiller University Jena,
-Germany). It can be used free of charge for academic non-commercial,
-non-profit research purposes only. If you want to use JANE other than
-in the demo version you have to fill out and send us the license
-agreement
-(\url{https://watchtower.coling.uni-jena.de/~tomanek/coling/JANE/JULIE_JANE_LICENSE.pdf}).
-
-JANE is provided on an ``as is'' basis, without any warranties or
-conditions of any kind. Each recipient is solely responsible for
-determining the appropriateness of using JANE.
-
-Further, please note that JANE-1.0 is still a beta version!
 
 \end{document}
