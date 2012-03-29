@@ -2,37 +2,36 @@
 
 <project name="AnnoEnv" default="compress" basedir=".">
 
-	<property name="project.name" value="AnnoEnv"/>
-	<property name="project.version" value="2.0"/>
-	<property name="dir.src" value="src"/>
-	<property name="dir.build" value="classes"/>
-	<property name="dir.lib" value="lib"/>
+	<property name="project.name" value="AnnoEnv" />
+	<property name="project.version" value="2.0" />
+	<property name="dir.src" value="src" />
+	<property name="dir.build" value="classes" />
+	<property name="dir.lib" value="lib" />
 
-	<property name="classpath" value="${dir.lib}/mysql-connector-java-3.1.12-bin.jar:${dir.lib}/EntityAL-Libs-2.0.jar:${dir.lib}/mallet.jar:${dir.lib}/mallet-deps.jar:${dir.lib}/jama.jar:${dir.lib}/maxent-2.4.0.jar:${dir.lib}/opennlp-tools-1.3.0.jar:${dir.lib}/trove.jar"/>
+	<property name="classpath" value="${dir.lib}/mysql-connector-java-3.1.12-bin.jar:${dir.lib}/EntityAL-Libs-2.0.jar:${dir.lib}/mallet.jar:${dir.lib}/mallet-deps.jar:${dir.lib}/jama.jar:${dir.lib}/maxent-2.4.0.jar:${dir.lib}/opennlp-tools-1.3.0.jar:${dir.lib}/trove.jar" />
 
 	<!-- Set time stamp -->
 	<target name="prepare">
-		<tstamp/>
+		<tstamp />
 	</target>
 
-   <!-- Clean up the build directory-->
+	<!-- Clean up the build directory-->
 	<target name="clean" depends="prepare">
-		<delete dir="${dir.build}"  failonerror="true"/>
-		<mkdir dir="${dir.build}"/>
+		<delete dir="${dir.build}" failonerror="true" />
+		<mkdir dir="${dir.build}" />
 	</target>
-	
-   <!-- Compile all source -->
-	<target name="compile" depends="clean">
-     <javac srcdir="${dir.src}" destdir="${dir.build}"
-	classpath="${classpath}" excludes="de/julielab/annoenv/test/**"/>
-     <chmod dir="${dir.build}" perm="g+w" includes="**"/>
-   </target>
 
-	   
-   <!-- Build jar file -->
-   <target name="compress" depends="compile">
-		<jar destfile="${dir.lib}/${project.name}.jar" basedir="${dir.build}"/>
-  		<delete dir="${dir.build}"  failonerror="true"/>
-   </target>
-  
+	<!-- Compile all source -->
+	<target name="compile" depends="clean">
+		<javac srcdir="${dir.src}" destdir="${dir.build}" classpath="${classpath}" excludes="de/julielab/annoenv/test/**" debug="on" debuglevel="lines,vars,source" />
+		<chmod dir="${dir.build}" perm="g+w" includes="**" />
+	</target>
+
+
+	<!-- Build jar file -->
+	<target name="compress" depends="compile">
+		<jar destfile="${dir.lib}/${project.name}.jar" basedir="${dir.build}" />
+		<delete dir="${dir.build}" failonerror="true" />
+	</target>
+
 </project>

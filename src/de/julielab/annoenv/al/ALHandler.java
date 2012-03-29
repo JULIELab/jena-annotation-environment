@@ -291,7 +291,7 @@ public class ALHandler extends Thread {
 			project.updateProject(sf);
 
 			// 1) get files from DB
-			logger.fine(projectID
+			logger.info(projectID
 					+ "#AL preprocessing: getting needed files... ");
 			int bdID = project.getCurrentBaseDataLight().getBasedataID();
 
@@ -320,12 +320,12 @@ public class ALHandler extends Thread {
 					priolist, TIDSIDFile, corpusPosDir, tmpDir, projectID,
 					latestBD.getUri(), sf);
 
-			logger.fine(projectID + "#AL preprocessing: created aTFile: "
+			logger.info(projectID + "#AL preprocessing: created aTFile: "
 					+ atFile.toString());
 
 			// 3) initialize other object variables nedded
 			logger
-					.fine(projectID
+					.info(projectID
 							+ "#AL preprocessing: other variable initialization... --- ");
 
 			selList = new File(tmpDir.getAbsolutePath() + File.separator

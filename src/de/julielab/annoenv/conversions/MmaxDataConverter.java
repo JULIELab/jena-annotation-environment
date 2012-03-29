@@ -526,8 +526,22 @@ public class MmaxDataConverter {
 
 				if (Math.floor(wordId) == wordId) {
 					// System.out.println("getting pos for word id: " + wordId);
-					wordAndPOSStr = word + "_"
-							+ extractPOS(wordAndPOSList.get(posCounter));
+					try {
+						wordAndPOSStr = word + "_"
+								+ extractPOS(wordAndPOSList.get(posCounter));
+					} catch (IndexOutOfBoundsException e) {
+						System.err
+								.println("Error while trying to get the word and PoS string at position "
+										+ posCounter
+										+ " (0-based) for document '"
+										+ tid
+										+ "', sentence "
+										+ sid
+										+ " (0-based) at PoS diretory '"
+										+ posDataPath
+										+ "'. If you created the seedset alsession file yourself, there might be an error in it.");
+						throw e;
+					}
 					// System.out.println("wordAndPOsStr: " + wordAndPOSStr);
 					posCounter++;
 				} else {
